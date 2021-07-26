@@ -3,9 +3,10 @@
   "scripts": {
     "clean": "rimraf _site",
     "start": "npm run dev",
-    "dev": "npm-run-all --parallel dev:tailwind dev:eleventy",
+    "dev": "npm-run-all --parallel dev:tailwind dev:eleventy dev:netlifycms",
     "dev:eleventy": "cross-env NODE_ENV=development eleventy --serve",
     "dev:tailwind": "cross-env NODE_ENV=development postcss _styles/tailwind.css --output _site/tailwind.css --config _styles/postcss.config.js --watch",
+    "dev:netlifycms": "npx netlify-cms-proxy-server",
     "build": "npm-run-all build:eleventy build:tailwind",
     "build:eleventy": "cross-env NODE_ENV=production eleventy",
     "build:tailwind": "cross-env NODE_ENV=production postcss _styles/tailwind.css --output _site/tailwind.css --config _styles/postcss.config.js"
