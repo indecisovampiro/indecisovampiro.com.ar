@@ -1,7 +1,4 @@
 module.exports = function (config) {
-  // Watch!
-  config.addWatchTarget('_site/tailwind.css')
-
   // Copy!
   // Favicon
   config.addPassthroughCopy({ 'static/favicon.ico': 'favicon.ico' })
@@ -13,7 +10,6 @@ module.exports = function (config) {
   config.addPassthroughCopy({
     'node_modules/alpinejs/dist/alpine.js': 'alpine.js',
     'node_modules/fitty/dist/fitty.min.js': 'fitty.js',
-    'node_modules/@fortawesome/fontawesome-free/sprites': 'static/sprites',
   })
 
   // Config!
