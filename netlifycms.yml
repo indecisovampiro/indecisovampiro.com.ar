@@ -29,6 +29,13 @@ collections:
             allow_add: true
             fields:
               - { label: Titulo, name: titulo, widget: string }
+              - label: Episodios
+                name: episodios
+                widget: list
+                fields:
+                  - { label: Titulo, name: title, widget: string }
+                  - { label: URL, name: url, widget: string }
+                  - { label: Fecha, name: fecha, widget: datetime, format: "DD-MM-YYYY", date_format: "DD-MM-YYYY", time_format: false }
               - { label: Imagen, name: imagen, widget: image }
               - { label: Dia, name: dia, widget: string }
               - { label: Horario, name: hora, widget: string }

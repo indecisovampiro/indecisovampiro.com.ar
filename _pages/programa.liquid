@@ -1,30 +1,45 @@
 ---
 layout: default
 pagination:
-    data: programacion.programacion
-    size: 1
-    alias: programa
-permalink: "programas/{{ programa.titulo | slug }}/"
+  data: programacion.programacion
+  size: 1
+  alias: programa
+permalink: 'programas/{{ programa.titulo | slug }}/'
 ---
+
 <!-- Logo -->
 <section class="y flex items-center justify-center">
-  <img loading="lazy" class="hidden sm:block" src="/static/images/radio-vampira.svg" alt="">
-  <img loading="lazy" class="block w-56 sm:hidden" src="/static/images/radio-vampira.png" alt="">
+  <img
+    loading="lazy"
+    class="hidden sm:block"
+    src="/static/images/radio-vampira.svg"
+    alt=""
+  />
+  <img
+    loading="lazy"
+    class="block w-56 sm:hidden"
+    src="/static/images/radio-vampira.png"
+    alt=""
+  />
 </section>
 
 <!-- Card -->
 <section class="x y flex flex-col justify-around sm:flex-row">
   <!-- Imagen -->
-  <img loading="lazy" class="max-w-md" src="{{ programa.imagen }}" alt="">
+  <img loading="lazy" class="max-w-md" src="{{ programa.imagen }}" alt="" />
   <!-- Descripcion -->
   <div class="flex flex-col justify-between gap-4 my-4">
     <!-- Titulo/Subtitulo -->
     <div class="flex flex-col gap-4">
       <!-- Header -->
       <div class="border-b-2 border-blue-900">
-        <h2 class="text-2xl uppercase sm:text-3xl">{{ programa.dia }} {{ programa.hora }}</h2>
+        <h2 class="text-2xl uppercase sm:text-3xl">
+          {{ programa.dia }} {{ programa.hora }}
+        </h2>
         <h1 class="text-3xl uppercase sm:text-5xl">{{ programa.titulo }}</h1>
-        <h3 class="text-2xl text-blue-800 uppercase sm:text-3xl">{% for t in programa.tags %}#{{t}} {% endfor %}</h3>
+        <h3 class="text-2xl text-blue-800 uppercase sm:text-3xl">
+          {% for t in programa.tags %}#{{ t }} {% endfor %}
+        </h3>
       </div>
       <!-- Paragraph-->
       <p class="text-base text-justify">{{ programa.descripcion }}</p>
@@ -33,24 +48,43 @@ permalink: "programas/{{ programa.titulo | slug }}/"
     <div class="flex items-end justify-between">
       <!-- Autor -->
       <div class="flex flex-col">
-        <p class="text-base"><strong>Musicalización</strong>: {{ programa.musicalizacion }}</p>
-        <p class="text-base"><strong>Contacto</strong>: {{ programa.contacto }}</p>
+        <p class="text-base">
+          <strong>Musicalización</strong>: {{ programa.musicalizacion }}
+        </p>
+        <p class="text-base">
+          <strong>Contacto</strong>: {{ programa.contacto }}
+        </p>
       </div>
       <!-- Compartir -->
       <div class="flex flex-col gap-2">
-        <p class="text-base text-right border-b-2 border-blue-900">Compartir</p>
+        <p class="text-base text-right border-b-2 border-blue-900">
+          Compartir
+        </p>
         <div class="flex gap-2">
-          <a class="hover:text-gray-300" href="https://wa.me/?text={{ site.baseURL }}{{ page.url }}">
+          <a
+            class="hover:text-gray-300"
+            href="https://wa.me/?text={{ site.baseURL }}{{ page.url }}"
+          >
             <svg class="w-5 h-5">
               <use xlink:href="/static/sprite.svg#whatsapp"></use>
             </svg>
           </a>
-          <a class="hover:text-gray-300" href="https://twitter.com/intent/tweet?url={{ site.baseURL }}{{ page.url }}">
+          <a
+            class="hover:text-gray-300"
+            href="https://twitter.com/intent/tweet?url={{ site.baseURL }}{{
+              page.url
+            }}"
+          >
             <svg class="w-5 h-5">
               <use xlink:href="/static/sprite.svg#twitter"></use>
             </svg>
           </a>
-          <a class="hover:text-gray-300" href="https://www.facebook.com/sharer/sharer.php?u={{ site.baseURL }}{{ page.url }}">
+          <a
+            class="hover:text-gray-300"
+            href="https://www.facebook.com/sharer/sharer.php?u={{
+              site.baseURL
+            }}{{ page.url }}"
+          >
             <svg class="w-5 h-5">
               <use xlink:href="/static/sprite.svg#facebook"></use>
             </svg>
@@ -60,3 +94,33 @@ permalink: "programas/{{ programa.titulo | slug }}/"
     </div>
   </div>
 </section>
+
+<!-- Programas Pasados -->
+{% if programa.episodios %}
+<section class="x y">
+<div
+  class="x y flex flex-col justify-around border-2 border-gray-500 rounded-3xl"
+>
+  <h1 class="text-4xl font-semibold uppercase md:text-5xl">
+    Programas Pasados
+  </h1>
+  <!-- Grid -->
+  <div class="flex flex-col">
+    {% for episodio in programa.episodios %}
+    <!-- Item -->
+    <div
+      class="flex flex-col md:items-center md:flex-row py-4 border-t border-b border-gray-500 gap-4"
+    >
+      <div class="flex flex-1 justify-between md:order-2">
+        <h2 class="text-2xl uppercase">{{ episodio.title }}</h2>
+        <h2 class="text-2xl">{{ episodio.fecha }}</h2>
+      </div>
+      <audio controls preload="none">
+        <source src="{{ episodio.url }}" type="audio/mpeg" />
+      </audio>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+</section>
+{% endif %}
