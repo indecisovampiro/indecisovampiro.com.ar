@@ -4,8 +4,11 @@ module.exports = function (config) {
     'static': 'static',
     'admin': 'admin',
     'node_modules/alpinejs/dist/alpine.js': 'alpine.js',
-    'node_modules/fitty/dist/fitty.min.js': 'fitty.js',
   })
+
+  // Plugins
+  const pluginSEO = require('eleventy-plugin-seo')
+  config.addPlugin(pluginSEO, require('./_data/seo.json'))
 
   // Config!
   config.setBrowserSyncConfig(require('./lib/browsersyncConfig'))
