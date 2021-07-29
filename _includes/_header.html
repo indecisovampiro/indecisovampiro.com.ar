@@ -9,7 +9,7 @@
     <!-- Right -->
     <div class="flex items-center justify-center gap-2">
       {% for item in site.icons %}
-        <a href="{{ item.href }}">
+        <a class="hover:text-gray-300" href="{{ item.href }}">
           <svg class="w-6 h-6">
             <use xlink:href="/static/sprite.svg#{{ item.icon }}"></use>
           </svg>
@@ -27,7 +27,7 @@
   <nav  class="flex flex-col justify-between gap-3 px-2 pb-2"
         :class="isOpen ? 'block' : 'hidden'">
     {% for item in site.navbar %}
-      <a class="text-xl font-semibold uppercase" href="{{ item.href }}">{{ item.title }}</a>
+      <a class="hover:text-gray-300 text-xl font-semibold uppercase" href="{{ item.href }}">{{ item.title }}</a>
     {% endfor %}
   </nav>
 </header>
@@ -39,7 +39,7 @@
     <!-- Left -->
     <div class="flex items-center justify-center gap-5 m-2">
       {% for item in site.icons %}
-        <a href="{{ item.href }}">
+        <a class="hover:text-gray-300" href="{{ item.href }}">
           <svg class="w-8 h-8">
             <use xlink:href="/static/sprite.svg#{{ item.icon }}"></use>
           </svg>
@@ -49,12 +49,12 @@
     <!-- Middle -->
     <nav class="flex items-center justify-between gap-3">
       {% for item in site.navbar %}
-        <a class="px-4 text-xl font-semibold uppercase" href="{{ item.href }}">{{ item.title }}</a>
+        <a class="hover:text-gray-300 px-4 text-xl font-semibold uppercase" href="{{ item.href }}">{{ item.title }}</a>
       {% endfor %}
     </nav>
     <!-- Right -->
     <div id="right" class="flex items-center justify-center gap-5 m-2">
-      <a href="/buscar">
+      <a class="hover:text-gray-300" href="/buscar">
         <svg class="w-8 h-8">
           <use xlink:href="/static/sprite.svg#search"></use>
         </svg>

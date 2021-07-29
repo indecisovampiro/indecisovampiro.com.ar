@@ -39,7 +39,7 @@ permalink: "catalogo/{{ producto.titulo | slug }}/"
     <div class="flex items-start justify-between">
       <div class="flex flex-col">
         <!-- Comprar -->
-        <a class="flex items-center justify-center p-2 text-lg uppercase border-2 sm:text-3xl" href="{{ producto.url }}">
+        <a class="hover:text-gray-300 flex items-center justify-center p-2 text-lg uppercase border-2 sm:text-3xl" href="{{ producto.url }}">
           <svg class="w-6 h-6 mr-2">
             <use xlink:href="/static/sprite.svg#shopping-cart"></use>
           </svg>
@@ -50,17 +50,17 @@ permalink: "catalogo/{{ producto.titulo | slug }}/"
       <div class="flex flex-col gap-2">
         <p class="text-base text-right border-b-2 border-blue-900">Compartir</p>
         <div class="flex gap-2">
-          <a href="https://wa.me/?text={{ site.baseURL }}{{ page.url }}">
+          <a class="hover:text-gray-300" href="https://wa.me/?text={{ site.baseURL }}{{ page.url }}">
             <svg class="w-5 h-5">
               <use xlink:href="/static/sprite.svg#whatsapp"></use>
             </svg>
           </a>
-          <a href="https://twitter.com/intent/tweet?url={{ site.baseURL }}{{ page.url }}">
+          <a class="hover:text-gray-300" href="https://twitter.com/intent/tweet?url={{ site.baseURL }}{{ page.url }}">
             <svg class="w-5 h-5">
               <use xlink:href="/static/sprite.svg#twitter"></use>
             </svg>
           </a>
-          <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.baseURL }}{{ page.url }}">
+          <a class="hover:text-gray-300" href="https://www.facebook.com/sharer/sharer.php?u={{ site.baseURL }}{{ page.url }}">
             <svg class="w-5 h-5">
               <use xlink:href="/static/sprite.svg#facebook"></use>
             </svg>

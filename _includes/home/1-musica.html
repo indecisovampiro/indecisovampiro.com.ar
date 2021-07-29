@@ -41,8 +41,8 @@
   <h1 class="text-3xl font-semibold text-gray-700 uppercase md:text-5xl">Programación Indecisa</h1>
   <div class="grid grid-cols-2 gap-1 sm:grid-cols-4 sm:gap-4">
     {% for programa in programacion.programacion %}
-    <a href="/programas/{{ programa.titulo | slug }}/">
-      <img src="{{ programa.imagen }}" alt="{{ programa.titulo }}">
+    <a  href="/programas/{{ programa.titulo | slug }}/">
+      <img class="transform duration-300 motion-safe:hover:scale-110" src="{{ programa.imagen }}" alt="{{ programa.titulo }}">
     </a>
     {% endfor %}
   </div>
@@ -100,7 +100,7 @@
     <div class="grid grid-cols-3 gap-2 sm:grid-cols-6 sm:gap-4">
       {% for p in playlists.playlists limit : 12 %}
       <a href="{{ p.url }}">
-        <img src="{{ p.imagen }}" alt="{{ p.titulo }}">
+        <img class="transform duration-300 motion-safe:hover:scale-110" src="{{ p.imagen }}" alt="{{ p.titulo }}">
       </a>
       {% endfor %}
     </div>

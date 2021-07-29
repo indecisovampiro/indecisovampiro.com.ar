@@ -1,13 +1,8 @@
 module.exports = function (config) {
-  // Copy!
-  // Favicon
-  config.addPassthroughCopy({ 'static/favicon.ico': 'favicon.ico' })
-  // Static
-  config.addPassthroughCopy('static')
-  // Netlify CMS
-  config.addPassthroughCopy('admin')
-  // Vendor
   config.addPassthroughCopy({
+    'static/favicon.ico': 'favicon.ico',
+    'static': 'static',
+    'admin': 'admin',
     'node_modules/alpinejs/dist/alpine.js': 'alpine.js',
     'node_modules/fitty/dist/fitty.min.js': 'fitty.js',
   })
