@@ -32,7 +32,7 @@
 
 <!-- Programacion -->
 <section class="x y flex flex-col">
-  <h1 class="text-3xl font-semibold text-gray-700 uppercase md:text-5xl">Programación Indecisa</h1>
+  <h1 class="text-4xl font-semibold text-gray-700 uppercase md:text-5xl">Programación Indecisa</h1>
   <div class="grid grid-cols-2 gap-1 sm:grid-cols-4 sm:gap-4">
     {% for programa in programacion.programacion %}
     <a  href="/programas/{{ programa.titulo | slug }}/">
@@ -50,39 +50,26 @@
   <!-- Wrapper -->
   <div class="x flex flex-col">
     <!-- Desktop -->
-    <div class="items-stretch justify-around hidden gap-16 sm:flex">
+    <div class="flex gap-8 sm:gap-16 items-stretch justify-around">
       <!-- Widget Playlist -->
-      <div class="flex items-center justify-center">
+      <!-- Visible only on Desktop -->
+      <div class="hidden sm:flex items-center justify-center">
         <iframe src="https://open.spotify.com/embed/playlist/1iSMIpcONhHVZN0DTmS2kV" width="300" height="315"
           frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
       </div>
       <!-- Descripcion -->
       <div class="flex flex-col justify-around">
-        <!-- Top -->
         <div class="flex flex-col">
-          <h1 class="text-2xl font-semibold text-gray-700 uppercase md:text-5xl">Streaming Indeciso</h1>
+          <!-- Title -->
+          <h1 class="text-4xl font-semibold text-gray-700 uppercase md:text-5xl">Streaming Indeciso</h1>
+          <!-- Paragraph -->
           <p class="px-8 text-lg">¿Sólo escuchas cosas en Spotify? También estamos ahí con la selección de música
             vampira. Podés encontrarlas en nuestra cuenta y las actualizamos constantemente.</p>
         </div>
-        <!-- Title -->
+        <!-- Nuestras Playlists -->
         <div class="flex items-center justify-center mx-8">
           <img class="w-full" loading="lazy"  src="/static/images/nuestras-playlists.svg" alt="">
         </div>
-      </div>
-    </div>
-
-
-    <!-- Mobile -->
-    <div class="flex flex-col items-center justify-center gap-8 sm:hidden">
-      <!-- Top -->
-      <div class="flex flex-col">
-        <h1 class="text-3xl font-semibold text-gray-700 uppercase">Streaming Indeciso</h1>
-        <p class="px-4">¿Sólo escuchas cosas en Spotify? También estamos ahí con la selección de música vampira.
-          Podés encontrarlas en nuestra cuenta y las actualizamos constantemente.</p>
-      </div>
-      <!-- Bottom -->
-      <div class="w-full">
-        <img class="w-full px-4" loading="lazy"  src="/static/images/nuestras-playlists.svg" alt="">
       </div>
     </div>
     <!-- Grid -->
