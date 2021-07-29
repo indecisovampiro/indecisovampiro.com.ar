@@ -18,7 +18,7 @@
     <!-- Grid -->
     <div class="flex items-center justify-center gap-16 p-5 bg-center bg-no-repeat bg-cover sm:p-20 "
       style="background-image: url('/static/images/bg-editorial.png');">
-      <img class="hidden sm:block w-60" src="/static/images/pila.png" alt="">
+      <img loading="lazy" class="hidden sm:block w-60" src="/static/images/pila.png" alt="">
       <div class="flex flex-col items-center justify-center gap-8">
         <div class="grid grid-cols-2 gap-4 sm:grid-cols-4">
           {% for producto in editorial.editorial %}
@@ -27,7 +27,7 @@
             <svg viewBox="0 0 210 297" style="grid-area: 1/1;"></svg>
             <div class="flex items-center" style="grid-area: 1/1;">
               <a href="/catalogo/{{ producto.titulo | slug }}/">
-                <img class="transform duration-300 motion-safe:hover:scale-110" src="{{ producto.imagen }}" alt="">
+                <img loading="lazy" class="transform duration-300 motion-safe:hover:scale-110" src="{{ producto.imagen }}" alt="">
               </a>
             </div>
           </div>

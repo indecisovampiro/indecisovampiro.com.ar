@@ -2,8 +2,8 @@
 <section id="musica" class="x y grid grid-cols-1 sm:grid-cols-2 items-center justify-around">
   <!-- Logo -->
   <div class="flex items-center justify-center sm:col-span-2">
-    <img class="sm:hidden" src="/static/images/radio-vampira.png" alt="">
-    <img class="hidden sm:block" src="/static/images/radio-vampira.svg" alt="">
+    <img loading="lazy" class="sm:hidden" src="/static/images/radio-vampira.png" alt="">
+    <img loading="lazy" class="hidden sm:block" src="/static/images/radio-vampira.svg" alt="">
   </div>
   <!-- Title -->
   <div class="w-full my-16">
@@ -28,10 +28,10 @@
       <h2 class="fit">Y seguí escuchando Radio Vampira en todas partes.</h2>
     </div>
     <!-- Imagen -->
-    <img class="w-52 sm:order-1" src="/static/images/app.png" alt="">
+    <img loading="lazy" class="w-52 sm:order-1" src="/static/images/app.png" alt="">
     <!-- Boton -->
     <a class="flex items-center justify-center w-2/3 sm:order-3" href="{{ site.google-play }}">
-      <img class="w-48" src="/static/images/btn-google-play.png" alt="">
+      <img loading="lazy" class="w-48" src="/static/images/btn-google-play.png" alt="">
     </a>
   </div>
 </section>
@@ -42,7 +42,7 @@
   <div class="grid grid-cols-2 gap-1 sm:grid-cols-4 sm:gap-4">
     {% for programa in programacion.programacion %}
     <a  href="/programas/{{ programa.titulo | slug }}/">
-      <img class="transform duration-300 motion-safe:hover:scale-110" src="{{ programa.imagen }}" alt="{{ programa.titulo }}">
+      <img loading="lazy" class="transform duration-300 motion-safe:hover:scale-110" src="{{ programa.imagen }}" alt="{{ programa.titulo }}">
     </a>
     {% endfor %}
   </div>
@@ -75,7 +75,7 @@
         <div class="flex items-center justify-center mx-8">
           <div class="w-full">
             <h1 class="fit font-bold leading-4">NUESTRASPLAYLISTS</h1>
-            <h2 class="fit text-blue-500">MÁS MÚSICA DE SELECCIÓN INDECISA</h2>
+            <h2 class="fit text-[#8cc63f]">MÁS MÚSICA DE SELECCIÓN INDECISA</h2>
           </div>
         </div>
       </div>
@@ -100,7 +100,7 @@
     <div class="grid grid-cols-3 gap-2 sm:grid-cols-6 sm:gap-4">
       {% for p in playlists.playlists limit : 12 %}
       <a href="{{ p.url }}">
-        <img class="transform duration-300 motion-safe:hover:scale-110" src="{{ p.imagen }}" alt="{{ p.titulo }}">
+        <img loading="lazy" class="transform duration-300 motion-safe:hover:scale-110" src="{{ p.imagen }}" alt="{{ p.titulo }}">
       </a>
       {% endfor %}
     </div>

@@ -9,14 +9,14 @@ permalink: "catalogo/{{ producto.titulo | slug }}/"
 <!-- Logo -->
 <section class="y flex items-center justify-center">
   <a href="/catalogo">
-    <img class="w-56 py-10" src="/static/images/logo-editorial-vampira.png" alt="">
+    <img loading="lazy" class="w-56 py-10" src="/static/images/logo-editorial-vampira.png" alt="">
   </a>
 </section>
 
 <!-- Card -->
 <section class="x y flex flex-col sm:flex-row items-center justify-center">
   <!-- Imagen -->
-  <img class="max-w-md" src="{{ producto.imagen }}" alt="">
+  <img loading="lazy" class="max-w-md" src="{{ producto.imagen }}" alt="">
   <!-- Descripcion -->
   <div class="flex flex-col justify-between gap-4 my-4">
     <!-- Top -->

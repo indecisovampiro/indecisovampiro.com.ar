@@ -3,7 +3,7 @@ title: Catalogo
 layout: default
 ---
 <section class="flex items-center justify-center max-w-screen-lg py-10 mx-auto">
-  <img class="w-56 py-10" src="/static/images/logo-editorial-vampira.png" alt="">
+  <img loading="lazy" class="w-56 py-10" src="/static/images/logo-editorial-vampira.png" alt="">
 </section>
 <section class="flex flex-col max-w-screen-lg gap-12 pt-0 mx-auto sm:gap-14">
   <h1 class="text-4xl font-semibold text-gray-700 uppercase md:text-5xl">Catálogo</h1>
@@ -13,7 +13,7 @@ layout: default
       <div class="flex flex-col justify-between gap-3">
         <!-- Image -->
         <a href="/catalogo/{{ producto.titulo | slug }}/">
-          <img src="{{ producto.imagen }}" alt="">
+          <img loading="lazy" src="{{ producto.imagen }}" alt="">
         </a>
         <!-- Description -->
         <div class="w-3/4">

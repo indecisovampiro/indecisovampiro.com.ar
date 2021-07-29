@@ -8,14 +8,14 @@ permalink: "programas/{{ programa.titulo | slug }}/"
 ---
 <!-- Logo -->
 <section class="y flex items-center justify-center">
-  <img class="hidden sm:block" src="/static/images/radio-vampira.svg" alt="">
-  <img class="block w-56 sm:hidden" src="/static/images/radio-vampira.png" alt="">
+  <img loading="lazy" class="hidden sm:block" src="/static/images/radio-vampira.svg" alt="">
+  <img loading="lazy" class="block w-56 sm:hidden" src="/static/images/radio-vampira.png" alt="">
 </section>
 
 <!-- Card -->
 <section class="x y flex flex-col justify-around sm:flex-row">
   <!-- Imagen -->
-  <img class="max-w-md" src="{{ programa.imagen }}" alt="">
+  <img loading="lazy" class="max-w-md" src="{{ programa.imagen }}" alt="">
   <!-- Descripcion -->
   <div class="flex flex-col justify-between gap-4 my-4">
     <!-- Titulo/Subtitulo -->
