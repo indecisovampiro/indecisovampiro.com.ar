@@ -18,14 +18,15 @@
       <button @click="isOpen = !isOpen" type="button">
         <svg class="w-8 h-8">
           <use x-show="!isOpen" xlink:href="/static/sprite.svg#bars"></use>
-          <use x-show="isOpen" xlink:href="/static/sprite.svg#times"></use>
+          <use x-show="isOpen" xlink:href="/static/sprite.svg#times" x-cloak></use>
         </svg>
       </button>
     </div>
   </div>
   <!-- List -->
   <nav  class="flex flex-col justify-between gap-3 px-2 pb-2"
-        :class="isOpen ? 'block' : 'hidden'">
+        :class="isOpen ? 'block' : 'hidden'"
+        x-cloak>
     {% for item in site.navbar %}
       <a class="hover:text-gray-300 text-xl font-semibold uppercase" href="{{ item.href }}">{{ item.title }}</a>
     {% endfor %}
