@@ -21,7 +21,8 @@ module.exports = function (config) {
     config.addTransform('minifyHtml', require('./src/minifyHtml'))
   } else {
     config.setBrowserSyncConfig(require('./src/browsersyncConfig'))
-    config.addTransform("prettier", require('./src/prettifyHtml'))
+    // Too strict, need a linter first
+    // config.addTransform("prettier", require('./src/prettifyHtml'))
   }
 
   return {
