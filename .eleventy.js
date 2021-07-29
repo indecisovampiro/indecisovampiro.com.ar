@@ -1,10 +1,15 @@
 module.exports = function (config) {
+  // Copy
   config.addPassthroughCopy({
     'static/favicon.ico': 'favicon.ico',
     static: 'static',
     'netlifycms.yml': 'admin/config.yml',
     'node_modules/alpinejs/dist/alpine.js': 'alpine.js',
   })
+
+  // Better defaults
+  config.setDataDeepMerge(true)
+  config.addWatchTarget("_site/tailwind.css");
 
   // Plugins
   const pluginSEO = require('eleventy-plugin-seo')
