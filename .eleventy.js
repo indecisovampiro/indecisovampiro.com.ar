@@ -1,8 +1,8 @@
 module.exports = function (config) {
   config.addPassthroughCopy({
     'static/favicon.ico': 'favicon.ico',
-    'static': 'static',
-    'admin': 'admin',
+    static: 'static',
+    'netlifycms.yml': 'admin/config.yml',
     'node_modules/alpinejs/dist/alpine.js': 'alpine.js',
   })
 
@@ -10,9 +10,14 @@ module.exports = function (config) {
   const pluginSEO = require('eleventy-plugin-seo')
   config.addPlugin(pluginSEO, require('./_data/seo.json'))
 
-  // Config!
-  config.setBrowserSyncConfig(require('./lib/browsersyncConfig'))
-  config.addTransform('minifyHtml', require('./lib/minifyHtml'))
+  // Conditional configs
+  const isProduction = process.env.NODE_ENV === 'production'
+  if (isProduction) {
+    config.addTransform('minifyHtml', require('./src/minifyHtml'))
+  } else {
+    config.setBrowserSyncConfig(require('./src/browsersyncConfig'))
+    config.addTransform("prettier", require('./src/prettifyHtml'))
+  }
 
   return {
     dir: {
