@@ -1,0 +1,11 @@
+---
+layout: default
+---
+<h1>Hello World</h1>
+<section class="mt-15">
+    {% for post in collections.post %}
+        <article class="my-8">
+          {{ post.templateContent }}
+        </article>
+    {% endfor %}
+</section>

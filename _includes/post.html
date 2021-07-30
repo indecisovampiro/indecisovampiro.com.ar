@@ -1,0 +1,21 @@
+---
+layout: default
+prism: true
+---
+
+<section style="background-image: linear-gradient(to right top, rgb(55, 9, 99), rgb(64, 43, 157), rgb(3, 143, 159))">
+  <div class="flex flex-col items-center justify-center gap-4 bg-center bg-no-repeat bg-cover h-[30vh]" style="background-image: url('/static/images/patterns/blog-pattern-bg.png')">
+    <h1 class="text-5xl font-playfairDisplay font-bold text-center sm:text-7xl">Blog</h1>
+  </div>
+</section>
+<section class="section">
+  <div class="container max-w-4xl mt-6 px-6">
+    <div class="pb-5 mb-5 border-b border-gray-100">
+      <h1 class="font-bold text-5xl text-center">{{title}}</h1>
+      <p class="text-center text-base mt-4 font-medium text-gray-500">
+        <time>{{ date | readableDate }} by <a>{{ author }}</a></time>
+      </p>
+    </div>
+    <article class="prose lg:prose-xl my-4 mx-auto">{{ content | safe }}</article>
+  </div>
+</section>

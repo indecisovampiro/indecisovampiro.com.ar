@@ -3,6 +3,7 @@
   "scripts": {
     "clean": "rimraf _site",
     "start": "npm run dev",
+    "debug": "DEBUG=Eleventy* eleventy",
     "dev": "npm-run-all --parallel dev:tailwind dev:eleventy dev:netlifycms",
     "dev:eleventy": "eleventy --serve --quiet",
     "dev:tailwind": "tailwindcss -i tailwind.css -c tailwind.config.js -o _site/tailwind.css --watch",
