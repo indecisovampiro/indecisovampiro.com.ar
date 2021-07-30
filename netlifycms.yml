@@ -94,3 +94,4 @@ collections:
         create: true
         options: ["noticias", "fanzines", "eventos", "encuentros", "talleres"]
       - { label: "Texto", name: "body", widget: "markdown" }
+      - { label: "Imagen", name: image, widget: image }

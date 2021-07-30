@@ -3,21 +3,21 @@ layout: default
 ---
 
 <section class="x y">
-  <div class="max-w-3xl">
+  <div class="max-w-2xl mx-auto">
     {% for post in collections.post %}
-    <article class="my-8">
-      <h2 class="font-bold text-3xl text-gray-900 mb-2">
-        <a href="{{ post.url | url }}">{% if post.data.title %}{{ post.data.title }}{% else %}Untitled{% endif %}</a>
-      </h2>
-      <img loading="lazy" class="w-56 py-10" src="{{ post.data.image }}" alt="">
-      <p class="text-base leading-6 text-gray-500 mb-3">
-        <time>{{ post.date | readableDate }}</time>
-      </p>
-      <p class="text-lg text-gray-500 mb-3">{{ post.templateContent }}</p>
-      <p>
-        <a href="{{ post.url | url }}" class="text-indigo-500 font-bold text-lg"> Read more → </a>
-      </p>
-      <img src="{{ post.image }}">
+    <article class="my-8 bg-[#242526] rounded-3xl">
+      <!-- Header -->
+      <div class="p-4 rounded-3xl">
+        <h2 class="font-bold text-3xl mb-2">
+          <a href="{{ post.url | url }}">{% if post.data.title %}{{ post.data.title }}{% else %}Untitled{% endif %}</a>
+        </h2>
+        <p class="text-base leading-6 text-gray-500 mb-3">
+          <time>{{ post.date | readableDate }}</time>
+        </p>
+        <div class="text-lg mb-3">{{ post.templateContent }}</div>
+      </div>
+      <!--<p><a href="{{ post.url | url }}" class="text-indigo-500 font-bold text-lg"> Read more → </a></p>-->
+      <img class="w-full" src="{{ post.data.image }}" alt="" loading="lazy">
     </article>
     {% endfor %}
   </div>
