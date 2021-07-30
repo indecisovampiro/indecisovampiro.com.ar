@@ -4,17 +4,23 @@
   <div class="flex items-center justify-between max-w-screen-lg p-2 mx-auto">
     <!-- Left -->
     <a href="/">
-      <img loading="lazy" class="h-12" src="/static/images/logo.png" alt="Indeciso Vampiro">
+      <img loading="lazy" class="h-12" src="/static/images/logo.png" alt="Indeciso Vampiro" />
     </a>
     <!-- Right -->
     <div class="flex items-center justify-center gap-2">
-      {% for item in site.icons %}
-        <a class="hover:text-gray-300" href="{{ item.href }}">
-          <svg class="w-6 h-6">
-            <use xlink:href="/static/sprite.svg#{{ item.icon }}"></use>
-          </svg>
-        </a>
-      {% endfor %}
+      <!-- Icons -->
+      <!-- Youtube -->
+      <a class="hover:text-gray-300" href="{{ settings.youtube }}">
+        <svg class="w-6 h-6">
+          <use xlink:href="/static/sprite.svg#youtube"></use>
+        </svg>
+      </a>
+      <!-- Instagram -->
+      <a class="hover:text-gray-300" href="{{ settings.instagram }}">
+        <svg class="w-6 h-6">
+          <use xlink:href="/static/sprite.svg#instagram"></use>
+        </svg>
+      </a>
       <button @click="isOpen = !isOpen" type="button">
         <svg class="w-8 h-8">
           <use x-show="!isOpen" xlink:href="/static/sprite.svg#bars"></use>
@@ -24,12 +30,10 @@
     </div>
   </div>
   <!-- List -->
-  <nav  class="flex flex-col justify-between gap-3 px-2 pb-2"
-        :class="isOpen ? 'block' : 'hidden'"
-        x-cloak>
-    {% for item in site.navbar %}
-      <a class="hover:text-gray-300 text-xl font-semibold uppercase" href="{{ item.href }}">{{ item.title }}</a>
-    {% endfor %}
+  <nav class="flex flex-col justify-between gap-3 px-2 pb-2" :class="isOpen ? 'block' : 'hidden'" x-cloak>
+    <a class="hover:text-gray-300 text-xl font-semibold uppercase" href="/#musica">Musica</a>
+    <a class="hover:text-gray-300 text-xl font-semibold uppercase" href="/#audiovisual">Audiovisual</a>
+    <a class="hover:text-gray-300 text-xl font-semibold uppercase" href="/#editorial">Editorial</a>
   </nav>
 </header>
 
@@ -39,19 +43,25 @@
   <div class="flex items-center justify-between max-w-screen-lg mx-auto">
     <!-- Left -->
     <div class="flex items-center justify-center gap-5 m-2">
-      {% for item in site.icons %}
-        <a class="hover:text-gray-300" href="{{ item.href }}">
-          <svg class="w-8 h-8">
-            <use xlink:href="/static/sprite.svg#{{ item.icon }}"></use>
-          </svg>
-        </a>
-      {% endfor %}
+      <!-- Icons -->
+      <!-- Youtube -->
+      <a class="hover:text-gray-300" href="{{ settings.youtube }}">
+        <svg class="w-6 h-6">
+          <use xlink:href="/static/sprite.svg#youtube"></use>
+        </svg>
+      </a>
+      <!-- Instagram -->
+      <a class="hover:text-gray-300" href="{{ settings.instagram }}">
+        <svg class="w-6 h-6">
+          <use xlink:href="/static/sprite.svg#instagram"></use>
+        </svg>
+      </a>
     </div>
     <!-- Middle -->
     <nav class="flex items-center justify-between gap-3">
-      {% for item in site.navbar %}
-        <a class="hover:text-gray-300 px-4 text-xl font-semibold uppercase" href="{{ item.href }}">{{ item.title }}</a>
-      {% endfor %}
+      <a class="hover:text-gray-300 px-4 text-xl font-semibold uppercase" href="/#musica">Musica</a>
+      <a class="hover:text-gray-300 px-4 text-xl font-semibold uppercase" href="/#audiovisual">Audiovisual</a>
+      <a class="hover:text-gray-300 px-4 text-xl font-semibold uppercase" href="/#editorial">Editorial</a>
     </nav>
     <!-- Right -->
     <div id="right" class="flex items-center justify-center gap-5 m-2">
@@ -65,9 +75,11 @@
 </header>
 
 <!-- Hero -->
-<section  class="flex items-center justify-center px-0 py-16"
-          style="background-image: linear-gradient(#006fbe, #1ba9e3)">
+<section
+  class="flex items-center justify-center px-0 py-16"
+  style="background-image: linear-gradient(#006fbe, #1ba9e3)"
+>
   <a href="/">
-    <img loading="lazy" class="w-56" src="/static/images/logo.png" alt="">
+    <img loading="lazy" class="w-56" src="/static/images/logo.png" alt="" />
   </a>
 </section>

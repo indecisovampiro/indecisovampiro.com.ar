@@ -7,6 +7,22 @@ collections:
     name: files
     editor: { preview: false }
     files:
+      - label: "Settings"
+        name: "settings"
+        file: "_data/settings.json"
+        fields:
+          - { label: URL, name: url, widget: string }
+          - { label: Titulo, name: title, widget: string }
+          - { label: Descripcion, name: description, widget: string }
+          - { label: Author, name: author, widget: string }
+          - { label: "Open Graph", name: image, widget: string }
+          - { label: "Radio URL", name: radio, widget: string }
+          - { label: "Google Play", name: google-play, widget: string }
+          - { label: Youtube, name: youtube, widget: string }
+          - { label: Facebook, name: facebook, widget: string }
+          - { label: Instagram, name: instagram, widget: string }
+          - { label: Spotify, name: spotify, widget: string }
+          - { label: E-Mail, name: email, widget: string }
       - label: Playlists
         name: playlists
         file: _data/playlists.json

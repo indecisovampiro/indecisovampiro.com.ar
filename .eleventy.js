@@ -13,7 +13,7 @@ module.exports = function (config) {
 
   // Plugins
   const pluginSEO = require('eleventy-plugin-seo')
-  config.addPlugin(pluginSEO, require('./_data/seo.json'))
+  config.addPlugin(pluginSEO, require('./_data/settings.json'))
 
   // Conditional configs
   const isProduction = process.env.NODE_ENV === 'production'

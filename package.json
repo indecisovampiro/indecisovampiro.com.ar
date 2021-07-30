@@ -4,7 +4,7 @@
     "clean": "rimraf _site",
     "start": "npm run dev",
     "dev": "npm-run-all --parallel dev:tailwind dev:eleventy dev:netlifycms",
-    "dev:eleventy": "eleventy --serve",
+    "dev:eleventy": "eleventy --serve --quiet",
     "dev:tailwind": "tailwindcss -i tailwind.css -c tailwind.config.js -o _site/tailwind.css --watch",
     "dev:netlifycms": "npx netlify-cms-proxy-server",
     "build": "npm-run-all build:eleventy build:tailwind",
