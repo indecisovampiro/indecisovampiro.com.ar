@@ -75,3 +75,18 @@ collections:
               - { label: Descripcion, name: descripcion, widget: "markdown" }
               - { label: Autor, name: autor, widget: string }
               - { label: Instagram, name: instagram, widget: string }
+  - label: Noticias
+    name: noticias
+    folder: _pages/noticias
+    create: true
+    editor: { preview: false }
+    identifier_field: date
+    fields:
+      - { label: Fecha, name: date, widget: datetime, format: "DD-MM-YYYY-hh-mm-ss", date_format: "DD-MM-YYYY", time_format: false }
+      - widget: select
+        label: "tags"
+        name: "tags"
+        multiple: true
+        create: true
+        options: ["noticias", "fanzines", "eventos", "encuentros", "talleres"]
+      - { label: "Texto", name: "body", widget: "markdown" }
