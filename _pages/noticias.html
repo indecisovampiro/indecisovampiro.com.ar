@@ -1,11 +1,24 @@
 ---
 layout: default
 ---
-<h1>Hello World</h1>
-<section class="mt-15">
+
+<section class="x y">
+  <div class="max-w-3xl">
     {% for post in collections.post %}
-        <article class="my-8">
-          {{ post.templateContent }}
-        </article>
+    <article class="my-8">
+      <h2 class="font-bold text-3xl text-gray-900 mb-2">
+        <a href="{{ post.url | url }}">{% if post.data.title %}{{ post.data.title }}{% else %}Untitled{% endif %}</a>
+      </h2>
+      <img loading="lazy" class="w-56 py-10" src="{{ post.data.image }}" alt="">
+      <p class="text-base leading-6 text-gray-500 mb-3">
+        <time>{{ post.date | readableDate }}</time>
+      </p>
+      <p class="text-lg text-gray-500 mb-3">{{ post.templateContent }}</p>
+      <p>
+        <a href="{{ post.url | url }}" class="text-indigo-500 font-bold text-lg"> Read more → </a>
+      </p>
+      <img src="{{ post.image }}">
+    </article>
     {% endfor %}
+  </div>
 </section>

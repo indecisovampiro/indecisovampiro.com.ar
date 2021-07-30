@@ -80,10 +80,12 @@ collections:
     folder: _pages/p
     create: true
     editor: { preview: false }
-    summary: '{{fields.date}}'
-    identifier_field: date
+    summary: '{{day}}/{{month}}/{{year}} {{hour}}:{{minute}} - {{fields.title}}'
+    # identifier_field: date
     slug: '{{year}}{{month}}{{day}}{{hour}}{{minute}}{{second}}'
+    # slug: '{{year}}{{month}}{{day}}-{{slug}}'
     fields:
+      - { label: Titulo, name: title, widget: string }
       - { label: Fecha, name: date, widget: datetime }
       - widget: select
         label: "tags"

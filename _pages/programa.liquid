@@ -63,7 +63,7 @@ permalink: 'programas/{{ programa.titulo | slug }}/'
         <div class="flex gap-2">
           <a
             class="hover:text-gray-300"
-            href="https://wa.me/?text={{ settings.url }}{{ page.url }}"
+            rel="noopener noreferrer" target="_blank" href="https://wa.me/?text={{ settings.url }}{{ page.url }}"
           >
             <svg class="w-5 h-5">
               <use xlink:href="/static/sprite.svg#whatsapp"></use>
@@ -71,7 +71,7 @@ permalink: 'programas/{{ programa.titulo | slug }}/'
           </a>
           <a
             class="hover:text-gray-300"
-            href="https://twitter.com/intent/tweet?url={{ settings.url }}{{
+            rel="noopener noreferrer" target="_blank" href="https://twitter.com/intent/tweet?url={{ settings.url }}{{
               page.url
             }}"
           >
@@ -81,7 +81,7 @@ permalink: 'programas/{{ programa.titulo | slug }}/'
           </a>
           <a
             class="hover:text-gray-300"
-            href="https://www.facebook.com/sharer/sharer.php?u={{
+            rel="noopener noreferrer" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{
               settings.url
             }}{{ page.url }}"
           >

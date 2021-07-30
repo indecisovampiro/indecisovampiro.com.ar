@@ -9,11 +9,19 @@ module.exports = function (config) {
 
   // Better defaults
   config.setDataDeepMerge(true)
-  config.addWatchTarget("_site/tailwind.css");
+  config.addWatchTarget('_site/tailwind.css')
 
   // Plugins
   const pluginSEO = require('eleventy-plugin-seo')
   config.addPlugin(pluginSEO, require('./_data/settings.json'))
+
+  // Filters
+  const { DateTime } = require('luxon')
+  config.addFilter('readableDate', (dateObj) => {
+    return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat(
+      'dd LLL yyyy'
+    )
+  })
 
   // Conditional configs
   const isProduction = process.env.NODE_ENV === 'production'
