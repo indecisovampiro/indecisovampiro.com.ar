@@ -77,12 +77,14 @@ collections:
               - { label: Instagram, name: instagram, widget: string }
   - label: Noticias
     name: noticias
-    folder: _pages/noticias
+    folder: _pages/p
     create: true
     editor: { preview: false }
+    summary: '{{fields.date}}'
     identifier_field: date
+    slug: '{{year}}{{month}}{{day}}{{hour}}{{minute}}{{second}}'
     fields:
-      - { label: Fecha, name: date, widget: datetime, format: "DD-MM-YYYY-hh-mm-ss", date_format: "DD-MM-YYYY", time_format: false }
+      - { label: Fecha, name: date, widget: datetime }
       - widget: select
         label: "tags"
         name: "tags"
