@@ -4,7 +4,7 @@ module.exports = function (config) {
     'static/favicon.ico': 'favicon.ico',
     static: 'static',
     'netlifycms.yml': 'admin/config.yml',
-    'node_modules/alpinejs/dist/alpine.js': 'alpine.js',
+    'node_modules/alpinejs/dist/cdn.min.js': 'alpine.js',
   })
 
   // Better defaults
