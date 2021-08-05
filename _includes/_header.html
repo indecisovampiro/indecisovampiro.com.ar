@@ -40,9 +40,9 @@
 <!-- Desktop -->
 <header class="sticky top-0 z-10 hidden w-full bg-black border-b-2 border-white md:block">
   <!-- Bar -->
-  <div class="flex items-center justify-between max-w-screen-lg mx-auto">
+  <div class="flex items-center justify-between max-w-screen-lg mx-auto p-2">
     <!-- Left -->
-    <div class="flex items-center justify-center gap-5 m-2">
+    <div class="flex items-center justify-center gap-5">
       <!-- Icons -->
       <!-- Youtube -->
       <a class="hover:text-gray-300" rel="noopener noreferrer" target="_blank" href="{{ settings.youtube }}">
@@ -50,10 +50,10 @@
           <use xlink:href="/static/sprite.svg#youtube"></use>
         </svg>
       </a>
-      <!-- Instagram -->
-      <a class="hover:text-gray-300" rel="noopener noreferrer" target="_blank" href="{{ settings.instagram }}">
+      <!-- Spotify -->
+      <a class="hover:text-gray-300" rel="noopener noreferrer" target="_blank" href="{{ settings.spotify }}">
         <svg class="w-6 h-6">
-          <use xlink:href="/static/sprite.svg#instagram"></use>
+          <use xlink:href="/static/sprite.svg#spotify"></use>
         </svg>
       </a>
     </div>
@@ -64,10 +64,18 @@
       <a class="hover:text-gray-300 px-4 text-xl font-semibold uppercase" href="/#editorial">Editorial</a>
     </nav>
     <!-- Right -->
-    <div id="right" class="flex items-center justify-center gap-5 m-2">
-      <a class="hover:text-gray-300" href="/buscar">
-        <svg class="w-8 h-8">
-          <use xlink:href="/static/sprite.svg#search"></use>
+    <div id="right" class="flex items-center justify-center gap-5">
+      <!-- Icons -->
+      <!-- Instagram -->
+      <a class="hover:text-gray-300" rel="noopener noreferrer" target="_blank" href="{{ settings.instagram }}">
+        <svg class="w-6 h-6">
+          <use xlink:href="/static/sprite.svg#instagram"></use>
+        </svg>
+      </a>
+      <!-- Facebook -->
+      <a class="hover:text-gray-300" rel="noopener noreferrer" target="_blank" href="{{ settings.facebook }}">
+        <svg class="w-6 h-6">
+          <use xlink:href="/static/sprite.svg#facebook"></use>
         </svg>
       </a>
     </div>
