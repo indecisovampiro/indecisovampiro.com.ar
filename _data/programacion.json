@@ -42,13 +42,14 @@
     },
     {
       "titulo": "Dos pájaros de un tiro",
-      "imagen": "/static/images/uploads/programacion-olas-en-montanas.png",
-      "dia": "Viernes",
-      "hora": "15:00",
+      "imagen": "/static/images/uploads/dos-pajaros-de-un-tiro.png",
+      "dia": "Jueves",
+      "hora": "18:00",
       "tags": [
         "Musica",
         "Tertulia",
-        "Simpsons"
+        "Simpsons",
+        "rock"
       ],
       "descripcion": "Encuentro rockero para encarar el inicio del fin de semana con chascarrillos y charlas inesperadas sobre cosas que sucedieron en la semana y cosas que no van a suceder nunca.",
       "musicalizacion": "El cieguito volador",
