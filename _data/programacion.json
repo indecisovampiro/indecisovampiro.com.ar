@@ -1,31 +1,17 @@
 {
   "programacion": [
     {
-      "episodios": [
-        {
-          "fecha": "05-07-2021",
-          "title": "Programa 1",
-          "url": "https://storage.googleapis.com/indecisovampiro/0001.mp3"
-        },
-        {
-          "fecha": "29-07-2021",
-          "url": "https://storage.googleapis.com/indecisovampiro/0002.mp3",
-          "title": "Programa 2"
-        }
-      ],
-      "musicalizacion": "Sebastián Casal",
-      "descripcion": "Presentaciones y análisis de novedades en materia de música, cine, series y libros; desde un enfoque ameno pero crítico. A su vez indagaremos en algunos movimientos artísticos del pasado y su relación e importancia con el contexto histórico; también, cuenta con entrevistas a actores involucrados en las distintas ramas artísticas, así como también, especialistas en diversas materias. En ocasiones, todos los contenidos del programa estarán atravesados por una temática en particular.",
-      "contacto": "lanavedecristalradio@gmail.com",
-      "imagen": "/static/images/uploads/programacion-la-nave-de-cristal.png",
-      "hora": "20:00",
+      "titulo": "Algunas de Algo",
+      "imagen": "/static/images/uploads/algunas-de-algo-01.png",
+      "dia": "Lunes ",
+      "hora": "21:00",
       "tags": [
-        "Musica",
-        "Cine",
-        "Dibujos",
-        "Entrevistas"
+        "Podcast",
+        "seleccion musical"
       ],
-      "titulo": "La nave de cristal",
-      "dia": "Viernes"
+      "descripcion": "Adentrensé al mágico mundo sonoro de la selección musical de otra persona. Cada programa un tópico diferente, semana tras semana vas a viajar desde del lejano oeste hasta el cercano presente. \\\n\\\nCurado y comentado por @wilson.vvilson",
+      "musicalizacion": "@wilson.vvilson",
+      "contacto": "lautaro.w@gmail.com / @wilson.vvilson"
     },
     {
       "titulo": "Vivo indeciso",
@@ -56,17 +42,31 @@
       "contacto": "Alanespinoza1990@gmail.com"
     },
     {
-      "titulo": "Algunas de Algo",
-      "imagen": "/static/images/uploads/algunas-de-algo-01.png",
-      "dia": "Lunes ",
-      "hora": "21:00",
-      "tags": [
-        "Podcast",
-        "seleccion musical"
+      "episodios": [
+        {
+          "fecha": "05-07-2021",
+          "title": "Programa 1",
+          "url": "https://storage.googleapis.com/indecisovampiro/0001.mp3"
+        },
+        {
+          "fecha": "29-07-2021",
+          "url": "https://storage.googleapis.com/indecisovampiro/0002.mp3",
+          "title": "Programa 2"
+        }
       ],
-      "descripcion": "Adentrensé al mágico mundo sonoro de la selección musical de otra persona. Cada programa un tópico diferente, semana tras semana vas a viajar desde del lejano oeste hasta el cercano presente. \\\n\\\nCurado y comentado por @wilson.vvilson",
-      "musicalizacion": "@wilson.vvilson",
-      "contacto": "lautaro.w@gmail.com / @wilson.vvilson"
+      "musicalizacion": "Sebastián Casal",
+      "descripcion": "Presentaciones y análisis de novedades en materia de música, cine, series y libros; desde un enfoque ameno pero crítico. A su vez indagaremos en algunos movimientos artísticos del pasado y su relación e importancia con el contexto histórico; también, cuenta con entrevistas a actores involucrados en las distintas ramas artísticas, así como también, especialistas en diversas materias. En ocasiones, todos los contenidos del programa estarán atravesados por una temática en particular.",
+      "contacto": "lanavedecristalradio@gmail.com",
+      "imagen": "/static/images/uploads/programacion-la-nave-de-cristal.png",
+      "hora": "20:00",
+      "tags": [
+        "Musica",
+        "Cine",
+        "Dibujos",
+        "Entrevistas"
+      ],
+      "titulo": "La nave de cristal",
+      "dia": "Viernes"
     },
     {
       "titulo": "Azul Profundo",
