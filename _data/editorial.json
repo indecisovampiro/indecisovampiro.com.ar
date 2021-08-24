@@ -28,6 +28,15 @@
       "instagram": "indecisovampiro"
     },
     {
+      "precio": 500,
+      "titulo": "3sc4n30",
+      "autor": "Valentina Bailez",
+      "instagram": "Balentinav",
+      "descripcion": "[@balentinav](https://www.instagram.com/balentinav/) nos muestra algunos de sus escritos acompañados de capturas cósmicas hechas también por ella",
+      "url": "https://mpago.la/1rkEzcp",
+      "imagen": "/static/images/uploads/3scane0.jpg"
+    },
+    {
       "titulo": "Inktober Vampiro",
       "imagen": "/static/images/uploads/editorial-inktober-vampiro.png",
       "precio": 200,
@@ -62,15 +71,6 @@
       "autor": "Lautaro N. Hernández",
       "instagram": "wilson.vvilson",
       "url": "https://mpago.la/1rkEzcp"
-    },
-    {
-      "precio": 500,
-      "titulo": "3sc4n30",
-      "autor": "Valentina Bailez",
-      "instagram": "Balentinav",
-      "descripcion": "[@balentinav](https://www.instagram.com/balentinav/) nos muestra algunos de sus escritos acompañados de capturas cósmicas hechas también por ella.",
-      "url": "https://mpago.la/1rkEzcp",
-      "imagen": "/static/images/uploads/3scane0.jpg"
     }
   ]
 }
