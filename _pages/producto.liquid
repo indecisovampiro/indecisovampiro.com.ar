@@ -33,13 +33,13 @@ permalink: "catalogo/{{ producto.titulo | slug }}/"
       <!-- Descripcion -->
       <p class="text-base text-justify">{{ producto.descripcion }}</p>
       <!-- Precio -->
-      <h1 class="text-4xl text-blue-800 uppercase">${{ producto.precio }}</h1>
+      <h1 class="text-4xl text-blue-800 uppercase">${{ producto.precio }}{% if producto.agotado %} (AGOTADO){% endif %}</h1>
     </div>
     <!-- Bottom -->
     <div class="flex items-start justify-between">
       <div class="flex flex-col">
         <!-- Comprar -->
-        <a class="hover:text-gray-300 flex items-center justify-center p-2 text-lg uppercase border-2 sm:text-3xl" href="{{ producto.url }}">
+        <a class="hover:text-gray-300 flex items-center justify-center p-2 text-lg uppercase border-2 sm:text-3xl {% if producto.agotado %}pointer-events-none text-gray-300 line-through{% endif %}" href="{{ producto.url }}">
           <svg class="w-6 h-6 mr-2">
             <use xlink:href="/static/sprite.svg#shopping-cart"></use>
           </svg>
