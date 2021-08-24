@@ -46,6 +46,24 @@
       "descripcion": "lorem esp\n\n\n\nDimensiones: A6 Horizontal\n\nFull color"
     },
     {
+      "titulo": "Tira de Ismael - Travesía Birrera",
+      "imagen": "/static/images/uploads/travesia.jpg",
+      "precio": 1,
+      "url": "https://mpago.la/1rkEzcp",
+      "descripcion": "Travesía de birra\n\n\n\nDimensiones: A5\\\nFull color",
+      "autor": "Lautaro N. Hernández",
+      "instagram": "wilson.vvilson"
+    },
+    {
+      "titulo": "Ahhh",
+      "imagen": "/static/images/uploads/ahhh.jpg",
+      "precio": 1,
+      "url": "https://mpago.la/1rkEzcp",
+      "descripcion": "Loren\n\n\n\nFormato: Fanzine clásico\\\nBlanco y negro",
+      "autor": "Lautaro N. Hernández",
+      "instagram": "wilson.vvilson"
+    },
+    {
       "titulo": "Diario de Ismael 3",
       "imagen": "/static/images/uploads/diario-isma-3.jpg",
       "precio": 1,
@@ -71,15 +89,6 @@
       "autor": "Lautaro N. Hernández",
       "instagram": "wilson.vvilson",
       "url": "https://mpago.la/1rkEzcp"
-    },
-    {
-      "titulo": "Ahhh",
-      "imagen": "/static/images/uploads/ahhh.jpg",
-      "precio": 1,
-      "url": "https://mpago.la/1rkEzcp",
-      "descripcion": "Loren\n\n\n\nFormato: Fanzine clásico\\\nBlanco y negro",
-      "autor": "Lautaro N. Hernández",
-      "instagram": "wilson.vvilson"
     }
   ]
 }
