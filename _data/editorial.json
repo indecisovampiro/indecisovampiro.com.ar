@@ -79,7 +79,8 @@
       "url": "https://mpago.la/1rkEzcp",
       "descripcion": "Colección de 9 fanzines de la historieta de @tira.ismael \n\n\n\nTamaño: Fanzine clásico\\\nFull color",
       "autor": "Lautaro N. Hernández",
-      "instagram": "wilson.vvilson"
+      "instagram": "wilson.vvilson",
+      "agotado": false
     },
     {
       "titulo": "Las Cosas Que No Debes Hacer En Vivo",
@@ -133,7 +134,8 @@
       "descripcion": "Diario de ismael 1\n\n\n\nDimensiones: A4 Doble cara\n\nFull color",
       "autor": "Lautaro N. Hernández",
       "instagram": "wilson.vvilson",
-      "url": "https://mpago.la/1rkEzcp"
+      "url": "https://mpago.la/1rkEzcp",
+      "agotado": true
     }
   ]
 }
