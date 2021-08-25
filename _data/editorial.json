@@ -1,6 +1,15 @@
 {
   "editorial": [
     {
+      "descripcion": "SEGURIDAD\n\nHOY, es una colección que nos lleva recorrer placeres, vivencias y recuerdos en un pequeño formato. Escrita por Pedro Lencina [@p.lencis](https://www.instagram.com/p.lencis/) e ilustrado por Lucía Kuzmuk [@plastictramp](https://www.instagram.com/plastictramp/).\\\n\"POLISEMIA\", \"SEGURIDAD\", \"DOMINGO\" y \"CÓMO\" son las 4 presentaciones de esta serie.",
+      "autor": "Pablo Lencina, Lucía Kuzmuk",
+      "instagram": "@p.lencis @plastictraamp",
+      "url": "dsdsd",
+      "precio": 202,
+      "imagen": "/static/images/uploads/seguridad.jpeg",
+      "titulo": "Seguridad"
+    },
+    {
       "titulo": "Lugares Donde Dormí",
       "imagen": "/static/images/uploads/editorial-lugares-donde-dormi.png",
       "precio": 500,
@@ -28,13 +37,13 @@
       "instagram": "@wilson.vvilson @plastictraamp @brureale @balentinav @holaveroilustra"
     },
     {
-      "descripcion": "SEGURIDAD\n\nHOY, es una colección que nos lleva recorrer placeres, vivencias y recuerdos en un pequeño formato. Escrita por Pedro Lencina [@p.lencis](https://www.instagram.com/p.lencis/) e ilustrado por Lucía Kuzmuk [@plastictramp](https://www.instagram.com/plastictramp/).\\\n\"POLISEMIA\", \"SEGURIDAD\", \"DOMINGO\" y \"CÓMO\" son las 4 presentaciones de esta serie.",
-      "autor": "Pablo Lencina, Lucía Kuzmuk",
-      "instagram": "@p.lencis @plastictraamp",
-      "url": "dsdsd",
-      "precio": 202,
-      "imagen": "/static/images/uploads/seguridad.jpeg",
-      "titulo": "Seguridad"
+      "titulo": "Tira de Ismael - Travesía Birrera",
+      "imagen": "/static/images/uploads/travesia.jpg",
+      "precio": 1,
+      "url": "https://mpago.la/1rkEzcp",
+      "descripcion": "Travesía de birra\n\n\n\nDimensiones: A5\\\nFull color",
+      "autor": "Lautaro N. Hernández",
+      "instagram": "wilson.vvilson"
     },
     {
       "descripcion": "Domingo\\\n\\\nHOY, es una colección que nos lleva recorrer placeres, vivencias y recuerdos en un pequeño formato. Escrita por Pedro Lencina [@p.lencis](https://www.instagram.com/p.lencis/) e ilustrado por Lucía Kuzmuk [@plastictramp](https://www.instagram.com/plastictramp/).\\\n\"POLISEMIA\", \"SEGURIDAD\", \"DOMINGO\" y \"CÓMO\" son las 4 presentaciones de esta serie.",
@@ -89,15 +98,6 @@
       "autor": "Fanzine Colaborativo",
       "instagram": "indecisovampiro",
       "descripcion": "lorem esp\n\n\n\nDimensiones: A6 Horizontal\n\nFull color"
-    },
-    {
-      "titulo": "Tira de Ismael - Travesía Birrera",
-      "imagen": "/static/images/uploads/travesia.jpg",
-      "precio": 1,
-      "url": "https://mpago.la/1rkEzcp",
-      "descripcion": "Travesía de birra\n\n\n\nDimensiones: A5\\\nFull color",
-      "autor": "Lautaro N. Hernández",
-      "instagram": "wilson.vvilson"
     },
     {
       "titulo": "Ahhh",
