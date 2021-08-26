@@ -1,13 +1,13 @@
 {
   "editorial": [
     {
-      "descripcion": "SEGURIDAD\n\nHOY, es una colección que nos lleva recorrer placeres, vivencias y recuerdos en un pequeño formato. Escrita por Pedro Lencina [@p.lencis](https://www.instagram.com/p.lencis/) e ilustrado por Lucía Kuzmuk [@plastictramp](https://www.instagram.com/plastictramp/).\\\n\"POLISEMIA\", \"SEGURIDAD\", \"DOMINGO\" y \"CÓMO\" son las 4 presentaciones de esta serie.",
-      "autor": "Pablo Lencina, Lucía Kuzmuk",
-      "instagram": "p.lencis plastictraamp",
-      "url": "dsdsd",
-      "precio": 202,
-      "imagen": "/static/images/uploads/seguridad.jpeg",
-      "titulo": "Seguridad"
+      "precio": 500,
+      "titulo": "3sc4n30",
+      "autor": "Valentina Bailez",
+      "instagram": "Balentinav",
+      "descripcion": "[@balentinav](https://www.instagram.com/balentinav/) nos muestra algunos de sus escritos acompañados de capturas cósmicas hechas también por ella\\\n\\\nDimensiones: A5\n\nFull color",
+      "url": "https://mpago.la/1rkEzcp",
+      "imagen": "/static/images/uploads/3scane0.jpg"
     },
     {
       "titulo": "Lugares Donde Dormí",
@@ -19,22 +19,49 @@
       "instagram": "wilson.vvilson"
     },
     {
-      "precio": 500,
-      "titulo": "3sc4n30",
-      "autor": "Valentina Bailez",
-      "instagram": "Balentinav",
-      "descripcion": "[@balentinav](https://www.instagram.com/balentinav/) nos muestra algunos de sus escritos acompañados de capturas cósmicas hechas también por ella\\\n\\\nDimensiones: A5\n\nFull color",
-      "url": "https://mpago.la/1rkEzcp",
-      "imagen": "/static/images/uploads/3scane0.jpg"
-    },
-    {
       "titulo": "Espíritus Oscuros En Un Verano Luminoso",
       "imagen": "/static/images/uploads/editorial-espiritus-oscuros-en-un-verano-luminoso.png",
       "precio": 400,
       "url": "https://mpago.la/1rkEzcp",
       "descripcion": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.\n\n\n\nDimensiones: A6\n\nBlanco y negro",
       "autor": "Fanzine Colaborativo",
-      "instagram": "@wilson.vvilson @plastictraamp @brureale @balentinav @holaveroilustra"
+      "instagram": "wilson.vvilson plastictraamp brureale balentinav holaveroilustra dai.papaleta"
+    },
+    {
+      "descripcion": "SEGURIDAD\n\nHOY, es una colección que nos lleva recorrer placeres, vivencias y recuerdos en un pequeño formato. Escrita por Pedro Lencina [@p.lencis](https://www.instagram.com/p.lencis/) e ilustrado por Lucía Kuzmuk [@plastictramp](https://www.instagram.com/plastictramp/).\\\n\"POLISEMIA\", \"SEGURIDAD\", \"DOMINGO\" y \"CÓMO\" son las 4 presentaciones de esta serie.",
+      "autor": "Pablo Lencina, Lucía Kuzmuk",
+      "instagram": "p.lencis plastictraamp",
+      "url": "dsdsd",
+      "precio": 202,
+      "imagen": "/static/images/uploads/seguridad.jpeg",
+      "titulo": "Seguridad"
+    },
+    {
+      "descripcion": "Domingo\\\n\\\nHOY, es una colección que nos lleva recorrer placeres, vivencias y recuerdos en un pequeño formato. Escrita por Pedro Lencina [@p.lencis](https://www.instagram.com/p.lencis/) e ilustrado por Lucía Kuzmuk [@plastictramp](https://www.instagram.com/plastictramp/).\\\n\"POLISEMIA\", \"SEGURIDAD\", \"DOMINGO\" y \"CÓMO\" son las 4 presentaciones de esta serie.",
+      "url": "sa",
+      "precio": 200,
+      "imagen": "/static/images/uploads/domingo.jpeg",
+      "titulo": "Domingo",
+      "autor": "Pablo Lencina, Lucía Kuzmuk",
+      "instagram": "p.lencina plastictraamp"
+    },
+    {
+      "titulo": "Polisemia",
+      "imagen": "/static/images/uploads/polisemia.jpeg",
+      "precio": 200,
+      "url": "https://mpago.la/1rkEzcp",
+      "descripcion": "Polisemia.\\\n\\\nHOY, es una colección que nos lleva recorrer placeres, vivencias y recuerdos en un pequeño formato. Escrita por Pedro Lencina [@p.lencis](https://www.instagram.com/p.lencis/) e ilustrado por Lucía Kuzmuk [@plastictramp](https://www.instagram.com/plastictramp/).\\\n\"POLISEMIA\", \"SEGURIDAD\", \"DOMINGO\" y \"CÓMO\" son las 4 presentaciones de esta serie.",
+      "autor": "Pablo Lencina, Lucía Kuzmuk",
+      "instagram": "p.lencis plastictraamp"
+    },
+    {
+      "descripcion": "Como.\\\n\\\nHOY, es una colección que nos lleva recorrer placeres, vivencias y recuerdos en un pequeño formato. Escrita por Pedro Lencina [@p.lencis](https://www.instagram.com/p.lencis/) e ilustrado por Lucía Kuzmuk [@plastictramp](https://www.instagram.com/plastictramp/).\\\n\"POLISEMIA\", \"SEGURIDAD\", \"DOMINGO\" y \"CÓMO\" son las 4 presentaciones de esta serie.",
+      "url": "sa",
+      "precio": 200,
+      "imagen": "/static/images/uploads/como.jpeg",
+      "titulo": "Como",
+      "autor": "Pablo Lencina, Lucía Kuzmuk",
+      "instagram": "p.lencis plastictraamp"
     },
     {
       "titulo": "Tira de Ismael - Travesía Birrera",
@@ -44,33 +71,6 @@
       "descripcion": "Travesía de birra\n\n\n\nDimensiones: A5\\\nFull color",
       "autor": "Lautaro N. Hernández",
       "instagram": "wilson.vvilson"
-    },
-    {
-      "descripcion": "Domingo\\\n\\\nHOY, es una colección que nos lleva recorrer placeres, vivencias y recuerdos en un pequeño formato. Escrita por Pedro Lencina [@p.lencis](https://www.instagram.com/p.lencis/) e ilustrado por Lucía Kuzmuk [@plastictramp](https://www.instagram.com/plastictramp/).\\\n\"POLISEMIA\", \"SEGURIDAD\", \"DOMINGO\" y \"CÓMO\" son las 4 presentaciones de esta serie.",
-      "url": "sa",
-      "precio": 200,
-      "imagen": "/static/images/uploads/domingo.jpeg",
-      "titulo": "Domingo",
-      "autor": "Pablo Lencina, Lucíz Kuzmuk",
-      "instagram": "@p.lencina @plastictraamp"
-    },
-    {
-      "titulo": "Polisemia",
-      "imagen": "/static/images/uploads/polisemia.jpeg",
-      "precio": 200,
-      "url": "https://mpago.la/1rkEzcp",
-      "descripcion": "Polisemia.\\\n\\\nHOY, es una colección que nos lleva recorrer placeres, vivencias y recuerdos en un pequeño formato. Escrita por Pedro Lencina [@p.lencis](https://www.instagram.com/p.lencis/) e ilustrado por Lucía Kuzmuk [@plastictramp](https://www.instagram.com/plastictramp/).\\\n\"POLISEMIA\", \"SEGURIDAD\", \"DOMINGO\" y \"CÓMO\" son las 4 presentaciones de esta serie.",
-      "autor": "Pablo Lencina, Lucía Kuzmuk",
-      "instagram": "@p.lencis @plastictraamp"
-    },
-    {
-      "descripcion": "Como.\\\n\\\nHOY, es una colección que nos lleva recorrer placeres, vivencias y recuerdos en un pequeño formato. Escrita por Pedro Lencina [@p.lencis](https://www.instagram.com/p.lencis/) e ilustrado por Lucía Kuzmuk [@plastictramp](https://www.instagram.com/plastictramp/).\\\n\"POLISEMIA\", \"SEGURIDAD\", \"DOMINGO\" y \"CÓMO\" son las 4 presentaciones de esta serie.",
-      "url": "sa",
-      "precio": 200,
-      "imagen": "/static/images/uploads/como.jpeg",
-      "titulo": "Como",
-      "autor": "Pablo Lencina, Lucía Kuzmuk",
-      "instagram": "@p.lencis @plastictraamp"
     },
     {
       "titulo": "Tira de Ismael - Pequeñas dosis de humor rockero",
