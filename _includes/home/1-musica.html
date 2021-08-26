@@ -73,9 +73,9 @@
       </div>
     </div>
     <!-- Grid -->
-    <div class="grid grid-cols-3 gap-2 sm:grid-cols-6 sm:gap-4">
-      {% for p in playlists.playlists limit : 12 %}
-      <a href="{{ p.url }}">
+    <div class="flex flex-wrap justify-center gap-2 sm:gap-4">
+      {% for p in playlists.playlists %}
+      <a class="w-[8.5rem]" href="{{ p.url }}">
         <img loading="lazy" class="transform duration-300 motion-safe:hover:scale-110" src="{{ p.imagen }}" alt="{{ p.titulo }}">
       </a>
       {% endfor %}
