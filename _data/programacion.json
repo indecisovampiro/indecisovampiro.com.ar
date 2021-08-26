@@ -2,7 +2,7 @@
   "programacion": [
     {
       "titulo": "Algunas de Algo",
-      "imagen": "/static/images/uploads/algunas-de-algo-01.png",
+      "imagen": "/static/images/uploads/programacion-algunas-de-algo.png",
       "dia": "Lunes ",
       "hora": "21:00",
       "tags": [
@@ -28,7 +28,7 @@
     },
     {
       "titulo": "Dos pájaros de un tiro",
-      "imagen": "/static/images/uploads/dos-pajaros-de-un-tiro-02.png",
+      "imagen": "/static/images/uploads/programacion-dos-pajaros-de-un-tiro.png",
       "dia": "Jueves",
       "hora": "18:00",
       "tags": [
