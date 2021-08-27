@@ -19,45 +19,28 @@
       <!-- Titulo -->
       <h1 class="self-start text-4xl font-bold uppercase sm:text-8xl" style="color: #EDEDED">Audiovisual</h1>
     </div>
-    <!-- Sesiones Indecisas -->
-    <div class="relative flex flex-col items-center justify-center">
-      <!-- Logo -->
-      <img loading="lazy" class="absolute top-0 w-36" src="/static/images/logo-sesiones-indecisas.png" alt="">
-      <!-- Background -->
-      <div class="pb-8 mt-16 bg-center bg-no-repeat bg-cover pt-28"
-        style="background-image: url('/static/images/bg-sesiones-indecisas.png');">
-        <!-- Wrapper -->
-        <div class="flex justify-between gap-8 mx-5 sm:mx-8">
-          <!-- Left -->
-          <div class="flex flex-col justify-between gap-4 sm:gap-0">
-            <!-- Title -->
-            <h1 class="text-2xl font-bold text-white-500 uppercase sm:text-4xl">Sesiones Indecisas</h1>
-            <!-- Description -->
-            <p class="text-base text-right sm:leading-6 sm:text-lg" style="text-align: justify;">
-              Si querés endulzar tus oídos de la mano de un ferviente set buscá Sesiones Indecisas en Youtube. Un
-              espacio
-              en donde estamos dejando registros de ciclos musicales que filmamos y producimos fervientemente.
-            </p>
-            <!-- ONLY MOBILE: Image -->
-            <a class="flex-none sm:hidden" rel="noopener noreferrer" target="_blank" href="https://youtu.be/b4eBSc3pBJA">
-              <img loading="lazy" class="h-full" src="/static/images/video.png" alt="">
-            </a>
-            <!-- Link -->
-            <a class="hover:text-gray-300 flex items-center justify-end text-sm font-bold uppercase sm:text-lg"
-              rel="noopener noreferrer" target="_blank" href="https://youtu.be/b4eBSc3pBJA">
-              <svg class="w-12 h-12 mr-4">
-                <use xlink:href="/static/sprite.svg#youtube"></use>
-              </svg>
-              X-NIDAA - SESIONES INDECISAS
-            </a>
-          </div>
-          <!-- ONLY DESKTOP: Right -->
-          <a class="flex-none hidden sm:block" rel="noopener noreferrer" target="_blank" href="https://youtu.be/b4eBSc3pBJA">
-            <img loading="lazy" class="h-full" src="/static/images/video.png" alt="">
-          </a>
-        </div>
-      </div>
-    </div>
+    {%
+      include _card.html
+      logo:'/static/images/logo-sesiones-indecisas.png'
+      background:'/static/images/bg-sesiones-indecisas.png'
+      title:'Sesiones Indecisas'
+      description:'Si querés endulzar tus oídos de la mano de un ferviente set buscá Sesiones Indecisas en Youtube. Un espacio en donde estamos dejando registros de ciclos musicales que filmamos y producimos fervientemente.'
+      image:'/static/images/video.png'
+      url-platform:'youtube'
+      url-title:'X-NIDAA - SESIONES INDECISAS'
+      url-href:'https://youtu.be/b4eBSc3pBJA'
+    %}
+    {%
+      include _card.html
+      logo:'/static/images/logo-invasion-indecisa.png'
+      background:'/static/images/bg-invasion-indecisa.png'
+      title:'Invasión Indecisa'
+      description:'Durante el aislamiento social obligatorio presentamos los primeros encuentros de Invasión Indecisa. Un festival online que junta a varios músicos de la escena nacional en un mismo lugar. Cada uno interpretando sus canciones en un contexto hogareño con la posibilidad de verlo en vivo de manera virtual. Suprimiendo las barreras geográficas que surgen a la hora de escuchar en directo a nuestros músicos favoritos. El acceso al festival es gratuito, con la posibilidad de realizar donaciones indecisas a los músicos.'
+      image:'/static/images/invasion-indecisa-flyer.png'
+      url-platform:'youtube'
+      url-title:'Invasión Indecisa #FestivalADistancia'
+      url-href:'https://youtu.be/9ea9nbti7JM'
+    %}
     <!-- Invasion Indecisa -->
     <div class="relative flex-col flex items-center justify-center">
       <!-- Logo -->
@@ -113,9 +96,3 @@
     </a>
   </div>
 </section>
-<!-- Dibujo -->
-<!--
-<div class="y w-full max-w-screen-lg mx-auto">
-  <img loading="lazy" class="w-full" src="/static/images/dibujo.png" alt="">
-</div>
--->
