@@ -1,0 +1,31 @@
+
+<section id="encuentros" class="y flex flex-col items-center justify-center">
+  <!-- Wrapper -->
+  <div class="x flex flex-col">
+    <!-- Titulo -->
+    <div class="flex flex-col self-stretch">
+      <h1 class="self-start text-4xl font-bold uppercase sm:text-8xl text-[#EDEDED]">Encuentros</h1>
+    </div>
+    {% for e in encuentros.encuentros %}
+      {%
+        include _card.html
+        titulo:e.titulo
+        logo:e.logo
+        background:e.background
+        descripcion:e.descripcion
+        imagen:e.imagen
+        plataforma:e.plataforma
+        url-texto:e.url-texto
+        url:e.url
+      %}
+    {% endfor %}
+  </div>
+  <!-- Button -->
+  <div class="w-full">
+    <a class="block pr-5 sm:pr-20" rel="noopener noreferrer" target="_blank" href="{{ settings.instagram }}">
+      <div class="h-14 bg-right bg-no-repeat bg-cover sm:h-20"
+        style="background-image: url('/static/images/btn-instagram.png');">
+      </div>
+    </a>
+  </div>
+</section>

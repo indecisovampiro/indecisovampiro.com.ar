@@ -93,6 +93,23 @@ collections:
               - { label: Descripcion, name: descripcion, widget: "markdown" }
               - { label: Autor, name: autor, widget: string }
               - { label: Instagram, name: instagram, widget: string }
+      - label: Encuentros
+        name: encuentros
+        file: _data/encuentros.json
+        fields:
+          - label: Encuentros
+            name: encuentros
+            widget: list
+            allow_add: true
+            fields:
+              - { label: Titulo, name: titulo, widget: string }
+              - { label: Logo, name: logo, widget: image }
+              - { label: Background, name: background, widget: image }
+              - { label: Descripcion, name: descripcion, widget: "markdown" }
+              - { label: Imagen, name: imagen, widget: image }
+              - { label: Plataforma, name: plataforma, widget: select, options: ["instagram", "youtube"] }
+              - { label: "Texto del Link", name: url-texto, widget: string }
+              - { label: URL, name: url, widget: string }
   - label: Noticias
     name: noticias
     folder: _pages/p
