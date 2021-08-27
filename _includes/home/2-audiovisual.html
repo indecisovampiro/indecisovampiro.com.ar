@@ -19,28 +19,19 @@
       <!-- Titulo -->
       <h1 class="self-start text-4xl font-bold uppercase sm:text-8xl" style="color: #EDEDED">Audiovisual</h1>
     </div>
-    {%
-      include _card.html
-      logo:'/static/images/logo-sesiones-indecisas.png'
-      background:'/static/images/bg-sesiones-indecisas.png'
-      title:'Sesiones Indecisas'
-      description:'Si querés endulzar tus oídos de la mano de un ferviente set buscá Sesiones Indecisas en Youtube. Un espacio en donde estamos dejando registros de ciclos musicales que filmamos y producimos fervientemente.'
-      image:'/static/images/video.png'
-      url-platform:'youtube'
-      url-title:'X-NIDAA - SESIONES INDECISAS'
-      url-href:'https://youtu.be/b4eBSc3pBJA'
-    %}
-    {%
-      include _card.html
-      logo:'/static/images/logo-invasion-indecisa.png'
-      background:'/static/images/bg-invasion-indecisa.png'
-      title:'Invasión Indecisa'
-      description:'Durante el aislamiento social obligatorio presentamos los primeros encuentros de Invasión Indecisa. Un festival online que junta a varios músicos de la escena nacional en un mismo lugar. Cada uno interpretando sus canciones en un contexto hogareño con la posibilidad de verlo en vivo de manera virtual. Suprimiendo las barreras geográficas que surgen a la hora de escuchar en directo a nuestros músicos favoritos. El acceso al festival es gratuito, con la posibilidad de realizar donaciones indecisas a los músicos.'
-      image:'/static/images/invasion-indecisa-flyer.png'
-      url-platform:'youtube'
-      url-title:'Invasión Indecisa #FestivalADistancia'
-      url-href:'https://youtu.be/9ea9nbti7JM'
-    %}
+    {% for a in audiovisual.audiovisual %}
+      {%
+        include _card.html
+        titulo:a.titulo
+        logo:a.logo
+        background:a.background
+        descripcion:a.descripcion
+        imagen:a.imagen
+        plataforma:a.plataforma
+        url-texto:a.url-texto
+        href:a.href
+      %}
+    {% endfor %}
   </div>
   <!-- Boton -->
   <div class="w-full">
