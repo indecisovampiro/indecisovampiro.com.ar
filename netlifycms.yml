@@ -7,9 +7,9 @@ collections:
     name: files
     editor: { preview: false }
     files:
-      - label: "Settings"
-        name: "settings"
-        file: "_data/settings.json"
+      - label: Settings
+        name: settings
+        file: _data/settings.json
         fields:
           - { label: URL, name: url, widget: string }
           - { label: Titulo, name: title, widget: string }
@@ -59,6 +59,23 @@ collections:
               - { label: Descripcion, name: descripcion, widget: "markdown" }
               - { label: Musicalizacion, name: musicalizacion, widget: string }
               - { label: Contacto, name: contacto, widget: string }
+      - label: Audiovisual
+        name: audiovisual
+        file: _data/audiovisual.json
+        fields:
+          - label: Audiovisual
+            name: audiovisual
+            widget: list
+            allow_add: true
+            fields:
+              - { label: Titulo, name: titulo, widget: string }
+              - { label: Logo, name: logo, widget: image }
+              - { label: Background, name: background, widget: image }
+              - { label: Descripcion, name: descripcion, widget: "markdown" }
+              - { label: Imagen, name: imagen, widget: image }
+              - { label: Plataforma, name: plataforma, widget: select, options: ["instagram", "youtube"] }
+              - { label: "Texto del Link", name: url-texto, widget: string }
+              - { label: URL, name: url, widget: string }
       - label: Editorial
         name: editorial
         file: _data/editorial.json

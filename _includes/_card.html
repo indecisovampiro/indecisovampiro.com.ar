@@ -1,0 +1,33 @@
+<div class="relative flex flex-col items-center justify-center">
+  <!-- Logo -->
+  <img loading="lazy" class="absolute top-0 h-32" src="{{ logo }}" alt="{{ titulo }}">
+  <!-- Background -->
+  <div class="pb-8 mt-16 bg-center bg-no-repeat bg-cover pt-28" style="background-image: url('{{ background }}');">
+    <!-- Wrapper -->
+    <div class="grid md:grid-cols-5 justify-between gap-8 mx-5 md:mx-8">
+      <!-- Left -->
+      <div class="flex md:col-span-3 flex-col justify-around gap-4 md:gap-0">
+        <!-- Title -->
+        <h1 class="text-2xl font-bold text-white-500 uppercase md:text-4xl">{{ titulo }}</h1>
+        <!-- Description -->
+        <p class="text-base text-right md:leading-6 md:text-lg" style="text-align: justify;">{{ descripcion }}</p>
+        <!-- ONLY MOBILE: Image -->
+        <a class="flex-none md:hidden" rel="noopener noreferrer" target="_blank" href="{{ href }}">
+          <img loading="lazy" class="h-full" src="{{ imagen }}" alt="{{ titulo }}">
+        </a>
+        <!-- Link -->
+        <a class="hover:text-gray-300 flex items-center justify-end text-sm font-bold uppercase md:text-lg"
+          rel="noopener noreferrer" target="_blank" href="{{ href }}">
+          <svg class="w-12 h-12 mr-4">
+            <use xlink:href="/static/sprite.svg#{{ plataforma }}"></use>
+          </svg>
+          {{ url-texto }}
+        </a>
+      </div>
+      <!-- ONLY DESKTOP: Right -->
+      <a class="hidden md:flex md:col-span-2" href="{{ href }}" rel="noopener noreferrer" target="_blank">
+        <img src="{{ imagen }}" alt="{{ titulo }}" loading="lazy">
+      </a>
+    </div>
+  </div>
+</div>
