@@ -10,6 +10,7 @@ collections:
       - label: "🔖 Playlists"
         name: playlists
         file: _data/playlists.json
+        media_folder: '/static/images/playlists'
         fields:
           - label: Playlists
             name: playlists
@@ -22,6 +23,7 @@ collections:
       - label: "📻 Programación"
         name: programacion
         file: _data/programacion.json
+        media_folder: '/static/images/programacion'
         fields:
           - label: Programación
             name: programacion
@@ -63,6 +65,7 @@ collections:
       - label: "📚 Editorial"
         name: editorial
         file: _data/editorial.json
+        media_folder: '/static/images/editorial'
         fields:
           - label: Editorial
             name: editorial
