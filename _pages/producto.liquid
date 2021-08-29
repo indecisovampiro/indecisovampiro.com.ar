@@ -31,7 +31,7 @@ permalink: "catalogo/{{ producto.titulo | slug }}/"
         </h3>
       </div>
       <!-- Descripcion -->
-      <p class="text-base text-justify">{{ producto.descripcion }}</p>
+      <p class="text-base text-justify">{{ producto.descripcion | renderUsingMarkdown }}</p>
       <!-- Precio -->
       <h1 class="text-4xl text-blue-800 uppercase">${{ producto.precio }}{% if producto.agotado %} (AGOTADO){% endif %}</h1>
     </div>

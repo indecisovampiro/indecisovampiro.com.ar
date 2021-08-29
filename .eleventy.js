@@ -16,12 +16,19 @@ module.exports = function (config) {
   config.addPlugin(pluginSEO, require('./_data/settings.json'))
 
   // Filters
+  // ReadableDate
   const { DateTime } = require('luxon')
   config.addFilter('readableDate', (dateObj) => {
     return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat(
       'dd LLL yyyy'
     )
   })
+  // renderUsingMarkdown
+  const MarkdownIt = require("markdown-it");
+  const mdRender = new MarkdownIt();
+  config.addFilter("renderUsingMarkdown", function(rawString) {
+    return mdRender.render(rawString);
+  });
 
   // Conditional configs
   const isProduction = process.env.NODE_ENV === 'production'
