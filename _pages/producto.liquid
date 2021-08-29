@@ -16,7 +16,7 @@ permalink: "catalogo/{{ producto.titulo | slug }}/"
 <!-- Card -->
 <section class="x y flex flex-col sm:flex-row items-center justify-center">
   <!-- Imagen -->
-  <img loading="lazy" class="max-w-md" src="{{ producto.imagen }}" alt="">
+  <img loading="lazy" class="max-w-md max-h-[32rem]" src="{{ producto.imagen }}" alt="">
   <!-- Descripcion -->
   <div class="flex flex-col justify-between gap-4 my-4">
     <!-- Top -->
@@ -25,13 +25,13 @@ permalink: "catalogo/{{ producto.titulo | slug }}/"
       <div class="border-b-2 border-blue-900">
         <!-- Titulo -->
         <h1 class="text-3xl uppercase sm:text-5xl">{{ producto.titulo }}</h1>
-        <!-- Autor -->
-        <h3 class="text-2xl text-blue-800 uppercase sm:text-3xl">
-          {{ producto.autor }}{% if producto.instagram != ""%} - @{{ producto.instagram }}{% endif %}
+        <!-- Subtitulo -->
+        <h3 class="text-2xl text-blue-800 uppercase">
+          {{ producto.subtitulo | renderUsingMarkdown }}
         </h3>
       </div>
       <!-- Descripcion -->
-      <p class="text-base text-justify">{{ producto.descripcion }}</p>
+      <p class="text-base text-justify">{{ producto.descripcion | renderUsingMarkdown }}</p>
       <!-- Precio -->
       <h1 class="text-4xl text-blue-800 uppercase">${{ producto.precio }}{% if producto.agotado %} (AGOTADO){% endif %}</h1>
     </div>

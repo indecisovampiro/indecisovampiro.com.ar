@@ -2,20 +2,20 @@
   "programacion": [
     {
       "titulo": "Algunas de Algo",
-      "imagen": "/static/images/uploads/programacion-algunas-de-algo.png",
+      "imagen": "/static/images/programacion/algunas-de-algo.png",
       "dia": "Lunes ",
       "hora": "21:00",
       "tags": [
         "Podcast",
         "seleccion musical"
       ],
-      "descripcion": "Adentrensé al mágico mundo sonoro de la selección musical de otra persona. Cada programa un tópico diferente, semana tras semana vas a viajar desde del lejano oeste hasta el cercano presente. \\\n\\\nCurado y comentado por @wilson.vvilson",
+      "descripcion": "Adentrensé al mágico mundo sonoro de la selección musical de otra persona. Cada programa un tópico diferente, semana tras semana vas a viajar desde del lejano oeste hasta el cercano presente. \\\n\\\nCurado y comentado por [@wilson.vvilson](https://www.instagram.com/wilson.vvilson/)",
       "musicalizacion": "@wilson.vvilson",
       "contacto": "lautaro.w@gmail.com / @wilson.vvilson"
     },
     {
       "titulo": "Vivo indeciso",
-      "imagen": "/static/images/uploads/programacion-vivo-indeciso.png",
+      "imagen": "/static/images/programacion/vivo-indeciso.png",
       "dia": "Miércoles",
       "hora": "23:00",
       "tags": [
@@ -28,7 +28,7 @@
     },
     {
       "titulo": "Dos pájaros de un tiro",
-      "imagen": "/static/images/uploads/programacion-dos-pajaros-de-un-tiro.png",
+      "imagen": "/static/images/programacion/dos-pajaros-de-un-tiro.png",
       "dia": "Jueves",
       "hora": "18:00",
       "tags": [
@@ -57,7 +57,7 @@
       "musicalizacion": "Sebastián Casal",
       "descripcion": "Presentaciones y análisis de novedades en materia de música, cine, series y libros; desde un enfoque ameno pero crítico. A su vez indagaremos en algunos movimientos artísticos del pasado y su relación e importancia con el contexto histórico; también, cuenta con entrevistas a actores involucrados en las distintas ramas artísticas, así como también, especialistas en diversas materias. En ocasiones, todos los contenidos del programa estarán atravesados por una temática en particular.",
       "contacto": "lanavedecristalradio@gmail.com",
-      "imagen": "/static/images/uploads/programacion-la-nave-de-cristal.png",
+      "imagen": "/static/images/programacion/la-nave-de-cristal.png",
       "hora": "20:00",
       "tags": [
         "Musica",
@@ -70,7 +70,7 @@
     },
     {
       "titulo": "Azul Profundo",
-      "imagen": "/static/images/uploads/programacion-mama-estoy-en-casa.png",
+      "imagen": "/static/images/programacion/mama-estoy-en-casa.png",
       "dia": "Jueves",
       "hora": "21:00",
       "tags": [
@@ -84,7 +84,7 @@
     },
     {
       "titulo": "El Corte del Director",
-      "imagen": "/static/images/uploads/programacion-pipas-y-cerveza.png",
+      "imagen": "/static/images/programacion/pipas-y-cerveza.png",
       "dia": "Jueves",
       "hora": "20:00",
       "tags": [
@@ -97,7 +97,7 @@
     },
     {
       "titulo": "Resonancias",
-      "imagen": "/static/images/uploads/programacion-electrodo-dominante.png",
+      "imagen": "/static/images/programacion/electrodo-dominante.png",
       "dia": "Domingo",
       "hora": "20:00",
       "tags": [
@@ -109,7 +109,7 @@
     },
     {
       "titulo": "Calavera no Chilla",
-      "imagen": "/static/images/uploads/programacion-calavera-no-chilla.png",
+      "imagen": "/static/images/programacion/calavera-no-chilla.png",
       "dia": "Domingo",
       "hora": "22:00",
       "tags": [

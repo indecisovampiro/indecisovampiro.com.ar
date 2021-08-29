@@ -7,25 +7,10 @@ collections:
     name: files
     editor: { preview: false }
     files:
-      - label: Settings
-        name: settings
-        file: _data/settings.json
-        fields:
-          - { label: URL, name: url, widget: string }
-          - { label: Titulo, name: title, widget: string }
-          - { label: Descripcion, name: description, widget: string }
-          - { label: Author, name: author, widget: string }
-          - { label: "Open Graph", name: image, widget: string }
-          - { label: "Radio URL", name: radio, widget: string }
-          - { label: "Google Play", name: google-play, widget: string }
-          - { label: Youtube, name: youtube, widget: string }
-          - { label: Facebook, name: facebook, widget: string }
-          - { label: Instagram, name: instagram, widget: string }
-          - { label: Spotify, name: spotify, widget: string }
-          - { label: E-Mail, name: email, widget: string }
-      - label: Playlists
+      - label: "🔖 Playlists"
         name: playlists
         file: _data/playlists.json
+        media_folder: '/static/images/playlists'
         fields:
           - label: Playlists
             name: playlists
@@ -35,9 +20,10 @@ collections:
               - { label: Titulo, name: titulo, widget: string }
               - { label: URL, name: url, widget: string }
               - { label: "Imagen [320x287] (playlist-<genero>.jpg)", name: imagen, widget: image }
-      - label: Programación
+      - label: "📻 Programación"
         name: programacion
         file: _data/programacion.json
+        media_folder: '/static/images/programacion'
         fields:
           - label: Programación
             name: programacion
@@ -59,7 +45,7 @@ collections:
               - { label: Descripcion, name: descripcion, widget: "markdown" }
               - { label: Musicalizacion, name: musicalizacion, widget: string }
               - { label: Contacto, name: contacto, widget: string }
-      - label: Audiovisual
+      - label: "🎥 Audiovisual"
         name: audiovisual
         file: _data/audiovisual.json
         fields:
@@ -76,9 +62,10 @@ collections:
               - { label: Plataforma, name: plataforma, widget: select, options: ["instagram", "youtube"] }
               - { label: "Texto del Link", name: url-texto, widget: string }
               - { label: URL, name: url, widget: string }
-      - label: Editorial
+      - label: "📚 Editorial"
         name: editorial
         file: _data/editorial.json
+        media_folder: '/static/images/editorial'
         fields:
           - label: Editorial
             name: editorial
@@ -86,14 +73,13 @@ collections:
             allow_add: true
             fields:
               - { label: Titulo, name: titulo, widget: string }
+              - { label: Subtitulo, name: subtitulo, widget: markdown }
               - { label: Imagen, name: imagen, widget: image }
               - { label: Precio, name: precio, widget: number }
               - { label: Agotado?, name: agotado, widget: boolean, required: false }
               - { label: URL, name: url, widget: string }
-              - { label: Descripcion, name: descripcion, widget: "markdown" }
-              - { label: Autor, name: autor, widget: string }
-              - { label: Instagram, name: instagram, widget: string }
-      - label: Encuentros
+              - { label: Descripcion, name: descripcion, widget: markdown }
+      - label: "🤝 Encuentros"
         name: encuentros
         file: _data/encuentros.json
         fields:
@@ -110,7 +96,23 @@ collections:
               - { label: Plataforma, name: plataforma, widget: select, options: ["instagram", "youtube"] }
               - { label: "Texto del Link", name: url-texto, widget: string }
               - { label: URL, name: url, widget: string }
-  - label: Noticias
+      - label: "⚙️ Settings"
+        name: settings
+        file: _data/settings.json
+        fields:
+          - { label: URL, name: url, widget: string }
+          - { label: Titulo, name: title, widget: string }
+          - { label: Descripcion, name: description, widget: string }
+          - { label: Author, name: author, widget: string }
+          - { label: "Open Graph", name: image, widget: string }
+          - { label: "Radio URL", name: radio, widget: string }
+          - { label: "Google Play", name: google-play, widget: string }
+          - { label: Youtube, name: youtube, widget: string }
+          - { label: Facebook, name: facebook, widget: string }
+          - { label: Instagram, name: instagram, widget: string }
+          - { label: Spotify, name: spotify, widget: string }
+          - { label: E-Mail, name: email, widget: string }
+  - label: Novedades
     name: noticias
     folder: _pages/p
     create: true

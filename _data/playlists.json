@@ -3,72 +3,72 @@
     {
       "titulo": "Funk",
       "url": "https://open.spotify.com/playlist/4ZgqQXFQ0oJLinNjab9MAj",
-      "imagen": "/static/images/uploads/playlist-funk.jpg"
+      "imagen": "/static/images/playlists/funk.jpg"
     },
     {
       "titulo": "Post-Punk",
       "url": "https://open.spotify.com/playlist/3gK1aPC6A33MT7bqHmXPy5",
-      "imagen": "/static/images/uploads/playlist-post-punk.jpg"
+      "imagen": "/static/images/playlists/post-punk.jpg"
     },
     {
       "titulo": "Grunge",
       "url": "https://open.spotify.com/playlist/2uIy7ruuHekHmNzP1FczMQ",
-      "imagen": "/static/images/uploads/playlist-grunge.jpg"
+      "imagen": "/static/images/playlists/grunge.jpg"
     },
     {
       "titulo": "Punk",
       "url": "https://open.spotify.com/playlist/67C1XRUwblAVcw7yj7mxVA",
-      "imagen": "/static/images/uploads/playlist-punk.jpg"
+      "imagen": "/static/images/playlists/punk.jpg"
     },
     {
       "titulo": "Ska",
       "url": "https://open.spotify.com/playlist/7wbTe2E3DxLzJMIIrQaIAl",
-      "imagen": "/static/images/uploads/playlist-ska.jpg"
+      "imagen": "/static/images/playlists/ska.jpg"
     },
     {
       "titulo": "Punk en Castellano",
       "url": "https://open.spotify.com/playlist/42YzjDlcuFrfWPuHsPpzVO",
-      "imagen": "/static/images/uploads/playlist-punk-en-castellano.jpg"
+      "imagen": "/static/images/playlists/punk-en-castellano.jpg"
     },
     {
       "titulo": "Indie",
       "url": "https://open.spotify.com/playlist/0HKzvSUbhARftrrti8nThc",
-      "imagen": "/static/images/uploads/playlist-indie.jpg"
+      "imagen": "/static/images/playlists/indie.jpg"
     },
     {
       "titulo": "Garage",
       "url": "https://open.spotify.com/playlist/4Cci0zvFeLywAtXvVO8NBn",
-      "imagen": "/static/images/uploads/playlist-garage.jpg"
+      "imagen": "/static/images/playlists/garage.jpg"
     },
     {
       "titulo": "Surf",
       "url": "https://open.spotify.com/playlist/3xXEqPXbFkpaOqIFGvcY3Q",
-      "imagen": "/static/images/uploads/playlist-surf.jpg"
+      "imagen": "/static/images/playlists/surf.jpg"
     },
     {
       "titulo": "Ramone",
       "url": "https://open.spotify.com/playlist/7iTTuEKo7EKAYoUPIkxLOh",
-      "imagen": "/static/images/uploads/playlist-ramone.jpg"
+      "imagen": "/static/images/playlists/ramone.jpg"
     },
     {
       "titulo": "Rockabilly",
       "url": "https://open.spotify.com/playlist/1DZEKEWBNPJNrLor595oZd",
-      "imagen": "/static/images/uploads/playlist-rockabilly.jpg"
+      "imagen": "/static/images/playlists/rockabilly.jpg"
     },
     {
       "titulo": "Stoner - Doom",
       "url": "https://open.spotify.com/playlist/4UmyFC2LcltnpODjWzj1mi",
-      "imagen": "/static/images/uploads/playlist-stoner-doom.jpg"
+      "imagen": "/static/images/playlists/stoner-doom.jpg"
     },
     {
       "titulo": "Cumbia",
       "url": "https://open.spotify.com/playlist/49jc6UdMh6RrrAjvA51wJW",
-      "imagen": "/static/images/uploads/playlist-cumbia.jpg"
+      "imagen": "/static/images/playlists/cumbia.jpg"
     },
     {
       "titulo": "Invasión Indecisa",
       "url": "https://open.spotify.com/playlist/1iSMIpcONhHVZN0DTmS2kV",
-      "imagen": "/static/images/uploads/playlist-invasion-indecisa.jpg"
+      "imagen": "/static/images/playlists/invasion-indecisa.jpg"
     }
   ]
 }
