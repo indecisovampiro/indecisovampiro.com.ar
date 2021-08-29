@@ -12,25 +12,24 @@ layout: default
       <!-- Card -->
       <div class="flex flex-col justify-between gap-3">
         <!-- Image -->
-        <a href="/catalogo/{{ producto.titulo | slug }}/">
-          <img loading="lazy" src="{{ producto.imagen }}" alt="">
+        <a class="flex items-center justify-center h-64" href="/catalogo/{{ producto.titulo | slug }}/">
+          <img class="max-h-64" loading="lazy" src="{{ producto.imagen }}" alt="">
         </a>
         <!-- Description -->
-        <div class="w-3/4">
-          <h1 class="text-sm font-bold border-b-2 border-white">{{ producto.titulo }}</h1>
-          <h2 class="text-sm">{{ producto.autor }}</h2>
-          {% if producto.instagram != "" %}
-          <h2 class="text-sm">@{{ producto.instagram }}</h2>
-          {% endif %}
-          <h2 class="text-base font-bold text-blue-700">${{ producto.precio }}</h2>
+        <div class="flex flex-1 flex-col justify-between gap-3">
+          <div class="">
+            <a href="/catalogo/{{ producto.titulo | slug }}/"><h1 class="text-sm font-bold border-b-2 border-white">{{ producto.titulo }}</h1></a>
+            <h2 class="text-sm">{{ producto.subtitulo | renderUsingMarkdown }}</h2>
+            <h2 class="text-base font-bold text-blue-700">${{ producto.precio }}</h2>
+          </div>
+          <!-- Boton -->
+          <a class="hover:text-gray-300 flex items-center justify-center p-1 text-sm uppercase border-2" href="{{ producto.url }}">
+            <svg class="w-4 h-4 mr-2">
+              <use xlink:href="/static/sprite.svg#shopping-cart"></use>
+            </svg>
+            Comprar
+          </a>
         </div>
-        <!-- Boton -->
-        <a class="hover:text-gray-300 flex items-center justify-center p-1 text-sm uppercase border-2" href="{{ producto.url }}">
-          <svg class="w-4 h-4 mr-2">
-            <use xlink:href="/static/sprite.svg#shopping-cart"></use>
-          </svg>
-          Comprar
-        </a>
       </div>
     {% endfor %}
   </div>

@@ -3,7 +3,7 @@
     {
       "precio": 500,
       "titulo": "3sc4n30",
-      "autor": "Valentina Bailez",
+      "subtitulo": "Valentina Bailez [@balentinav](https://www.instagram.com/balentinav/)",
       "instagram": "Balentinav",
       "descripcion": "[@balentinav](https://www.instagram.com/balentinav/) nos muestra algunos de sus escritos acompañados de capturas cósmicas hechas también por ella\\\n\\\nDimensiones: A5\n\nFull color",
       "url": "https://mpago.la/1rkEzcp",
@@ -15,7 +15,7 @@
       "precio": 500,
       "url": "https://mpago.la/2tXhPGf",
       "descripcion": "¿Se acuerdan de todos todos los lugares donde durmieron? Les presentamos una recopilación de los recuerdos visuales de wilson.vvilson en formato fanzine, llamada \"Lugares donde dormí\".\n\nDimensiones: A5\n\nBlanco y negro",
-      "autor": "Lautaro N Hernández",
+      "subtitulo": "Lautaro N Hernández",
       "instagram": "wilson.vvilson"
     },
     {
@@ -24,12 +24,12 @@
       "precio": 400,
       "url": "https://mpago.la/1rkEzcp",
       "descripcion": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.\n\n\n\nDimensiones: A6\n\nBlanco y negro",
-      "autor": "Fanzine Colaborativo",
+      "subtitulo": "Fanzine Colaborativo",
       "instagram": "wilson.vvilson plastictraamp brureale balentinav holaveroilustra dai.papaleta"
     },
     {
       "descripcion": "SEGURIDAD\n\nHOY, es una colección que nos lleva recorrer placeres, vivencias y recuerdos en un pequeño formato. Escrita por Pedro Lencina [@p.lencis](https://www.instagram.com/p.lencis/) e ilustrado por Lucía Kuzmuk [@plastictramp](https://www.instagram.com/plastictramp/).\\\n\"POLISEMIA\", \"SEGURIDAD\", \"DOMINGO\" y \"CÓMO\" son las 4 presentaciones de esta serie.",
-      "autor": "Pablo Lencina, Lucía Kuzmuk",
+      "subtitulo": "Pablo Lencina, Lucía Kuzmuk",
       "instagram": "p.lencis plastictraamp",
       "url": "dsdsd",
       "precio": 202,
@@ -42,7 +42,7 @@
       "precio": 200,
       "imagen": "/static/images/uploads/domingo.jpeg",
       "titulo": "Domingo",
-      "autor": "Pablo Lencina, Lucía Kuzmuk",
+      "subtitulo": "Pablo Lencina, Lucía Kuzmuk",
       "instagram": "p.lencina plastictraamp"
     },
     {
@@ -51,7 +51,7 @@
       "precio": 200,
       "url": "https://mpago.la/1rkEzcp",
       "descripcion": "Polisemia.\\\n\\\nHOY, es una colección que nos lleva recorrer placeres, vivencias y recuerdos en un pequeño formato. Escrita por Pedro Lencina [@p.lencis](https://www.instagram.com/p.lencis/) e ilustrado por Lucía Kuzmuk [@plastictramp](https://www.instagram.com/plastictramp/).\\\n\"POLISEMIA\", \"SEGURIDAD\", \"DOMINGO\" y \"CÓMO\" son las 4 presentaciones de esta serie.",
-      "autor": "Pablo Lencina, Lucía Kuzmuk",
+      "subtitulo": "Pablo Lencina, Lucía Kuzmuk",
       "instagram": "p.lencis plastictraamp"
     },
     {
@@ -60,7 +60,7 @@
       "precio": 200,
       "imagen": "/static/images/uploads/como.jpeg",
       "titulo": "Como",
-      "autor": "Pablo Lencina, Lucía Kuzmuk",
+      "subtitulo": "Pablo Lencina, Lucía Kuzmuk",
       "instagram": "p.lencis plastictraamp"
     },
     {
@@ -69,7 +69,7 @@
       "precio": 400,
       "url": "https://mpago.la/1rkEzcp",
       "descripcion": "Recopilatorio de 3 fanzines de bolsillo de cosas que no deberías decir arriba de un escenario. Pero que todos hacen.\n\nDimensiones: A6\n\nBlanco y negro",
-      "autor": "Fanzine Colaborativo",
+      "subtitulo": "Fanzine Colaborativo",
       "instagram": "@wilson.vvilson @plastictraamp @___temporaluser"
     },
     {
@@ -78,7 +78,7 @@
       "precio": 1,
       "url": "https://mpago.la/1rkEzcp",
       "descripcion": "Travesía de birra\n\n\n\nDimensiones: A5\\\nFull color",
-      "autor": "Lautaro N. Hernández",
+      "subtitulo": "Lautaro N. Hernández",
       "instagram": "wilson.vvilson"
     },
     {
@@ -87,7 +87,7 @@
       "precio": 500,
       "url": "https://mpago.la/1rkEzcp",
       "descripcion": "Colección de 9 fanzines de la historieta de @tira.ismael \n\n\n\nTamaño: Fanzine clásico\\\nFull color",
-      "autor": "Lautaro N. Hernández",
+      "subtitulo": "Lautaro N. Hernández",
       "instagram": "wilson.vvilson",
       "agotado": false
     },
@@ -96,7 +96,7 @@
       "imagen": "/static/images/uploads/editorial-inktober-vampiro.png",
       "precio": 200,
       "url": "https://mpago.la/1rkEzcp",
-      "autor": "Fanzine Colaborativo",
+      "subtitulo": "Fanzine Colaborativo",
       "instagram": "indecisovampiro",
       "descripcion": "lorem esp\n\n\n\nDimensiones: A6 Horizontal\n\nFull color"
     },
@@ -106,7 +106,7 @@
       "precio": 1,
       "url": "https://mpago.la/1rkEzcp",
       "descripcion": "Loren\n\n\n\nFormato: Fanzine clásico\\\nBlanco y negro",
-      "autor": "Lautaro N. Hernández",
+      "subtitulo": "Lautaro N. Hernández",
       "instagram": "wilson.vvilson"
     },
     {
@@ -115,7 +115,7 @@
       "precio": 1,
       "url": "https://mpago.la/1rkEzcp",
       "descripcion": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.\n\n\n\nDimensiones: A4 Doble cara\n\nFull color",
-      "autor": "Lautaro N Hernández",
+      "subtitulo": "Lautaro N Hernández",
       "instagram": "wilson.vvilson"
     },
     {
@@ -124,7 +124,7 @@
       "precio": 1,
       "url": "https://mpago.la/1rkEzcp",
       "descripcion": "Diario de ismael 2\n\n\n\nDimensiones: A4 Doble cara\n\nFull color",
-      "autor": "Lautaro N. Hernández",
+      "subtitulo": "Lautaro N. Hernández",
       "instagram": "wilson.vvilson"
     },
     {
@@ -132,7 +132,7 @@
       "imagen": "/static/images/uploads/diario-isma-1.jpg",
       "precio": 1,
       "descripcion": "Diario de ismael 1\n\n\n\nDimensiones: A4 Doble cara\n\nFull color",
-      "autor": "Lautaro N. Hernández",
+      "subtitulo": "Lautaro N. Hernández",
       "instagram": "wilson.vvilson",
       "url": "https://mpago.la/1rkEzcp",
       "agotado": true
