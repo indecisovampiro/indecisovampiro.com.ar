@@ -73,13 +73,12 @@ collections:
             allow_add: true
             fields:
               - { label: Titulo, name: titulo, widget: string }
+              - { label: Subtitulo, name: subtitulo, widget: markdown }
               - { label: Imagen, name: imagen, widget: image }
               - { label: Precio, name: precio, widget: number }
               - { label: Agotado?, name: agotado, widget: boolean, required: false }
               - { label: URL, name: url, widget: string }
-              - { label: Descripcion, name: descripcion, widget: "markdown" }
-              - { label: Autor, name: autor, widget: string }
-              - { label: Instagram, name: instagram, widget: string }
+              - { label: Descripcion, name: descripcion, widget: markdown }
       - label: "🤝 Encuentros"
         name: encuentros
         file: _data/encuentros.json

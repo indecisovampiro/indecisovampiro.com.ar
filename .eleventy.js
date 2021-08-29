@@ -16,7 +16,7 @@ module.exports = function (config) {
   config.addPlugin(pluginSEO, require('./_data/settings.json'))
 
   // Filters
-  // ReadableDate
+  // readableDate
   const { DateTime } = require('luxon')
   config.addFilter('readableDate', (dateObj) => {
     return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat(
@@ -24,10 +24,10 @@ module.exports = function (config) {
     )
   })
   // renderUsingMarkdown
-  const MarkdownIt = require("markdown-it");
-  const mdRender = new MarkdownIt();
-  config.addFilter("renderUsingMarkdown", function(rawString) {
-    return mdRender.render(rawString);
+  const markdownIt = require("markdown-it");
+  const md = new markdownIt();
+  config.addFilter("renderUsingMarkdown", (content) => {
+    return md.render(content);
   });
 
   // Conditional configs
