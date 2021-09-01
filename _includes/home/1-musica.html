@@ -33,11 +33,13 @@
 <!-- Programacion -->
 <section class="flex flex-col x y">
   <h1 class="text-4xl font-semibold text-gray-700 uppercase md:text-5xl">Programación Indecisa</h1>
-  <div class="grid grid-cols-2 gap-1 sm:grid-cols-4 sm:gap-4">
+  <div class="flex flex-wrap justify-center gap-1 sm:gap-4">
     {% for programa in programacion.programacion %}
-    <a  href="/programas/{{ programa.titulo | slug }}/">
-      <img loading="lazy" class="duration-300 transform motion-safe:hover:scale-110" src="{{ programa.imagen }}" alt="{{ programa.titulo }}">
-    </a>
+      {% if programa.invisible != true %}
+        <a class="w-52" href="/programas/{{ programa.titulo | slug }}/">
+          <img loading="lazy" class="duration-300 transform motion-safe:hover:scale-110" src="{{ programa.imagen }}" alt="{{ programa.titulo }}">
+        </a>
+      {% endif %}
     {% endfor %}
   </div>
 </section>

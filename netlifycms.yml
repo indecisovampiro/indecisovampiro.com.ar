@@ -31,6 +31,7 @@ collections:
             allow_add: true
             fields:
               - { label: Titulo, name: titulo, widget: string }
+              - { label: Esconder?, name: invisible, widget: boolean, required: false }
               - label: Episodios
                 name: episodios
                 widget: list
