@@ -16,14 +16,14 @@ layout: default
           <img class="max-h-64" loading="lazy" src="{{ producto.imagen }}" alt="">
         </a>
         <!-- Description -->
-        <div class="flex flex-1 flex-col justify-between gap-3">
+        <div class="flex flex-col justify-between flex-1 gap-3">
           <div class="">
             <a href="/catalogo/{{ producto.titulo | slug }}/"><h1 class="text-sm font-bold border-b-2 border-white">{{ producto.titulo }}</h1></a>
             <h2 class="text-sm">{{ producto.subtitulo | renderUsingMarkdown }}</h2>
-            <h2 class="text-base font-bold text-blue-700">${{ producto.precio }}</h2>
+            <h2 class="text-base font-bold text-blue-700">{% if producto.precio == 0 %}GRATIS{% else %}${{ producto.precio }}{% endif %}{% if producto.agotado %} (AGOTADO){% endif %}</h2>
           </div>
           <!-- Boton -->
-          <a class="hover:text-gray-300 flex items-center justify-center p-1 text-sm uppercase border-2" href="{{ producto.url }}">
+          <a class="flex items-center justify-center p-1 text-sm uppercase border-2 hover:text-gray-300 {% if producto.agotado %}pointer-events-none text-gray-300 line-through{% endif %}" href="{{ producto.url }}">
             <svg class="w-4 h-4 mr-2">
               <use xlink:href="/static/sprite.svg#shopping-cart"></use>
             </svg>
