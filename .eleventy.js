@@ -29,6 +29,11 @@ module.exports = function (config) {
   config.addFilter("renderUsingMarkdown", (content) => {
     return md.render(content);
   });
+  // renderAsText
+  const { convert } = require('html-to-text');
+  config.addFilter("renderAsText", (content) => {
+    return convert(content, { ignoreHref: true })
+  });
 
   // Conditional configs
   const isProduction = process.env.NODE_ENV === 'production'

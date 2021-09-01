@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"/>
+    <link href="/tailwind.css" rel="stylesheet"/>
+    <script src="/alpine.js" defer></script>
+    <title>{{ settings.title }}</title>
+    <meta name="description" content="{{ producto.descripcion | renderUsingMarkdown | renderAsText }}">
+    <meta name="robots" content="index,follow">
+    <meta name="author" content="{{ settings.author }}">
+
+    <link rel="canonical" href="{{ settings.url }}{{ page.url }}">
+
+    <meta property="og:title" content="{{ producto.titulo }}">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="{{ settings.url }}{{ page.url }}">
+    <meta property="og:description" content="{{ producto.descripcion | renderUsingMarkdown | renderAsText }}">
+    <meta property="og:image" content="{{ settings.url }}{{ producto.imagen }}">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:url" content="{{ settings.url }}{{ page.url }}">
+    <meta name="twitter:title" content="{{ producto.titulo }}">
+    <meta name="twitter:description" content="{{ producto.descripcion | renderUsingMarkdown | renderAsText }}">
+    <meta name="twitter:image" content="{{ settings.url }}{{ producto.imagen }}">
+
+    <style>
+      [x-cloak] { display: none !important; }
+    </style>
+  </head>
+
+  <body style="background-image: linear-gradient(#000000, #00355A);">
+    {% include _header.html %}
+    {{ content }}
+    {% include _footer.html %}
+  </body>
+
+</html>
