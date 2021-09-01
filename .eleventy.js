@@ -32,7 +32,7 @@ module.exports = function (config) {
   // renderAsText
   const { convert } = require('html-to-text');
   config.addFilter("renderAsText", (content) => {
-    return convert(content, { ignoreHref: true })
+    return convert(content, { ignoreHref: true }).replace(/"/g, `'`)
   });
 
   // Conditional configs
