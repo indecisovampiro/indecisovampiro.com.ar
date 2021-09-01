@@ -16,7 +16,7 @@
 <!-- Bajate la App -->
 <section class=""
   style="background: linear-gradient(to bottom, transparent 0%, transparent 40%, #0E4056 40%, #0E4056 60%, transparent 60%);">
-  <div class="x y flex flex-col items-center justify-center sm:flex-row sm:py-16">
+  <div class="flex flex-col items-center justify-center x y sm:flex-row sm:py-16">
     <!-- Titulo -->
     <div class="w-4/5 sm:w-full sm:order-2">
       <img class="w-full" loading="lazy"  src="/static/images/bajate-la-app.svg" alt="">
@@ -25,18 +25,18 @@
     <img loading="lazy" class="w-52 sm:order-1" src="/static/images/app.png" alt="">
     <!-- Boton -->
     <a class="flex items-center justify-center w-2/3 sm:order-3" rel="noopener noreferrer" target="_blank" href="{{ settings.google-play }}">
-      <img loading="lazy" class="w-48 transform duration-300 motion-safe:hover:scale-110" src="/static/images/buttons/google-play.png" alt="">
+      <img loading="lazy" class="w-48 duration-300 transform motion-safe:hover:scale-110" src="/static/images/buttons/google-play.png" alt="">
     </a>
   </div>
 </section>
 
 <!-- Programacion -->
-<section class="x y flex flex-col">
+<section class="flex flex-col x y">
   <h1 class="text-4xl font-semibold text-gray-700 uppercase md:text-5xl">Programación Indecisa</h1>
   <div class="grid grid-cols-2 gap-1 sm:grid-cols-4 sm:gap-4">
     {% for programa in programacion.programacion %}
     <a  href="/programas/{{ programa.titulo | slug }}/">
-      <img loading="lazy" class="transform duration-300 motion-safe:hover:scale-110" src="{{ programa.imagen }}" alt="{{ programa.titulo }}">
+      <img loading="lazy" class="duration-300 transform motion-safe:hover:scale-110" src="{{ programa.imagen }}" alt="{{ programa.titulo }}">
     </a>
     {% endfor %}
   </div>
@@ -46,14 +46,14 @@
 <div class="px-20 m-auto border-t-2" style="max-width: calc(1024px - 5rem * 2); border-color: #1DB954;"></div>
 
 <!-- Streaming -->
-<section class="y flex flex-col items-stretch justify-center">
+<section class="flex flex-col items-stretch justify-center y">
   <!-- Wrapper -->
-  <div class="x flex flex-col">
+  <div class="flex flex-col x">
     <!-- Desktop -->
-    <div class="flex gap-8 sm:gap-16 items-stretch justify-around">
+    <div class="flex items-stretch justify-around gap-8 sm:gap-16">
       <!-- Widget Playlist -->
       <!-- Visible only on Desktop -->
-      <div class="hidden sm:flex items-center justify-center">
+      <div class="items-center justify-center hidden sm:flex">
         <iframe src="https://open.spotify.com/embed/playlist/1iSMIpcONhHVZN0DTmS2kV" width="300" height="315"
           frameborder="0" allowtransparency="true" allow="encrypted-media" loading="lazy"></iframe>
       </div>
@@ -75,8 +75,8 @@
     <!-- Grid -->
     <div class="flex flex-wrap justify-center gap-2 sm:gap-4">
       {% for p in playlists.playlists %}
-      <a class="w-[8.5rem]" href="{{ p.url }}">
-        <img loading="lazy" class="transform duration-300 motion-safe:hover:scale-110" src="{{ p.imagen }}" alt="{{ p.titulo }}">
+      <a class="w-[8.5rem]" href="{{ p.url }}" rel="noopener noreferrer" target="_blank">
+        <img loading="lazy" class="duration-300 transform motion-safe:hover:scale-110" src="{{ p.imagen }}" alt="{{ p.titulo }}">
       </a>
       {% endfor %}
     </div>
