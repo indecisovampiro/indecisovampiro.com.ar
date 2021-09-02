@@ -72,7 +72,7 @@
     {
       "musicalizacion": "Mauro Hernández",
       "descripcion": "Aventura sonora que recorre las mejores paradas instrumentales de los años sesenta. Vaivenes musicales con pequeños interludios radiofónicos de la época, efectos espaciales que ponen la piel de gallina y transportan tus oídos a otra realidad.",
-      "invisible": true,
+      "invisible": false,
       "contacto": "mauro87hz@gmail.com",
       "imagen": "/static/images/programacion/mama-estoy-en-casa.png",
       "hora": "21:00",
