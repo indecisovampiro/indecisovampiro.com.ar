@@ -2,20 +2,20 @@
   "audiovisual": [
     {
       "titulo": "Sesiones Indecisas",
-      "logo": "/static/images/uploads/logo-sesiones-indecisas.png",
-      "background": "/static/images/uploads/bg-sesiones-indecisas.png",
+      "logo": "/static/images/logos/sesiones-indecisas.png",
+      "background": "/static/images/backgrounds/sesiones-indecisas.png",
       "descripcion": "Si querés endulzar tus oídos de la mano de un ferviente set buscá Sesiones Indecisas en Youtube. Un espacio en donde estamos dejando registros de ciclos musicales que filmamos y producimos fervientemente.",
-      "imagen": "/static/images/uploads/video.png",
+      "imagen": "/static/images/flyers/sesiones-indecisas.png",
       "plataforma": "youtube",
       "url-texto": "X-NIDAA - SESIONES INDECISAS",
       "url": "https://youtu.be/b4eBSc3pBJA"
     },
     {
       "titulo": "Invasión Indecisa",
-      "logo": "/static/images/uploads/logo-invasion-indecisa.png",
-      "background": "/static/images/uploads/bg-invasion-indecisa.png",
+      "logo": "/static/images/logos/invasion-indecisa.png",
+      "background": "/static/images/backgrounds/invasion-indecisa.png",
       "descripcion": "Durante el aislamiento social obligatorio presentamos los primeros encuentros de Invasión Indecisa. Un festival online que junta a varios músicos de la escena nacional en un mismo lugar. Cada uno interpretando sus canciones en un contexto hogareño con la posibilidad de verlo en vivo de manera virtual. Suprimiendo las barreras geográficas que surgen a la hora de escuchar en directo a nuestros músicos favoritos. El acceso al festival es gratuito, con la posibilidad de realizar donaciones indecisas a los músicos.",
-      "imagen": "/static/images/uploads/invasion-indecisa-flyer.png",
+      "imagen": "/static/images/flyers/invasion-indecisa.png",
       "plataforma": "youtube",
       "url-texto": "Invasión Indecisa #FestivalADistancia",
       "url": "https://youtu.be/9ea9nbti7JM"
