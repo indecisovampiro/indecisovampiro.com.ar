@@ -14,17 +14,18 @@
       "contacto": "lautaro.w@gmail.com / @wilson.vvilson"
     },
     {
-      "titulo": "Vivo indeciso",
+      "musicalizacion": "Indeciso Vampiro",
+      "descripcion": "Selección indecisa de recitales en vivo de cualquier año, cualquier lugar e idioma.",
+      "invisible": false,
+      "contacto": "Vivoindeciso@gmail.com",
       "imagen": "/static/images/programacion/vivo-indeciso.png",
-      "dia": "Miércoles",
       "hora": "23:00",
       "tags": [
         "Recitales",
         "musica"
       ],
-      "descripcion": "Selección indecisa de recitales en vivo de cualquier año, cualquier lugar e idioma.",
-      "musicalizacion": "Indeciso Vampiro",
-      "contacto": "Vivoindeciso@gmail.com"
+      "titulo": "Vivo indeciso",
+      "dia": "Miércoles"
     },
     {
       "titulo": "Dos pájaros de un tiro",
@@ -69,55 +70,59 @@
       "dia": "Viernes"
     },
     {
-      "titulo": "Azul Profundo",
+      "musicalizacion": "Mauro Hernández",
+      "descripcion": "Aventura sonora que recorre las mejores paradas instrumentales de los años sesenta. Vaivenes musicales con pequeños interludios radiofónicos de la época, efectos espaciales que ponen la piel de gallina y transportan tus oídos a otra realidad.",
+      "invisible": true,
+      "contacto": "mauro87hz@gmail.com",
       "imagen": "/static/images/programacion/mama-estoy-en-casa.png",
-      "dia": "Jueves",
       "hora": "21:00",
       "tags": [
         "musica",
         "sesenta",
         ""
       ],
-      "descripcion": "Aventura sonora que recorre las mejores paradas instrumentales de los años sesenta. Vaivenes musicales con pequeños interludios radiofónicos de la época, efectos espaciales que ponen la piel de gallina y transportan tus oídos a otra realidad.",
-      "musicalizacion": "Mauro Hernández",
-      "contacto": "mauro87hz@gmail.com"
+      "titulo": "Azul Profundo",
+      "dia": "Jueves"
     },
     {
-      "titulo": "El Corte del Director",
+      "musicalizacion": "Sebastian Casal",
+      "descripcion": "Programa de corta duración, dedicado a recorrer y analizar la obra de algunos de los compositores más renombrados en el mundo de las bandas sonoras para cine, así como también, de algunos de los nuevos exponentes en esta disciplina. Además de música, el programa se complementará con fragmentos de audio -pertenecientes a entrevistas o escenas de películas- que ayudaran a reforzar la idea general de cada capítulo.",
+      "invisible": true,
+      "contacto": "pleasedontwakeme@gmail.com",
       "imagen": "/static/images/programacion/pipas-y-cerveza.png",
-      "dia": "Jueves",
       "hora": "20:00",
       "tags": [
         "Musica",
         "Cine"
       ],
-      "descripcion": "Programa de corta duración, dedicado a recorrer y analizar la obra de algunos de los compositores más renombrados en el mundo de las bandas sonoras para cine, así como también, de algunos de los nuevos exponentes en esta disciplina. Además de música, el programa se complementará con fragmentos de audio -pertenecientes a entrevistas o escenas de películas- que ayudaran a reforzar la idea general de cada capítulo.",
-      "musicalizacion": "Sebastian Casal",
-      "contacto": "pleasedontwakeme@gmail.com"
+      "titulo": "El Corte del Director",
+      "dia": "Jueves"
     },
     {
-      "titulo": "Resonancias",
+      "musicalizacion": "Sebastian Casal",
+      "descripcion": "Dj set ecléctico, que explora géneros y estilos musicales (actuales y de décadas pasadas), haciendo énfasis en el carácter desconocido de algunos artistas, discos y composiciones. Con selecciones musicales que van del jazz a la electrónica, del rock progresivo al funk, pasando por los ritmos africanos y latinos (afrobeat, salsa, cumbia), entre otros.",
+      "invisible": true,
+      "contacto": "pleasedontwakeme@gmail.com",
       "imagen": "/static/images/programacion/electrodo-dominante.png",
-      "dia": "Domingo",
       "hora": "20:00",
       "tags": [
         "Musica"
       ],
-      "descripcion": "Dj set ecléctico, que explora géneros y estilos musicales (actuales y de décadas pasadas), haciendo énfasis en el carácter desconocido de algunos artistas, discos y composiciones. Con selecciones musicales que van del jazz a la electrónica, del rock progresivo al funk, pasando por los ritmos africanos y latinos (afrobeat, salsa, cumbia), entre otros.",
-      "musicalizacion": "Sebastian Casal",
-      "contacto": "pleasedontwakeme@gmail.com"
+      "titulo": "Resonancias",
+      "dia": "Domingo"
     },
     {
-      "titulo": "Calavera no Chilla",
+      "musicalizacion": "Ramon Valdéz",
+      "descripcion": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.",
+      "invisible": true,
+      "contacto": "ramonvaldez@gmail.com",
       "imagen": "/static/images/programacion/calavera-no-chilla.png",
-      "dia": "Domingo",
       "hora": "22:00",
       "tags": [
         "Podcast"
       ],
-      "descripcion": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.",
-      "musicalizacion": "Ramon Valdéz",
-      "contacto": "ramonvaldez@gmail.com"
+      "titulo": "Calavera no Chilla",
+      "dia": "Domingo"
     }
   ]
 }
