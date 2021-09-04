@@ -5,7 +5,7 @@ module.exports = function (config) {
   // Defaults
   config.setDataDeepMerge(true)
   config.addWatchTarget('_site/tailwind.css')
-  
+
   // Copy
   config.addPassthroughCopy({
     'static/favicon.ico': 'favicon.ico',
@@ -34,6 +34,7 @@ module.exports = function (config) {
     dir: {
       input: '_pages',
       includes: '../_includes',
+      layouts: '../_layouts',
       data: '../_data',
     },
   }
