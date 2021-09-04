@@ -1,9 +1,8 @@
 {
   "files.exclude": {
-    "**/.vscode": true,
+    "**/.vscode": false,
     "**/node_modules": true,
     "**/_site": true,
-    "**/maquetas": true,
     "**/package-lock.json": true
   }
 }

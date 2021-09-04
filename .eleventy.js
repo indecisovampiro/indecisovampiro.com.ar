@@ -8,9 +8,11 @@ module.exports = function (config) {
 
   // Copy
   config.addPassthroughCopy({
-    'static/favicon.ico': 'favicon.ico',
-    static: 'static',
     'netlifycms.yml': 'admin/config.yml',
+    'static/favicon.ico': 'favicon.ico',
+    'static/sprite.svg': 'sprite.svg',
+    'static/fonts': 'static/fonts',
+    'static/images': 'static/images',
     'node_modules/alpinejs/dist/cdn.min.js': 'alpine.js',
   })
 

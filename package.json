@@ -12,25 +12,22 @@
     "build:eleventy": "cross-env NODE_ENV=production eleventy",
     "build:tailwind": "cross-env NODE_ENV=production tailwindcss -i tailwind.css -c tailwind.config.js -o _site/tailwind.css --minify"
   },
-  "prettier": {
-    "semi": false,
-    "singleQuote": true
-  },
-  "devDependencies": {
+  "dependencies": {
     "@11ty/eleventy": "^0.12.1",
+    "tailwindcss": "^2.2.9",
     "alpinejs": "^3.2.2",
-    "autoprefixer": "^10.3.1",
-    "cross-env": "^7.0.3",
     "eleventy-plugin-seo": "^0.5.2",
     "html-minifier": "^4.0.0",
     "html-to-text": "^8.0.0",
     "luxon": "^1.28.0",
-    "markdown-it": "^12.2.0",
+    "markdown-it": "^12.2.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.3.1",
+    "cross-env": "^7.0.3",
     "npm-run-all": "^4.1.5",
     "postcss": "^8.3.6",
     "postcss-cli": "^8.3.1",
-    "prettier": "^2.2.1",
-    "rimraf": "^2.7.1",
-    "tailwindcss": "^2.2.7"
+    "rimraf": "^2.7.1"
   }
 }
