@@ -4,18 +4,18 @@ module.exports = {
   mode: 'jit',
   purge: [
     './_pages/**/*.html',
-    './_site/**/*.html',
+    './_site/**/*.html'
   ],
   darkMode: false,
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Barlow Condensed', ...defaultTheme.fontFamily.sans],
-      },
-    },
+        sans: ['Barlow Condensed', ...defaultTheme.fontFamily.sans]
+      }
+    }
   },
   variants: {
-    extend: {},
+    extend: {}
   },
-  plugins: [],
+  plugins: []
 }

@@ -13,7 +13,7 @@ module.exports = function (config) {
     'static/sprite.svg': 'sprite.svg',
     'static/fonts': 'static/fonts',
     'static/images': 'static/images',
-    'node_modules/alpinejs/dist/cdn.min.js': 'alpine.js',
+    'node_modules/alpinejs/dist/cdn.min.js': 'alpine.js'
   })
 
   // Plugins
@@ -21,8 +21,8 @@ module.exports = function (config) {
 
   // Filters
   config.addFilter('readableDate', readableDate)
-  config.addFilter("renderUsingMarkdown", renderUsingMarkdown);
-  config.addFilter("renderAsText", renderAsText);
+  config.addFilter('renderUsingMarkdown', renderUsingMarkdown)
+  config.addFilter('renderAsText', renderAsText)
 
   // Conditional configs
   const isProduction = process.env.NODE_ENV === 'production'
@@ -37,7 +37,7 @@ module.exports = function (config) {
       input: '_pages',
       includes: '../_includes',
       layouts: '../_layouts',
-      data: '../_data',
-    },
+      data: '../_data'
+    }
   }
 }
