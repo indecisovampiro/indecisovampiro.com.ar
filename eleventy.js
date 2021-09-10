@@ -1,5 +1,4 @@
 const yaml = require('js-yaml')
-const pluginSEO = require('eleventy-plugin-seo')
 const { readableDate, renderUsingMarkdown, renderAsText } = require('./src/filters')
 
 module.exports = function (config) {
@@ -18,7 +17,6 @@ module.exports = function (config) {
   })
 
   // Plugins
-  config.addPlugin(pluginSEO, require('./data/settings.json'))
   config.addDataExtension('yaml', (contents) => yaml.load(contents))
 
   // Filters

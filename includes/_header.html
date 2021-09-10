@@ -9,18 +9,13 @@
     <!-- Right -->
     <div class="flex items-center justify-center gap-2">
       <!-- Icons -->
-      <!-- Youtube -->
-      <a class="hover:text-gray-300" rel="noopener noreferrer" target="_blank" href="{{ settings.youtube }}">
-        <svg class="w-6 h-6">
-          <use xlink:href="/static/sprite.svg#youtube"></use>
-        </svg>
-      </a>
-      <!-- Instagram -->
-      <a class="hover:text-gray-300" rel="noopener noreferrer" target="_blank" href="{{ settings.instagram }}">
-        <svg class="w-6 h-6">
-          <use xlink:href="/static/sprite.svg#instagram"></use>
-        </svg>
-      </a>
+      {% for x in settings.nav.mobile %}
+        <a class="hover:text-gray-300" rel="noopener noreferrer" target="_blank" href="{{ x.href }}">
+          <svg class="w-6 h-6">
+            <use xlink:href="/static/sprite.svg#{{ x.icon }}"></use>
+          </svg>
+        </a>
+      {% endfor %}
       <button @click="isOpen = !isOpen" type="button">
         <svg class="w-8 h-8">
           <use x-show="!isOpen" xlink:href="/static/sprite.svg#bars"></use>
@@ -31,11 +26,9 @@
   </div>
   <!-- List -->
   <nav class="flex flex-col justify-between gap-3 px-2 pb-2" :class="isOpen ? 'block' : 'hidden'" x-cloak>
-    <a class="text-xl font-semibold uppercase hover:text-gray-300" href="/novedades">Novedades</a>
-    <a class="text-xl font-semibold uppercase hover:text-gray-300" href="/#musica">Musica</a>
-    <a class="text-xl font-semibold uppercase hover:text-gray-300" href="/#audiovisual">Audiovisual</a>
-    <a class="text-xl font-semibold uppercase hover:text-gray-300" href="/catalogo">Editorial</a>
-    <a class="text-xl font-semibold uppercase hover:text-gray-300" href="/#encuentros">Encuentros</a>
+    {% for x in settings.nav.main %}
+      <a class="text-xl font-semibold uppercase hover:text-gray-300" href="{{ x.href }}">{{ x.title }}</a>
+    {% endfor %}
   </nav>
 </header>
 
@@ -45,43 +38,29 @@
   <div class="flex items-center justify-between max-w-screen-lg p-2 mx-auto">
     <!-- Left -->
     <div class="flex items-center justify-center gap-5">
-      <!-- Icons -->
-      <!-- Youtube -->
-      <a class="hover:text-gray-300" rel="noopener noreferrer" target="_blank" href="{{ settings.youtube }}">
-        <svg class="w-6 h-6">
-          <use xlink:href="/static/sprite.svg#youtube"></use>
-        </svg>
-      </a>
-      <!-- Spotify -->
-      <a class="hover:text-gray-300" rel="noopener noreferrer" target="_blank" href="{{ settings.spotify }}">
-        <svg class="w-6 h-6">
-          <use xlink:href="/static/sprite.svg#spotify"></use>
-        </svg>
-      </a>
+      {% for x in settings.nav.left %}
+        <a class="hover:text-gray-300" rel="noopener noreferrer" target="_blank" href="{{ x.href }}">
+          <svg class="w-6 h-6">
+            <use xlink:href="/static/sprite.svg#{{ x.icon }}"></use>
+          </svg>
+        </a>
+      {% endfor %}
     </div>
     <!-- Middle -->
     <nav class="flex items-center justify-between gap-7">
-      <a class="text-xl font-semibold uppercase hover:text-gray-300" href="/novedades">Novedades</a>
-      <a class="text-xl font-semibold uppercase hover:text-gray-300" href="/#musica">Musica</a>
-      <a class="text-xl font-semibold uppercase hover:text-gray-300" href="/#audiovisual">Audiovisual</a>
-      <a class="text-xl font-semibold uppercase hover:text-gray-300" href="/catalogo">Editorial</a>
-      <a class="text-xl font-semibold uppercase hover:text-gray-300" href="/#encuentros">Encuentros</a>
+      {% for x in settings.nav.main %}
+        <a class="text-xl font-semibold uppercase hover:text-gray-300" href="{{ x.href }}">{{ x.title }}</a>
+      {% endfor %}
     </nav>
     <!-- Right -->
     <div class="flex items-center justify-center gap-5">
-      <!-- Icons -->
-      <!-- Instagram -->
-      <a class="hover:text-gray-300" rel="noopener noreferrer" target="_blank" href="{{ settings.instagram }}">
-        <svg class="w-6 h-6">
-          <use xlink:href="/static/sprite.svg#instagram"></use>
-        </svg>
-      </a>
-      <!-- Facebook -->
-      <a class="hover:text-gray-300" rel="noopener noreferrer" target="_blank" href="{{ settings.facebook }}">
-        <svg class="w-6 h-6">
-          <use xlink:href="/static/sprite.svg#facebook"></use>
-        </svg>
-      </a>
+      {% for x in settings.nav.right %}
+        <a class="hover:text-gray-300" rel="noopener noreferrer" target="_blank" href="{{ x.href }}">
+          <svg class="w-6 h-6">
+            <use xlink:href="/static/sprite.svg#{{ x.icon }}"></use>
+          </svg>
+        </a>
+      {% endfor %}
     </div>
   </div>
 </header>

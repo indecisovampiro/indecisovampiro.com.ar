@@ -9,7 +9,7 @@ collections:
     files:
       - label: "🔖 Playlists"
         name: playlists
-        file: _data/playlists.json
+        file: data/playlists.json
         media_folder: '/static/images/playlists'
         fields:
           - label: Playlists
@@ -22,7 +22,7 @@ collections:
               - { label: "Imagen [320x287] (playlist-<genero>.jpg)", name: imagen, widget: image }
       - label: "📻 Programación"
         name: programacion
-        file: _data/programacion.json
+        file: data/programacion.json
         media_folder: '/static/images/programacion'
         fields:
           - label: Programación
@@ -48,7 +48,7 @@ collections:
               - { label: Contacto, name: contacto, widget: string }
       - label: "🎥 Audiovisual"
         name: audiovisual
-        file: _data/audiovisual.json
+        file: data/audiovisual.json
         fields:
           - label: Audiovisual
             name: audiovisual
@@ -65,7 +65,7 @@ collections:
               - { label: URL, name: url, widget: string }
       - label: "📚 Editorial"
         name: editorial
-        file: _data/editorial.json
+        file: data/editorial.json
         media_folder: '/static/images/editorial'
         fields:
           - label: Editorial
@@ -82,7 +82,7 @@ collections:
               - { label: Descripcion, name: descripcion, widget: markdown }
       - label: "🤝 Encuentros"
         name: encuentros
-        file: _data/encuentros.json
+        file: data/encuentros.json
         fields:
           - label: Encuentros
             name: encuentros
@@ -99,7 +99,7 @@ collections:
               - { label: URL, name: url, widget: string }
       - label: "⚙️ Settings"
         name: settings
-        file: _data/settings.json
+        file: data/settings.yaml
         fields:
           - { label: URL, name: url, widget: string }
           - { label: Titulo, name: title, widget: string }
