@@ -4,7 +4,7 @@
     "clean": "rimraf _site",
     "start": "npm run dev",
     "debug": "DEBUG=Eleventy* eleventy",
-    "dev": "npm-run-all --parallel dev:tailwind dev:eleventy dev:netlifycms",
+    "dev": "npm-run-all --parallel dev:netlifycms dev:tailwind dev:eleventy",
     "dev:eleventy": "eleventy --serve --quiet",
     "dev:tailwind": "tailwindcss -i tailwind.css -c tailwind.config.js -o _site/tailwind.css --watch",
     "dev:netlifycms": "npx netlify-cms-proxy-server",
@@ -12,27 +12,25 @@
     "build:eleventy": "cross-env NODE_ENV=production eleventy",
     "build:tailwind": "cross-env NODE_ENV=production tailwindcss -i tailwind.css -c tailwind.config.js -o _site/tailwind.css --minify"
   },
+  "eslintConfig": {
+    "extends": "standard"
+  },
   "dependencies": {
     "@11ty/eleventy": "^0.12.1",
     "alpinejs": "^3.2.2",
     "eleventy-plugin-seo": "^0.5.2",
     "html-minifier": "^4.0.0",
     "html-to-text": "^8.0.0",
+    "js-yaml": "^4.1.0",
     "luxon": "^1.28.0",
     "markdown-it": "^12.2.0",
     "tailwindcss": "^2.2.9"
   },
   "devDependencies": {
-    "autoprefixer": "^10.3.1",
     "cross-env": "^7.0.3",
     "eslint": "^7.32.0",
     "eslint-config-standard": "^16.0.3",
-    "eslint-plugin-import": "^2.24.2",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^5.1.0",
     "npm-run-all": "^4.1.5",
-    "postcss": "^8.3.6",
-    "postcss-cli": "^8.3.1",
     "rimraf": "^2.7.1"
   }
 }
