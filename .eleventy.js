@@ -10,7 +10,7 @@ module.exports = function (config) {
   config.addPassthroughCopy({
     'netlifycms.yml': 'admin/config.yml',
     'static/favicon.ico': 'favicon.ico',
-    'static/sprite.svg': 'sprite.svg',
+    'static/sprite.svg': 'static/sprite.svg',
     'static/fonts': 'static/fonts',
     'static/images': 'static/images',
     'node_modules/alpinejs/dist/cdn.min.js': 'alpine.js'
