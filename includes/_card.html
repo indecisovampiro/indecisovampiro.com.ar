@@ -2,13 +2,13 @@
   <!-- Logo -->
   <img loading="lazy" class="absolute top-0 h-32" src="{{ logo }}" alt="{{ titulo }}">
   <!-- Background -->
-  <div class="pb-8 mt-16 bg-center bg-no-repeat bg-cover pt-28" style="background-image: url('{{ background }}');">
+  <div class="mt-16 pb-8  bg-center bg-no-repeat bg-cover pt-28" style="background-image: url('{{ background }}');">
     <!-- Wrapper -->
     <div class="grid justify-between gap-8 mx-5 md:grid-cols-5 md:mx-8">
       <!-- Left -->
-      <div class="flex flex-col justify-around gap-4 md:col-span-3 md:gap-0">
+      <div class="flex flex-col justify-around gap-4 md:col-span-3 md:gap-0 {%if isBgLight %}text-black{% endif %}">
         <!-- Title -->
-        <h1 class="text-2xl font-bold uppercase text-white-500 md:text-4xl">{{ titulo }}</h1>
+        <h3 class="h3">{{ titulo }}</h3>
         <!-- Description -->
         <p class="text-base text-justify md:leading-6 md:text-lg">{{ descripcion | renderUsingMarkdown }}</p>
         <!-- ONLY MOBILE: Image -->
@@ -16,7 +16,7 @@
           <img loading="lazy" class="h-full" src="{{ imagen }}" alt="{{ titulo }}">
         </a>
         <!-- Link -->
-        <a class="flex items-center justify-end text-sm font-bold uppercase hover:text-gray-300 md:text-lg"
+        <a class="flex items-center justify-end text-sm font-bold uppercase {%if isBgLight %}hover:text-gray-700{% else %}hover:text-gray-300{% endif %} md:text-lg"
           rel="noopener noreferrer" target="_blank" href="{{ url }}">
           <svg class="w-12 h-12 mr-4">
             <use xlink:href="/static/sprite.svg#{{ plataforma }}"></use>

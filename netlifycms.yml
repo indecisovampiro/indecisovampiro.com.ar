@@ -57,6 +57,7 @@ collections:
             fields:
               - { label: Titulo, name: titulo, widget: string }
               - { label: Logo, name: logo, widget: image, media_folder: '/static/images/logos' }
+              - { label: 'Es un background claro?', name: isBgLight, widget: boolean, required: true }
               - { label: Background, name: background, widget: image, media_folder: '/static/images/backgrounds' }
               - { label: Descripcion, name: descripcion, widget: "markdown" }
               - { label: Imagen, name: imagen, widget: image, media_folder: '/static/images/flyers' }
@@ -91,6 +92,7 @@ collections:
             fields:
               - { label: Titulo, name: titulo, widget: string }
               - { label: Logo, name: logo, widget: image, media_folder: '/static/images/logos' }
+              - { label: 'Es un background claro?', name: isBgLight, widget: boolean, required: true }
               - { label: Background, name: background, widget: image, media_folder: '/static/images/backgrounds'}
               - { label: Descripcion, name: descripcion, widget: "markdown" }
               - { label: Imagen, name: imagen, widget: image, media_folder: '/static/images/flyers' }

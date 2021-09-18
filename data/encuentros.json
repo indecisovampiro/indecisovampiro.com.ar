@@ -8,7 +8,8 @@
       "imagen": "/static/images/flyers/pegatina-masiva.png",
       "plataforma": "instagram",
       "url-texto": "POSTER - PEGATINA MASIVA #PEGATINAMASIVA",
-      "url": "https://www.instagram.com/p/B-I2m5DJgqW"
+      "url": "https://www.instagram.com/p/B-I2m5DJgqW",
+      "isBgLight": true
     },
     {
       "titulo": "Cine Indeciso",
@@ -18,7 +19,8 @@
       "imagen": "/static/images/flyers/cine-indeciso.png",
       "plataforma": "instagram",
       "url-texto": "CARTELERA INDECISA",
-      "url": "https://www.instagram.com/stories/highlights/17861871697677267/"
+      "url": "https://www.instagram.com/stories/highlights/17861871697677267/",
+      "isBgLight": false
     },
     {
       "titulo": "Invarieté Vampira",
@@ -28,7 +30,8 @@
       "imagen": "/static/images/flyers/invariete-vampira.png",
       "plataforma": "youtube",
       "url-texto": "INVARIETÉ VAMPIRA - VERANO 2020",
-      "url": "https://youtu.be/n_6MJj9UEiw"
+      "url": "https://youtu.be/n_6MJj9UEiw",
+      "isBgLight": true
     },
     {
       "titulo": "Inktober Vampiro",
@@ -38,7 +41,8 @@
       "imagen": "/static/images/flyers/inktober-vampiro.png",
       "plataforma": "youtube",
       "url-texto": "Inktober Vampiro 2019",
-      "url": "https://youtu.be/xKlb5_JXD14"
+      "url": "https://youtu.be/xKlb5_JXD14",
+      "isBgLight": false
     }
   ]
 }

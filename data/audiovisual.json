@@ -8,7 +8,8 @@
       "imagen": "/static/images/flyers/sesiones-indecisas.png",
       "plataforma": "youtube",
       "url-texto": "X-NIDAA - SESIONES INDECISAS",
-      "url": "https://youtu.be/b4eBSc3pBJA"
+      "url": "https://youtu.be/b4eBSc3pBJA",
+      "isBgLight": false
     },
     {
       "titulo": "Invasión Indecisa",
@@ -18,7 +19,8 @@
       "imagen": "/static/images/flyers/invasion-indecisa.png",
       "plataforma": "youtube",
       "url-texto": "Invasión Indecisa #FestivalADistancia",
-      "url": "https://youtu.be/9ea9nbti7JM"
+      "url": "https://youtu.be/9ea9nbti7JM",
+      "isBgLight": false
     }
   ]
 }

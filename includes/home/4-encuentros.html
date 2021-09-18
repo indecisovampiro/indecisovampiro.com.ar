@@ -4,7 +4,7 @@
   <div class="x flex flex-col">
     <!-- Titulo -->
     <div class="flex flex-col self-stretch">
-      <h1 class="self-start text-4xl font-bold uppercase sm:text-8xl text-[#EDEDED]">Encuentros</h1>
+      <h1 class="h1 self-start text-[#EDEDED]">Encuentros</h1>
     </div>
     {% for e in encuentros.encuentros %}
       {%
@@ -17,6 +17,7 @@
         plataforma:e.plataforma
         url-texto:e.url-texto
         url:e.url
+        isBgLight:e.isBgLight
       %}
     {% endfor %}
   </div>
