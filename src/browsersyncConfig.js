@@ -1,7 +1,7 @@
 const fs = require('fs')
 
 module.exports = {
-  open: 'http://localhost:8080',
+  // open: 'http://localhost:8080',
   callbacks: {
     ready: function (_err, bs) {
       const html = fs.readFileSync('_site/404.html')
