@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "start": "npm run dev",
+    "start": "npm-run-all --parallel dev:tailwind dev:eleventy",
     "dev": "npm-run-all --parallel dev:netlifycms dev:tailwind dev:eleventy",
     "dev:eleventy": "eleventy --serve --quiet --config=eleventy.js",
     "dev:tailwind": "tailwindcss -i tailwind.css -c tailwind.config.js -o _site/tailwind.css --watch",
@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "@11ty/eleventy": "^0.12.1",
+    "@tailwindcss/typography": "^0.4.1",
     "alpinejs": "^3.3.5",
     "html-minifier": "^4.0.0",
     "html-to-text": "^8.0.0",

@@ -42,7 +42,7 @@ permalink: 'programas/{{ programa.titulo | slug }}/'
         </h3>
       </div>
       <!-- Paragraph-->
-      <p class="text-base text-justify">{{ programa.descripcion | renderUsingMarkdown }}</p>
+      <div class="prose prose-dark">{{ programa.descripcion | renderUsingMarkdown }}</div>
     </div>
     <!-- Autor/Compartir -->
     <div class="flex items-end justify-between">
