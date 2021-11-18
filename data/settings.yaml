@@ -1,29 +1,40 @@
-youtube: https://www.youtube.com/channel/UCSgiioP7m9Qgi3mfa_zb51g
-facebook: https://www.facebook.com/indecisovampiro
-google-play: https://play.google.com/store/apps/details?id=com.app.radiovampira
-author: Indeciso Vampiro
-url: https://indecisovampiro.com.ar
-instagram: https://www.instagram.com/indecisovampiro
-title: Indeciso Vampiro
-spotify: https://open.spotify.com/user/shti52s949jw7tn1szo5go0uv
-image: https://indecisovampiro.com.ar/static/images/og.png
-radio: https://argentina.republicahosting.com:2039/stream
-email: mailto:indecisovampiro@gmail.com
-flashcookie: https://indeciso-vampiro.flashcookie.com
-description: Estudio Creativo Pluridisciplinar, Tierra del Fuego, Argentina.
 nav:
   main:
-    - { title: novedades, href: /novedades }
-    - { title: musica, href: '/#musica' }
-    - { title: audiovisual, href: '/#audiovisual' }
-    - { title: editorial, href: /catalogo }
-    - { title: encuentros, href: '/#encuentros' }
+    - title: novedades
+      href: /novedades
+    - title: musica
+      href: /#musica
+    - title: audiovisual
+      href: /#audiovisual
+    - title: editorial
+      href: /catalogo
+    - title: encuentros
+      href: /#encuentros
   left:
-    - { icon: youtube, href: https://www.youtube.com/channel/UCSgiioP7m9Qgi3mfa_zb51g }
-    - { icon: spotify, href: https://open.spotify.com/user/shti52s949jw7tn1szo5go0uv }
+    - icon: youtube
+      href: https://www.youtube.com/channel/UCSgiioP7m9Qgi3mfa_zb51g
+    - icon: spotify
+      href: https://open.spotify.com/user/shti52s949jw7tn1szo5go0uv
   right:
-    - { icon: instagram, href: https://www.instagram.com/indecisovampiro }
-    - { icon: facebook, href: https://open.spotify.com/user/shti52s949jw7tn1szo5go0uv }
+    - icon: instagram
+      href: https://www.instagram.com/indecisovampiro
+    - icon: facebook
+      href: https://open.spotify.com/user/shti52s949jw7tn1szo5go0uv
   mobile:
-    - { icon: youtube, href: https://www.youtube.com/channel/UCSgiioP7m9Qgi3mfa_zb51g }
-    - { icon: instagram, href: https://www.instagram.com/indecisovampiro }
+    - icon: youtube
+      href: https://www.youtube.com/channel/UCSgiioP7m9Qgi3mfa_zb51g
+    - icon: instagram
+      href: https://www.instagram.com/indecisovampiro
+url: https://indecisovampiro.com.ar
+title: Indeciso Vampiro
+description: Estudio Creativo Pluridisciplinar, Tierra del Fuego, Argentina.
+author: Indeciso Vampiro X
+image: https://indecisovampiro.com.ar/static/images/og.png
+radio: https://argentina.republicahosting.com:2039/stream
+google-play: https://play.google.com/store/apps/details?id=com.app.radiovampira
+youtube: https://www.youtube.com/channel/UCSgiioP7m9Qgi3mfa_zb51g
+facebook: https://www.facebook.com/indecisovampiro
+instagram: https://www.instagram.com/indecisovampiro
+flashcookie: https://indeciso-vampiro.flashcookie.com
+spotify: https://open.spotify.com/user/shti52s949jw7tn1szo5go0uv
+email: mailto:indecisovampiro@gmail.com
