@@ -13,6 +13,7 @@ module.exports = function (config) {
     'static/sprite.svg': 'static/sprite.svg',
     'static/fonts': 'static/fonts',
     'static/images': 'static/images',
+    'static/js': 'static/js',
     'node_modules/alpinejs/dist/cdn.min.js': 'alpine.js'
   })
 

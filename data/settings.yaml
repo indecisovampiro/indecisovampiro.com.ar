@@ -1,15 +1,17 @@
 nav:
   main:
+    - title: inicio
+      href: /
     - title: novedades
       href: /novedades
     - title: musica
-      href: /#musica
+      href: /musica
     - title: audiovisual
-      href: /#audiovisual
+      href: /audiovisual
     - title: editorial
       href: /catalogo
     - title: encuentros
-      href: /#encuentros
+      href: /encuentros
   left:
     - icon: youtube
       href: https://www.youtube.com/channel/UCSgiioP7m9Qgi3mfa_zb51g
@@ -19,12 +21,16 @@ nav:
     - icon: instagram
       href: https://www.instagram.com/indecisovampiro
     - icon: facebook
-      href: https://open.spotify.com/user/shti52s949jw7tn1szo5go0uv
+      href: https://www.facebook.com/indecisovampiro
   mobile:
     - icon: youtube
       href: https://www.youtube.com/channel/UCSgiioP7m9Qgi3mfa_zb51g
+    - icon: spotify
+      href: https://open.spotify.com/user/shti52s949jw7tn1szo5go0uv
     - icon: instagram
       href: https://www.instagram.com/indecisovampiro
+    - icon: facebook
+      href: https://www.facebook.com/indecisovampiro
 url: https://indecisovampiro.com.ar
 title: Indeciso Vampiro
 description: Estudio Creativo Pluridisciplinar, Tierra del Fuego, Argentina.

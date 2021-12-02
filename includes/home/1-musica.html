@@ -1,15 +1,11 @@
 <!-- Radio en Vivo -->
-<section id="musica" class="x pt-16 sm:pt-24 sm:gap-16">
+<section id="musica" class="pt-16 x sm:pt-24 sm:gap-16">
   <div class="flex flex-col items-center gap-16 sm:gap-24">
     <!-- Logo -->
     <img class="w-3/4 sm:hidden" src="/static/images/radio-vampira.png" alt="" loading="lazy">
     <img class="hidden sm:block" src="/static/images/radio-vampira.svg" alt="" loading="lazy">
     <!-- Title -->
     <img class="w-3/4 sm:w-1/2" src="/static/images/radio-en-vivo.svg" alt="" loading="lazy">
-    <!-- Widget -->
-    <div class="">
-      {% include _radio-widget.html %}
-    </div>
   </div>
 </section>
 
@@ -41,7 +37,7 @@
 
 <!-- Programacion -->
 <section class="flex flex-col x y">
-  <h2 class="h2 text-gray-700">Programación Indecisa</h2>
+  <h2 class="text-gray-700 h2">Programación Indecisa</h2>
   <div class="flex flex-wrap justify-center gap-1 sm:gap-4">
     {% for programa in programacion.programacion %}
     {% if programa.invisible != true %}
@@ -73,7 +69,7 @@
       <div class="flex flex-col justify-around">
         <div class="flex flex-col">
           <!-- Title -->
-          <h2 class="h2 text-gray-700">Streaming Indeciso</h2>
+          <h2 class="text-gray-700 h2">Streaming Indeciso</h2>
           <!-- Paragraph -->
           <p class="px-8 text-lg">¿Sólo escuchas cosas en Spotify? También estamos ahí con la selección de música
             vampira. Podés encontrarlas en nuestra cuenta y las actualizamos constantemente.</p>
