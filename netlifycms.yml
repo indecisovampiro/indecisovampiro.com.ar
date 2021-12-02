@@ -108,7 +108,7 @@ collections:
           - { label: Descripcion, name: description, widget: string }
           - { label: Author, name: author, widget: string }
           - { label: "Open Graph", name: image, widget: string }
-          - { label: "Radio URL", name: radio, widget: string }
+          - { label: "App Store", name: app-store, widget: string }
           - { label: "Google Play", name: google-play, widget: string }
           - { label: Youtube, name: youtube, widget: string }
           - { label: Facebook, name: facebook, widget: string }

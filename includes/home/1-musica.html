@@ -19,14 +19,23 @@
   <div class="flex flex-col items-center justify-center x y sm:flex-row sm:py-16">
     <!-- Titulo -->
     <div class="w-4/5 sm:w-full sm:order-2">
-      <img class="w-full" loading="lazy"  src="/static/images/bajate-la-app.svg" alt="">
+      <img class="w-full" loading="lazy" src="/static/images/bajate-la-app.svg" alt="">
     </div>
     <!-- Imagen -->
     <img loading="lazy" class="w-52 sm:order-1" src="/static/images/app.png" alt="">
     <!-- Boton -->
-    <a class="flex items-center justify-center w-2/3 sm:order-3" rel="noopener noreferrer" target="_blank" href="{{ settings.google-play }}">
-      <img loading="lazy" class="w-48 duration-300 transform motion-safe:hover:scale-110" src="/static/images/buttons/google-play.png" alt="">
-    </a>
+    <div class="flex w-full gap-4 sm:order-3">
+      <a class="flex items-center justify-center w-2/3 " rel="noopener noreferrer" target="_blank"
+        href="{{ settings.app-store }}">
+        <img loading="lazy" class="w-48 duration-300 transform motion-safe:hover:scale-110"
+          src="/static/images/buttons/app-store.png" alt="">
+      </a>
+      <a class="flex items-center justify-center w-2/3 sm:order-3" rel="noopener noreferrer" target="_blank"
+        href="{{ settings.google-play }}">
+        <img loading="lazy" class="w-48 duration-300 transform motion-safe:hover:scale-110"
+          src="/static/images/buttons/google-play.png" alt="">
+      </a>
+    </div>
   </div>
 </section>
 
@@ -35,11 +44,12 @@
   <h2 class="h2 text-gray-700">Programación Indecisa</h2>
   <div class="flex flex-wrap justify-center gap-1 sm:gap-4">
     {% for programa in programacion.programacion %}
-      {% if programa.invisible != true %}
-        <a class="w-52" href="/programas/{{ programa.titulo | slug }}/">
-          <img loading="lazy" class="duration-300 transform motion-safe:hover:scale-110" src="{{ programa.imagen }}" alt="{{ programa.titulo }}">
-        </a>
-      {% endif %}
+    {% if programa.invisible != true %}
+    <a class="w-52" href="/programas/{{ programa.titulo | slug }}/">
+      <img loading="lazy" class="duration-300 transform motion-safe:hover:scale-110" src="{{ programa.imagen }}"
+        alt="{{ programa.titulo }}">
+    </a>
+    {% endif %}
     {% endfor %}
   </div>
 </section>
@@ -70,7 +80,7 @@
         </div>
         <!-- Nuestras Playlists -->
         <div class="flex items-center justify-center mx-8">
-          <img class="w-full" loading="lazy"  src="/static/images/nuestras-playlists.svg" alt="">
+          <img class="w-full" loading="lazy" src="/static/images/nuestras-playlists.svg" alt="">
         </div>
       </div>
     </div>
@@ -78,7 +88,8 @@
     <div class="flex flex-wrap justify-center gap-2 sm:gap-4">
       {% for p in playlists.playlists %}
       <a class="w-[8.5rem]" href="{{ p.url }}" rel="noopener noreferrer" target="_blank">
-        <img loading="lazy" class="duration-300 transform motion-safe:hover:scale-110" src="{{ p.imagen }}" alt="{{ p.titulo }}">
+        <img loading="lazy" class="duration-300 transform motion-safe:hover:scale-110" src="{{ p.imagen }}"
+          alt="{{ p.titulo }}">
       </a>
       {% endfor %}
     </div>
