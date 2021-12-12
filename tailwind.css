@@ -17,7 +17,33 @@ svg { @apply fill-current; }
 .h1 { @apply text-4xl font-semibold uppercase md:text-8xl; }
 .h2 { @apply text-4xl font-semibold uppercase md:text-5xl; }
 .h3 { @apply text-2xl font-semibold uppercase md:text-4xl; }
-.x { @apply max-w-screen-lg mx-auto gap-8 sm:gap-16 px-4  sm:px-16; }
-.y { @apply max-w-screen-lg mx-auto gap-8 sm:gap-16 py-16 sm:py-24; }
+.x { @apply max-w-screen-lg gap-8 px-4 mx-auto sm:gap-16 sm:px-16; }
+.y { @apply max-w-screen-lg gap-8 py-16 mx-auto sm:gap-16 sm:py-24; }
+.g { @apply gap-8 sm:gap-16}
 
 @tailwind utilities;
+
+#cf img {
+  position:absolute;
+  left:0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+
+@keyframes cf3FadeInOut {
+  0% { opacity:1;}
+  45% { opacity:1;}
+  55% { opacity:0;}
+  100% { opacity:0;}
+}
+
+#cf img.top {
+animation-duration: 10s;
+animation-name: cf3FadeInOut;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+}

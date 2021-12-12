@@ -1,5 +1,6 @@
+{% comment %}
 <!-- Radio en Vivo -->
-<section id="musica" class="pt-16 x sm:pt-24 sm:gap-16">
+<section id="musica" class="x y">
   <div class="flex flex-col items-center gap-16 sm:gap-24">
     <!-- Logo -->
     <img class="w-3/4 sm:hidden" src="/static/images/radio-vampira.png" alt="" loading="lazy">
@@ -8,11 +9,20 @@
     <img class="w-3/4 sm:w-1/2" src="/static/images/radio-en-vivo.svg" alt="" loading="lazy">
   </div>
 </section>
+{% endcomment %}
+<section id="musica">
+  <!-- TODO: Refactor esta mugre de h-<harcodeado> -->
+  <!-- http://css3.bradshawenterprises.com/cfimg/ -->
+  <div id="cf" class="y relative h-[300px] sm:h-[485px] max-w-screen-lg mx-auto">
+    <img class="bottom" src="/static/images/carousel/ochoaslab.png" />
+    <img class="top" src="/static/images/carousel/radioenvivo.png" />
+  </div>
+</section>
 
 <!-- Bajate la App -->
 <section class=""
-  style="background: linear-gradient(to bottom, transparent 0%, transparent 40%, #0E4056 40%, #0E4056 60%, transparent 60%);">
-  <div class="flex flex-col items-center justify-center x y sm:flex-row sm:py-16">
+  style="background: linear-gradient(to bottom, transparent 0%, transparent 30%, #0E4056 30%, #0E4056 70%, transparent 70%);">
+  <div class="flex flex-col items-center justify-center x sm:flex-row">
     <!-- Titulo -->
     <div class="w-4/5 sm:w-full sm:order-2">
       <img class="w-full" loading="lazy" src="/static/images/bajate-la-app.svg" alt="">
