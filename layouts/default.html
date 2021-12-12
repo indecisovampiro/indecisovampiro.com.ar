@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"/>
     <link href="/tailwind.css" rel="stylesheet"/>
     <script src="/alpine.js" defer></script>
+    <script src="/router.js" defer></script>
     {% include _seo.html %}
     <meta name="x-base-url" content="{{ site.url }}"/>
     <style>
@@ -21,7 +22,6 @@
       {{ content }}
     </main>
     {% include _footer.html %}
-    <script src="{{ site.url }}/static/js/mini-spa.js"></script>
     {% if path == "home" %}<script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>{% endif %}
   </body>
 
