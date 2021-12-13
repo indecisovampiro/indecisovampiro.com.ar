@@ -1,22 +1,23 @@
 {
   "programacion": [
     {
-      "titulo": "Algunas de Algo",
+      "musicalizacion": "@wilson.vvilson",
+      "descripcion": "Adentrensé al mágico mundo sonoro de la selección musical de otra persona. Cada programa un tópico diferente, semana tras semana vas a viajar desde del lejano oeste hasta el cercano presente. \\\n\\\nCurado y comentado por [@wilson.vvilson](https://www.instagram.com/wilson.vvilson/)",
+      "invisible": true,
+      "contacto": "lautaro.w@gmail.com / @wilson.vvilson",
       "imagen": "/static/images/programacion/algunas-de-algo.png",
-      "dia": "Lunes ",
       "hora": "21:00",
       "tags": [
         "Podcast",
         "seleccion musical"
       ],
-      "descripcion": "Adentrensé al mágico mundo sonoro de la selección musical de otra persona. Cada programa un tópico diferente, semana tras semana vas a viajar desde del lejano oeste hasta el cercano presente. \\\n\\\nCurado y comentado por [@wilson.vvilson](https://www.instagram.com/wilson.vvilson/)",
-      "musicalizacion": "@wilson.vvilson",
-      "contacto": "lautaro.w@gmail.com / @wilson.vvilson"
+      "titulo": "Algunas de Algo",
+      "dia": "Lunes "
     },
     {
       "musicalizacion": "Indeciso Vampiro",
       "descripcion": "Selección indecisa de recitales en vivo de cualquier año, cualquier lugar e idioma.",
-      "invisible": false,
+      "invisible": true,
       "contacto": "Vivoindeciso@gmail.com",
       "imagen": "/static/images/programacion/vivo-indeciso.png",
       "hora": "23:00",
@@ -28,9 +29,11 @@
       "dia": "Miércoles"
     },
     {
-      "titulo": "Dos pájaros de un tiro",
+      "musicalizacion": "El cieguito volador",
+      "descripcion": "Encuentro rockero para encarar el inicio del fin de semana con chascarrillos y charlas inesperadas sobre cosas que sucedieron en la semana y cosas que no van a suceder nunca.",
+      "invisible": true,
+      "contacto": "Alanespinoza1990@gmail.com",
       "imagen": "/static/images/programacion/dos-pajaros-de-un-tiro.png",
-      "dia": "Jueves",
       "hora": "18:00",
       "tags": [
         "Musica",
@@ -38,9 +41,8 @@
         "Simpsons",
         "rock"
       ],
-      "descripcion": "Encuentro rockero para encarar el inicio del fin de semana con chascarrillos y charlas inesperadas sobre cosas que sucedieron en la semana y cosas que no van a suceder nunca.",
-      "musicalizacion": "El cieguito volador",
-      "contacto": "Alanespinoza1990@gmail.com"
+      "titulo": "Dos pájaros de un tiro",
+      "dia": "Jueves"
     },
     {
       "episodios": [
@@ -57,6 +59,7 @@
       ],
       "musicalizacion": "Sebastián Casal",
       "descripcion": "Presentaciones y análisis de novedades en materia de música, cine, series y libros; desde un enfoque ameno pero crítico. A su vez indagaremos en algunos movimientos artísticos del pasado y su relación e importancia con el contexto histórico; también, cuenta con entrevistas a actores involucrados en las distintas ramas artísticas, así como también, especialistas en diversas materias. En ocasiones, todos los contenidos del programa estarán atravesados por una temática en particular.",
+      "invisible": true,
       "contacto": "lanavedecristalradio@gmail.com",
       "imagen": "/static/images/programacion/la-nave-de-cristal.png",
       "hora": "20:00",
