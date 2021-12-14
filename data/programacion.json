@@ -3,7 +3,7 @@
     {
       "musicalizacion": "@wilson.vvilson",
       "descripcion": "Adentrensé al mágico mundo sonoro de la selección musical de otra persona. Cada programa un tópico diferente, semana tras semana vas a viajar desde del lejano oeste hasta el cercano presente. \\\n\\\nCurado y comentado por [@wilson.vvilson](https://www.instagram.com/wilson.vvilson/)",
-      "invisible": true,
+      "invisible": false,
       "contacto": "lautaro.w@gmail.com / @wilson.vvilson",
       "imagen": "/static/images/programacion/algunas-de-algo.png",
       "hora": "21:00",
@@ -17,7 +17,7 @@
     {
       "musicalizacion": "Indeciso Vampiro",
       "descripcion": "Selección indecisa de recitales en vivo de cualquier año, cualquier lugar e idioma.",
-      "invisible": true,
+      "invisible": false,
       "contacto": "Vivoindeciso@gmail.com",
       "imagen": "/static/images/programacion/vivo-indeciso.png",
       "hora": "23:00",
@@ -59,7 +59,7 @@
       ],
       "musicalizacion": "Sebastián Casal",
       "descripcion": "Presentaciones y análisis de novedades en materia de música, cine, series y libros; desde un enfoque ameno pero crítico. A su vez indagaremos en algunos movimientos artísticos del pasado y su relación e importancia con el contexto histórico; también, cuenta con entrevistas a actores involucrados en las distintas ramas artísticas, así como también, especialistas en diversas materias. En ocasiones, todos los contenidos del programa estarán atravesados por una temática en particular.",
-      "invisible": true,
+      "invisible": false,
       "contacto": "lanavedecristalradio@gmail.com",
       "imagen": "/static/images/programacion/la-nave-de-cristal.png",
       "hora": "20:00",
