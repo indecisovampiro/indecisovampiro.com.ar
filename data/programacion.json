@@ -29,22 +29,6 @@
       "dia": "Miércoles"
     },
     {
-      "musicalizacion": "El cieguito volador",
-      "descripcion": "Encuentro rockero para encarar el inicio del fin de semana con chascarrillos y charlas inesperadas sobre cosas que sucedieron en la semana y cosas que no van a suceder nunca.",
-      "invisible": false,
-      "contacto": "Alanespinoza1990@gmail.com",
-      "imagen": "/static/images/programacion/dos-pajaros-de-un-tiro.png",
-      "hora": "15:00",
-      "tags": [
-        "Musica",
-        "Tertulia",
-        "Simpsons",
-        "rock"
-      ],
-      "titulo": "Dos pájaros de un tiro",
-      "dia": "Viernes"
-    },
-    {
       "episodios": [
         {
           "fecha": "05-07-2021",
@@ -73,6 +57,35 @@
       "dia": "Viernes"
     },
     {
+      "musicalizacion": "El cieguito volador",
+      "descripcion": "Encuentro rockero para encarar el inicio del fin de semana con chascarrillos y charlas inesperadas sobre cosas que sucedieron en la semana y cosas que no van a suceder nunca.",
+      "invisible": false,
+      "contacto": "Alanespinoza1990@gmail.com",
+      "imagen": "/static/images/programacion/dos-pajaros-de-un-tiro-02-01.png",
+      "hora": "15:00",
+      "tags": [
+        "Musica",
+        "Tertulia",
+        "Simpsons",
+        "rock"
+      ],
+      "titulo": "Dos pájaros de un tiro",
+      "dia": "Viernes"
+    },
+    {
+      "musicalizacion": "Emilio y Alejandro Valencia",
+      "descripcion": "Un podcast que llegó para desempolvar producciones de cine que ninguna plataforma, ni\nalgoritmo, te va a recomendar. Un mano a mano con dos films por episodio, elegidos para\nser vistos uno tras otro, como en los viejos tiempos\n\nUna producción de NTET Podcast.",
+      "invisible": false,
+      "contacto": "noteentusiasmes@gmail.com",
+      "imagen": "/static/images/programacion/doblefuncion-02.png",
+      "hora": "21:00",
+      "tags": [
+        "Podcast"
+      ],
+      "titulo": "Doble Función",
+      "dia": "Jueves"
+    },
+    {
       "musicalizacion": "Mauro Hernández",
       "descripcion": "Aventura sonora que recorre las mejores paradas instrumentales de los años sesenta. Vaivenes musicales con pequeños interludios radiofónicos de la época, efectos espaciales que ponen la piel de gallina y transportan tus oídos a otra realidad.",
       "invisible": true,
@@ -84,7 +97,7 @@
         "sesenta",
         ""
       ],
-      "titulo": "Azul Profundo",
+      "titulo": "Azul profundo",
       "dia": "Jueves"
     },
     {
@@ -112,19 +125,6 @@
         "Musica"
       ],
       "titulo": "Resonancias",
-      "dia": "Domingo"
-    },
-    {
-      "musicalizacion": "Ramon Valdéz",
-      "descripcion": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.",
-      "invisible": true,
-      "contacto": "ramonvaldez@gmail.com",
-      "imagen": "/static/images/programacion/calavera-no-chilla.png",
-      "hora": "22:00",
-      "tags": [
-        "Podcast"
-      ],
-      "titulo": "Calavera no Chilla",
       "dia": "Domingo"
     }
   ],
