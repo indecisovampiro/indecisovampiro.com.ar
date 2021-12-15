@@ -17,6 +17,23 @@
       "subtitulo": "Lautaro N Hernández [@wilson.vvilson](https://www.instagram.com/wilson.vvilson/)"
     },
     {
+      "descripcion": "SEGURIDAD\n\nHOY, es una colección que nos lleva recorrer placeres, vivencias y recuerdos en un pequeño formato. Escrita por Pedro Lencina [@p.lencis](https://www.instagram.com/p.lencis/) e ilustrado por Lucía Kuzmuk [@plastictramp](https://www.instagram.com/plastictramp/).\\\n\"POLISEMIA\", \"SEGURIDAD\", \"DOMINGO\" y \"CÓMO\" son las 4 presentaciones de esta serie.",
+      "subtitulo": "Pablo Lencina [@p.lencis](https://www.instagram.com/p.lencis/), Lucía Kuzmuk [@plastictramp](https://www.instagram.com/plastictramp/)",
+      "url": "iy",
+      "precio": 200,
+      "imagen": "/static/images/editorial/seguridad.jpg",
+      "titulo": "Seguridad"
+    },
+    {
+      "titulo": "Las Cosas Que No Debes Hacer En Vivo",
+      "imagen": "/static/images/editorial/las-cosas-que-no-debes-hacer-en-vivo.png",
+      "precio": 500,
+      "url": "https://mpago.la/1rkEzcp",
+      "descripcion": "Recopilatorio de 3 fanzines de bolsillo de cosas que no deberías decir arriba de un escenario. Pero que todos hacen.\n\nDimensiones: A6\n\nBlanco y negro",
+      "subtitulo": "Fanzine Colaborativo - [@wilson.vvilson](https://www.instagram.com/wilson.vvilson/) [@plastictraamp](https://www.instagram.com/plastictraamp/) [@___temporaluser](https://www.instagram.com/___temporaluser/)",
+      "agotado": true
+    },
+    {
       "titulo": "Espíritus Oscuros En Un Verano Luminoso",
       "imagen": "/static/images/editorial/espiritus-oscuros-en-un-verano-luminoso.png",
       "precio": 0,
@@ -26,20 +43,13 @@
       "agotado": false
     },
     {
-      "descripcion": "SEGURIDAD\n\nHOY, es una colección que nos lleva recorrer placeres, vivencias y recuerdos en un pequeño formato. Escrita por Pedro Lencina [@p.lencis](https://www.instagram.com/p.lencis/) e ilustrado por Lucía Kuzmuk [@plastictramp](https://www.instagram.com/plastictramp/).\\\n\"POLISEMIA\", \"SEGURIDAD\", \"DOMINGO\" y \"CÓMO\" son las 4 presentaciones de esta serie.",
-      "subtitulo": "Pablo Lencina [@p.lencis](https://www.instagram.com/p.lencis/), Lucía Kuzmuk [@plastictramp](https://www.instagram.com/plastictramp/)",
-      "url": "iy",
-      "precio": 200,
-      "imagen": "/static/images/editorial/seguridad.jpg",
-      "titulo": "Seguridad"
-    },
-    {
       "descripcion": "Domingo\\\n\\\nHOY, es una colección que nos lleva recorrer placeres, vivencias y recuerdos en un pequeño formato. Escrita por Pedro Lencina [@p.lencis](https://www.instagram.com/p.lencis/) e ilustrado por Lucía Kuzmuk [@plastictramp](https://www.instagram.com/plastictramp/).\\\n\"POLISEMIA\", \"SEGURIDAD\", \"DOMINGO\" y \"CÓMO\" son las 4 presentaciones de esta serie.",
       "url": "sa",
       "precio": 200,
       "imagen": "/static/images/editorial/domingo.jpg",
       "titulo": "Domingo",
-      "subtitulo": "Pablo Lencina [@p.lencis](https://www.instagram.com/p.lencis/), Lucía Kuzmuk [@plastictramp](https://www.instagram.com/plastictramp/)"
+      "subtitulo": "Pablo Lencina [@p.lencis](https://www.instagram.com/p.lencis/), Lucía Kuzmuk [@plastictramp](https://www.instagram.com/plastictramp/)",
+      "agotado": false
     },
     {
       "titulo": "Polisemia",
@@ -55,16 +65,8 @@
       "precio": 200,
       "imagen": "/static/images/editorial/como.jpg",
       "titulo": "Como",
-      "subtitulo": "Pablo Lencina [@p.lencis](https://www.instagram.com/p.lencis/), Lucía Kuzmuk [@plastictramp](https://www.instagram.com/plastictramp/)"
-    },
-    {
-      "titulo": "Las Cosas Que No Debes Hacer En Vivo",
-      "imagen": "/static/images/editorial/las-cosas-que-no-debes-hacer-en-vivo.png",
-      "precio": 500,
-      "url": "https://mpago.la/1rkEzcp",
-      "descripcion": "Recopilatorio de 3 fanzines de bolsillo de cosas que no deberías decir arriba de un escenario. Pero que todos hacen.\n\nDimensiones: A6\n\nBlanco y negro",
-      "subtitulo": "Fanzine Colaborativo - [@wilson.vvilson](https://www.instagram.com/wilson.vvilson/) [@plastictraamp](https://www.instagram.com/plastictraamp/) [@___temporaluser](https://www.instagram.com/___temporaluser/)",
-      "agotado": true
+      "subtitulo": "Pablo Lencina [@p.lencis](https://www.instagram.com/p.lencis/), Lucía Kuzmuk [@plastictramp](https://www.instagram.com/plastictramp/)",
+      "agotado": false
     },
     {
       "titulo": "Tira de Ismael - Travesía Birrera",
