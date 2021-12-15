@@ -19,17 +19,17 @@
     {
       "titulo": "Espíritus Oscuros En Un Verano Luminoso",
       "imagen": "/static/images/editorial/espiritus-oscuros-en-un-verano-luminoso.png",
-      "precio": 400,
+      "precio": 0,
       "url": "https://mpago.la/1rkEzcp",
       "descripcion": "Recopilatorio de un verano.\n\n\n\nDimensiones: A6\n\nBlanco y negro",
       "subtitulo": "Fanzine Colaborativo - [@wilson.vvilson](https://instagram.com/wilson.vvilson/) [@plastictraamp](https://instagram.com/plastictraamp/) [@brureale](https://instagram.com/brureale/) [@balentinav](https://instagram.com/balentinav/) [@holaveroilustra](https://instagram.com/holaveroilustra/) [@dai.papaleta](@dai.papaleta)",
-      "agotado": true
+      "agotado": false
     },
     {
       "descripcion": "SEGURIDAD\n\nHOY, es una colección que nos lleva recorrer placeres, vivencias y recuerdos en un pequeño formato. Escrita por Pedro Lencina [@p.lencis](https://www.instagram.com/p.lencis/) e ilustrado por Lucía Kuzmuk [@plastictramp](https://www.instagram.com/plastictramp/).\\\n\"POLISEMIA\", \"SEGURIDAD\", \"DOMINGO\" y \"CÓMO\" son las 4 presentaciones de esta serie.",
       "subtitulo": "Pablo Lencina [@p.lencis](https://www.instagram.com/p.lencis/), Lucía Kuzmuk [@plastictramp](https://www.instagram.com/plastictramp/)",
-      "url": "dsdsd",
-      "precio": 202,
+      "url": "iy",
+      "precio": 200,
       "imagen": "/static/images/editorial/seguridad.jpg",
       "titulo": "Seguridad"
     },
