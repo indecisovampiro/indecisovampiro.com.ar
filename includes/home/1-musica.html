@@ -47,6 +47,7 @@
 </section>
 
 <!-- Programacion -->
+{% if programacion.invisible != true %}
 <section class="flex flex-col x y">
   <h2 class="text-gray-700 h2">Programación Indecisa</h2>
   <div class="flex flex-wrap justify-center gap-1 sm:gap-4">
@@ -60,9 +61,9 @@
     {% endfor %}
   </div>
 </section>
-
 <!-- Separador -->
 <div class="px-20 m-auto border-t-2" style="max-width: calc(1024px - 5rem * 2); border-color: #1DB954;"></div>
+{% endif %}
 
 <!-- Streaming -->
 <section class="flex flex-col items-stretch justify-center y">

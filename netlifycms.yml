@@ -25,6 +25,7 @@ collections:
         file: data/programacion.json
         media_folder: '/static/images/programacion'
         fields:
+          - { label: Esconder?, name: invisible, widget: boolean, required: false }
           - label: Programación
             name: programacion
             widget: list
