@@ -73,8 +73,9 @@
       "imagen": "/static/images/editorial/travesia.jpg",
       "precio": 0,
       "url": "https://mpago.la/1rkEzcp",
-      "descripcion": "Travesía de birra\n\n\n\nDimensiones: A5\\\nFull color",
-      "subtitulo": "Lautaro N Hernández [@wilson.vvilson](https://www.instagram.com/wilson.vvilson/)"
+      "descripcion": "Ismáel y Poseydón salen de su agitada rutina de descanso cervezal para salvar al mundo de una amenaza olorienta, manguera y egoísta.\n\n\n\nDimensiones: A5\\\nBlanco y Negro",
+      "subtitulo": "Lautaro N Hernández [@wilson.vvilson](https://www.instagram.com/wilson.vvilson/)",
+      "agotado": true
     },
     {
       "titulo": "Tira de Ismael - Pequeñas dosis de humor rockero",
