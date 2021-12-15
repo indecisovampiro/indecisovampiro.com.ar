@@ -31,10 +31,10 @@
     {
       "musicalizacion": "El cieguito volador",
       "descripcion": "Encuentro rockero para encarar el inicio del fin de semana con chascarrillos y charlas inesperadas sobre cosas que sucedieron en la semana y cosas que no van a suceder nunca.",
-      "invisible": true,
+      "invisible": false,
       "contacto": "Alanespinoza1990@gmail.com",
       "imagen": "/static/images/programacion/dos-pajaros-de-un-tiro.png",
-      "hora": "18:00",
+      "hora": "15:00",
       "tags": [
         "Musica",
         "Tertulia",
@@ -42,7 +42,7 @@
         "rock"
       ],
       "titulo": "Dos pájaros de un tiro",
-      "dia": "Jueves"
+      "dia": "Viernes"
     },
     {
       "episodios": [
