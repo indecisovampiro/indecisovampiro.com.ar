@@ -89,12 +89,13 @@
       "precio": 200,
       "url": "https://mpago.la/1rkEzcp",
       "subtitulo": "Fanzine Colaborativo",
-      "descripcion": "lorem esp\n\n\n\nDimensiones: A6 Horizontal\n\nFull color"
+      "descripcion": "lorem esp\n\n\n\nDimensiones: A6 Horizontal\n\nFull color",
+      "agotado": true
     },
     {
       "titulo": "Ahhh",
       "imagen": "/static/images/editorial/ahhh.jpg",
-      "precio": 1,
+      "precio": 0,
       "url": "https://mpago.la/1rkEzcp",
       "descripcion": "Loren\n\n\n\nFormato: Fanzine clásico\\\nBlanco y negro",
       "subtitulo": "Lautaro N Hernández [@wilson.vvilson](https://www.instagram.com/wilson.vvilson/)",
