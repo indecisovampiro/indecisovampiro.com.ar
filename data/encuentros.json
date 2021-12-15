@@ -1,48 +1,48 @@
 {
   "encuentros": [
     {
-      "titulo": "Pegatina Masiva",
-      "logo": "/static/images/logos/pegatina-masiva.png",
-      "background": "/static/images/backgrounds/pegatina-masiva.png",
-      "descripcion": "Es un festival donde el paste up es el protagonista principal. Esta técnica de arte urbano consiste en la composición de imágenes o textos, usando como soporte principal el papel, el cual se coloca encolado sobre una superficie, pared o donde sea. Buscamos la construcción de un mural indeciso, público y cargado de pegatinas y calcomanías. Con la intervención y el aporte de artistas autoconvocados de todo el país que hacen llegar sus obras.",
-      "imagen": "/static/images/flyers/pegatina-masiva.png",
-      "plataforma": "instagram",
       "url-texto": "POSTER - PEGATINA MASIVA #PEGATINAMASIVA",
-      "url": "https://www.instagram.com/p/B-I2m5DJgqW",
-      "isBgLight": true
-    },
-    {
-      "titulo": "Cine Indeciso",
-      "logo": "/static/images/logos/cine-indeciso.png",
-      "background": "/static/images/backgrounds/cine-indeciso.png",
-      "descripcion": "Ciclo de cine en donde todas las semanas compartimos cortometrajes y largometrajes descatalogados. Todo en compañía amena, refrigerios y un pequeño debate luego del film. ¿Dónde? en nuestro refugio vampiro.",
-      "imagen": "/static/images/flyers/cine-indeciso.png",
+      "isBgLight": true,
       "plataforma": "instagram",
+      "logo": "/static/images/logos/pegatina-masiva.png",
+      "descripcion": "Es un festival donde el paste up es el protagonista principal. Esta técnica de arte urbano consiste en la composición de imágenes o textos, usando como soporte principal el papel, el cual se coloca encolado sobre una superficie, pared o donde sea. Buscamos la construcción de un mural indeciso, público y cargado de pegatinas y calcomanías. Con la intervención y el aporte de artistas autoconvocados de todo el país que hacen llegar sus obras.",
+      "background": "/static/images/backgrounds/pegatina-masiva.png",
+      "url": "https://www.instagram.com/p/B-I2m5DJgqW",
+      "imagen": "/static/images/flyers/pegatina-masiva.png",
+      "titulo": "Pegatina Masiva"
+    },
+    {
       "url-texto": "CARTELERA INDECISA",
+      "isBgLight": false,
+      "plataforma": "instagram",
+      "logo": "/static/images/logos/cine-indeciso.png",
+      "descripcion": "Ciclo de cine en donde todas las semanas compartimos cortometrajes y largometrajes descatalogados. Todo en compañía amena, refrigerios y un pequeño debate luego del film. ¿Dónde? en nuestro refugio vampiro.",
+      "background": "/static/images/backgrounds/cine-indeciso.png",
       "url": "https://www.instagram.com/stories/highlights/17861871697677267/",
-      "isBgLight": false
+      "imagen": "/static/images/flyers/cine-indeciso.png",
+      "titulo": "Cine Indeciso"
     },
     {
-      "titulo": "Invarieté Vampira",
-      "logo": "/static/images/logos/invariete-vampira.png",
-      "background": "/static/images/backgrounds/invariete-vampira.png",
-      "descripcion": "Es un festival donde el paste up es el protagonista principal. Esta técnica de arte urbano consiste en la composición de imágenes o textos, usando como soporte principal el papel, el cual se coloca encolado sobre una superficie, pared o donde sea. Buscamos la construcción de un mural indeciso, público y cargado de pegatinas y calcomanías. Con la intervención y el aporte de artistas autoconvocados de todo el país que hacen llegar sus obras.",
-      "imagen": "/static/images/flyers/invariete-vampira.png",
-      "plataforma": "youtube",
       "url-texto": "INVARIETÉ VAMPIRA - VERANO 2020",
+      "isBgLight": true,
+      "plataforma": "youtube",
+      "logo": "/static/images/logos/invariete-vampira.png",
+      "descripcion": "Fiesta y feria en la cual distintos colaboradores participan mostrando sus trabajos en un marco de camaradería y festejo indeciso. Con bandas en vivo, paste up, dibujo, música y cerveza.",
+      "background": "/static/images/backgrounds/invariete-vampira.png",
       "url": "https://youtu.be/n_6MJj9UEiw",
-      "isBgLight": true
+      "imagen": "/static/images/flyers/invariete-vampira.png",
+      "titulo": "Invarieté Vampira"
     },
     {
-      "titulo": "Inktober Vampiro",
-      "logo": "/static/images/logos/inktober-vampiro.png",
-      "background": "/static/images/backgrounds/inktober-vampiro.png",
-      "descripcion": "Es un festival donde el paste up es el protagonista principal. Esta técnica de arte urbano consiste en la composición de imágenes o textos, usando como soporte principal el papel, el cual se coloca encolado sobre una superficie, pared o donde sea. Buscamos la construcción de un mural indeciso, público y cargado de pegatinas y calcomanías. Con la intervención y el aporte de artistas autoconvocados de todo el país que hacen llegar sus obras.",
-      "imagen": "/static/images/flyers/inktober-vampiro.png",
-      "plataforma": "youtube",
       "url-texto": "Inktober Vampiro 2019",
+      "isBgLight": false,
+      "plataforma": "youtube",
+      "logo": "/static/images/logos/inktober-vampiro.png",
+      "descripcion": "Creamos una lista para ser parte del reto de dibujo  #Inktobervampiro. Luego los presentamos en una muestra la cual acompañamos con música en vinilo, visuales, cadáver exquisito y mucho aire festivo.",
+      "background": "/static/images/backgrounds/inktober-vampiro.png",
       "url": "https://youtu.be/xKlb5_JXD14",
-      "isBgLight": false
+      "imagen": "/static/images/flyers/inktober-vampiro.png",
+      "titulo": "Inktober Vampiro"
     }
   ]
 }
