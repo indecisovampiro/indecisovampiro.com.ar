@@ -3,7 +3,7 @@
     {
       "musicalizacion": "@wilson.vvilson",
       "descripcion": "Adentrensé al mágico mundo sonoro de la selección musical de otra persona. Cada programa un tópico diferente, semana tras semana vas a viajar desde del lejano oeste hasta el cercano presente. \\\n\\\nCurado y comentado por [@wilson.vvilson](https://www.instagram.com/wilson.vvilson/)",
-      "invisible": false,
+      "invisible": true,
       "contacto": "lautaro.w@gmail.com / @wilson.vvilson",
       "imagen": "/static/images/programacion/algunas-de-algo.png",
       "hora": "21:00",
