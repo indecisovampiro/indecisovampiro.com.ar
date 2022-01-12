@@ -23,7 +23,7 @@
     "html-to-text": "^8.0.0",
     "js-yaml": "^4.1.0",
     "luxon": "^1.28.0",
-    "markdown-it": "^12.2.0",
+    "markdown-it": "^12.3.2",
     "tailwindcss": "^2.2.15"
   },
   "devDependencies": {
