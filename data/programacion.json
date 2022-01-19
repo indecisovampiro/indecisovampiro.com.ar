@@ -15,6 +15,22 @@
       "dia": "Lunes "
     },
     {
+      "musicalizacion": "Martín Sanzano",
+      "descripcion": "Podcast sobre discos con un único fin: que los protagonistas hablen de sus obras.",
+      "invisible": false,
+      "contacto": "@martinsanzano",
+      "imagen": "/static/images/programacion/disco_compacto-01-01.png",
+      "hora": "23:00",
+      "tags": [
+        "Musica",
+        "Entrevista",
+        "Discos",
+        "Podcast"
+      ],
+      "titulo": "Disco Compacto",
+      "dia": "Martes"
+    },
+    {
       "musicalizacion": "Indeciso Vampiro",
       "descripcion": "Selección indecisa de recitales en vivo de cualquier año, cualquier lugar e idioma.",
       "invisible": false,
@@ -27,6 +43,19 @@
       ],
       "titulo": "Vivo indeciso",
       "dia": "Miércoles"
+    },
+    {
+      "musicalizacion": "Emilio y Alejandro Valencia",
+      "descripcion": "Un podcast que llegó para desempolvar producciones de cine que ninguna plataforma, ni\nalgoritmo, te va a recomendar. Un mano a mano con dos films por episodio, elegidos para\nser vistos uno tras otro, como en los viejos tiempos\n\nUna producción de NTET Podcast.",
+      "invisible": false,
+      "contacto": "noteentusiasmes@gmail.com",
+      "imagen": "/static/images/programacion/doblefuncion-02.png",
+      "hora": "21:00",
+      "tags": [
+        "Podcast"
+      ],
+      "titulo": "Doble Función",
+      "dia": "Jueves"
     },
     {
       "episodios": [
@@ -55,35 +84,6 @@
       ],
       "titulo": "La nave de cristal",
       "dia": "Viernes"
-    },
-    {
-      "musicalizacion": "El cieguito volador",
-      "descripcion": "Encuentro rockero para encarar el inicio del fin de semana con chascarrillos y charlas inesperadas sobre cosas que sucedieron en la semana y cosas que no van a suceder nunca.",
-      "invisible": false,
-      "contacto": "Alanespinoza1990@gmail.com",
-      "imagen": "/static/images/programacion/dos-pajaros-de-un-tiro-02-01.png",
-      "hora": "15:00",
-      "tags": [
-        "Musica",
-        "Tertulia",
-        "Simpsons",
-        "rock"
-      ],
-      "titulo": "Dos pájaros de un tiro",
-      "dia": "Viernes"
-    },
-    {
-      "musicalizacion": "Emilio y Alejandro Valencia",
-      "descripcion": "Un podcast que llegó para desempolvar producciones de cine que ninguna plataforma, ni\nalgoritmo, te va a recomendar. Un mano a mano con dos films por episodio, elegidos para\nser vistos uno tras otro, como en los viejos tiempos\n\nUna producción de NTET Podcast.",
-      "invisible": false,
-      "contacto": "noteentusiasmes@gmail.com",
-      "imagen": "/static/images/programacion/doblefuncion-02.png",
-      "hora": "21:00",
-      "tags": [
-        "Podcast"
-      ],
-      "titulo": "Doble Función",
-      "dia": "Jueves"
     },
     {
       "musicalizacion": "Mauro Hernández",
