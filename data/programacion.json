@@ -88,7 +88,7 @@
     {
       "musicalizacion": "Alejandro Valencia",
       "descripcion": "No sabía operar, no sabía editar y no subía los contenidos a las plataformas. Ahora tampoco lo sé. Pero lo hago. DO IT YOURSELF. Así nació UNA VIEJA, UNA CUALQUIERA Y UNA NUEVA. Como si estuviera mandando mi propia cápsula del tiempo para que alguien la escuche en mil años (¡o ahora mismo!).\n\n Tres canciones pegajosas, húmedas y un poco ventosas, que me gustan, y espero que a vos también. Estás invitada/o a oírlas.",
-      "invisible": true,
+      "invisible": false,
       "contacto": "@alejandroush",
       "imagen": "/static/images/programacion/una-vieja-nueva-cualquiera-02-02.png",
       "hora": "24:00",
