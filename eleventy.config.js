@@ -2,10 +2,6 @@ const yaml = require('js-yaml')
 const { readableDate, renderUsingMarkdown, renderAsText } = require('./src/filters')
 
 module.exports = function (config) {
-  // Defaults
-  config.setDataDeepMerge(true)
-  config.addWatchTarget('_site/tailwind.css')
-
   // Copy
   config.addPassthroughCopy({
     'netlifycms.yml': 'admin/config.yml',
@@ -36,6 +32,7 @@ module.exports = function (config) {
   return {
     dir: {
       input: 'pages',
+      output: 'public',
       includes: '../includes',
       layouts: '../layouts',
       data: '../data'

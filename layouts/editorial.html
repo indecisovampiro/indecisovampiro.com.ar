@@ -1,43 +1,59 @@
 <!DOCTYPE html>
 <html lang="es-AR">
-
   <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"/>
-    <link href="/tailwind.css" rel="stylesheet"/>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"
+    />
+    <link href="/main.css" rel="stylesheet" />
     <script src="/alpine.js" defer></script>
     <title>{{ settings.title }}</title>
-    <meta name="description" content="{{ producto.descripcion | renderUsingMarkdown | renderAsText }}">
-    <meta name="robots" content="index,follow">
-    <meta name="author" content="{{ settings.author }}">
+    <meta
+      name="description"
+      content="{{ producto.descripcion | renderUsingMarkdown | renderAsText }}"
+    />
+    <meta name="robots" content="index,follow" />
+    <meta name="author" content="{{ settings.author }}" />
 
-    <link rel="canonical" href="{{ settings.url }}{{ page.url }}">
+    <link rel="canonical" href="{{ settings.url }}{{ page.url }}" />
 
-    <meta property="og:title" content="{{ producto.titulo }}">
-    <meta property="og:type" content="article">
-    <meta property="og:url" content="{{ settings.url }}{{ page.url }}">
-    <meta property="og:description" content="{{ producto.descripcion | renderUsingMarkdown | renderAsText }}">
-    <meta property="og:image" content="{{ settings.url }}{{ producto.imagen }}">
+    <meta property="og:title" content="{{ producto.titulo }}" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="{{ settings.url }}{{ page.url }}" />
+    <meta
+      property="og:description"
+      content="{{ producto.descripcion | renderUsingMarkdown | renderAsText }}"
+    />
+    <meta
+      property="og:image"
+      content="{{ settings.url }}{{ producto.imagen }}"
+    />
 
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:url" content="{{ settings.url }}{{ page.url }}">
-    <meta name="twitter:title" content="{{ producto.titulo }}">
-    <meta name="twitter:description" content="{{ producto.descripcion | renderUsingMarkdown | renderAsText }}">
-    <meta name="twitter:image" content="{{ settings.url }}{{ producto.imagen }}">
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:url" content="{{ settings.url }}{{ page.url }}" />
+    <meta name="twitter:title" content="{{ producto.titulo }}" />
+    <meta
+      name="twitter:description"
+      content="{{ producto.descripcion | renderUsingMarkdown | renderAsText }}"
+    />
+    <meta
+      name="twitter:image"
+      content="{{ settings.url }}{{ producto.imagen }}"
+    />
 
-    <meta name="x-base-url" content="{{ site.url }}"/>
+    <meta name="x-base-url" content="{{ site.url }}" />
     <style>
-      [x-cloak] { display: none !important; }
+      [x-cloak] {
+        display: none !important;
+      }
     </style>
   </head>
 
-  <body style="background-image: linear-gradient(#000000, #00355A);">
+  <body style="background-image: linear-gradient(#000000, #00355a)">
     {% include '_header.html' %}
-    <main class="mb-auto">
-      {{ content }}
-    </main>
+    <main class="mb-auto">{{ content }}</main>
     {% include '_footer.html' %}
     <script src="{{ site.url }}/static/js/mini-spa.js"></script>
   </body>
-
 </html>

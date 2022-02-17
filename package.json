@@ -1,19 +1,16 @@
 {
   "private": true,
   "scripts": {
-    "start": "npm-run-all --parallel dev:tailwind dev:eleventy",
-    "dev": "npm-run-all --parallel dev:netlifycms dev:tailwind dev:eleventy",
-    "dev:eleventy": "eleventy --serve --quiet --config=eleventy.js",
-    "dev:tailwind": "tailwindcss -i tailwind.css -c tailwind.config.js -o _site/tailwind.css --watch",
+    "dev": "run-p dev:netlifycms dev:tailwind dev:eleventy",
+    "dev:eleventy": "eleventy --serve --config=eleventy.config.js --quiet",
+    "dev:tailwind": "tailwindcss -i tailwind.css -c tailwind.config.js -o public/main.css --watch",
     "dev:netlifycms": "netlify-cms-proxy-server",
-    "build": "npm-run-all --serial build:eleventy build:tailwind",
-    "build:eleventy": "cross-env NODE_ENV=production eleventy --config=eleventy.js",
-    "build:tailwind": "cross-env NODE_ENV=production tailwindcss -i tailwind.css -c tailwind.config.js -o _site/tailwind.css --minify",
+    "build": "run-s build:eleventy build:tailwind",
+    "build:eleventy": "NODE_ENV=production eleventy --config=eleventy.config.js",
+    "build:tailwind": "NODE_ENV=production tailwindcss -i tailwind.css -c tailwind.config.js -o public/main.css --minify",
     "debug": "DEBUG=Eleventy* eleventy",
-    "clean": "rimraf _site"
-  },
-  "eslintConfig": {
-    "extends": "standard"
+    "start": "npm run dev",
+    "clean": "rm -rf public"
   },
   "dependencies": {
     "@11ty/eleventy": "^1.0.0",
@@ -27,11 +24,9 @@
     "tailwindcss": "^3.0.23"
   },
   "devDependencies": {
-    "cross-env": "^7.0.3",
-    "eslint": "^8.9.0",
-    "eslint-config-standard": "^16.0.3",
     "netlify-cms-proxy-server": "^1.3.23",
     "npm-run-all": "^4.1.5",
-    "rimraf": "^3.0.2"
+    "prettier": "^2.5.1",
+    "prettier-plugin-tailwindcss": "^0.1.7"
   }
 }
