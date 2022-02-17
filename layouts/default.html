@@ -7,7 +7,7 @@
     <link href="/tailwind.css" rel="stylesheet"/>
     <script src="/alpine.js" defer></script>
     <script src="/router.js" defer></script>
-    {% include _seo.html %}
+    {% include '_seo.html' %}
     <meta name="x-base-url" content="{{ site.url }}"/>
     <style>
       [x-cloak] { display: none !important; }
@@ -17,11 +17,11 @@
   <body
     class="flex flex-col justify-between"
     style="background-image: linear-gradient(#000000, #00355A);">
-    {% include _header.html %}
+    {% include '_header.html' %}
     <main class="mb-auto">
       {{ content }}
     </main>
-    {% include _footer.html %}
+    {% include '_footer.html' %}
     {% if path == "home" %}<script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>{% endif %}
   </body>
 
