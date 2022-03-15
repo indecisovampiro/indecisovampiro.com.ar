@@ -3,11 +3,11 @@ layout: default
 ---
 
 <section class="x y">
-  <div class="max-w-2xl mx-auto">
+  <div class="mx-auto max-w-2xl">
     {% for post in collections.post reversed %}
-    <article class="my-8 bg-[#242526] rounded-3xl">
+    <article class="my-8 flex flex-col rounded-3xl bg-[#242526]">
       <!-- Header -->
-      <div class="p-4 rounded-3xl">
+      <div class="rounded-3xl p-4">
         <h2 class="mb-2 text-3xl font-bold">
           <!--<a href="{{ post.url | url }}">{% if post.data.title %}{{ post.data.title }}{% else %}Untitled{% endif %}</a>-->
           {% if post.data.title %}{{ post.data.title }}{% else %}Untitled{% endif %}
@@ -17,8 +17,10 @@ layout: default
         </p>
         <div class="mb-3 text-lg">{{ post.templateContent }}</div>
       </div>
-      <!--<p><a href="{{ post.url | url }}" class="text-lg font-bold text-indigo-500"> Read more → </a></p>-->
-      <img class="w-full" src="{{ post.data.image }}" alt="" loading="lazy">
+      <!-- Image -->
+      <div class="flex w-full items-center justify-center bg-black align-middle">
+        <img class="max-h-[28rem]" src="{{ post.data.image }}" alt="" loading="lazy" />
+      </div>
     </article>
     {% endfor %}
   </div>
