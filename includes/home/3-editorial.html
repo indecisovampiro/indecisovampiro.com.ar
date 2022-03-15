@@ -1,10 +1,10 @@
 <!-- Editorial -->
-<section id="editorial" class="flex flex-col items-center justify-center y">
+<section id="editorial" class="y flex flex-col items-center justify-center">
   <!-- Wrapper -->
-  <div class="flex flex-col x">
+  <div class="x flex flex-col">
     <!-- Titulo -->
     <div class="flex flex-col self-stretch px-5 sm:px-0">
-      <div class="flex flex-col items-end self-end w-3/4 border-t-2 border-[#0C4967]">
+      <div class="flex w-3/4 flex-col items-end self-end border-t-2 border-[#0C4967]">
         <h2 class="text-base font-bold sm:text-lg">
           fanzines
           <span class="text-gray-600">,</span>
@@ -17,10 +17,17 @@
     </div>
 
     <!-- Card -->
-    <div class="flex items-stretch justify-center gap-16 p-5 bg-center bg-no-repeat bg-cover sm:p-20"
-      style="background-image: url('/static/images/backgrounds/editorial.png');">
+    <div
+      class="flex items-stretch justify-center gap-16 bg-cover bg-center bg-no-repeat p-5 sm:p-20"
+      style="background-image: url('/static/images/backgrounds/editorial.png')"
+    >
       <!-- Only Desktop: Pila -->
-      <img loading="lazy" class="hidden md:block w-60" src="/static/images/pila.png" alt="Pila de Fanzines">
+      <img
+        loading="lazy"
+        class="hidden w-60 md:block"
+        src="/static/images/pila.png"
+        alt="Pila de Fanzines"
+      />
 
       <!-- Items -->
       <div class="flex flex-col items-center justify-around gap-8 md:gap-0">
@@ -29,19 +36,26 @@
           {% for producto in editorial.editorial limit:4 %}
           <!-- https://stackoverflow.com/questions/1495407/maintain-the-aspect-ratio-of-a-div-with-css -->
           <div class="grid">
-            <svg viewBox="0 0 210 297" style="grid-area: 1/1;"></svg>
-            <div class="flex items-center" style="grid-area: 1/1;">
+            <svg viewBox="0 0 210 297" style="grid-area: 1/1"></svg>
+            <div class="flex items-center" style="grid-area: 1/1">
               <a href="/catalogo/{{ producto.titulo | slug }}/">
-                <img loading="lazy" class="duration-300 transform motion-safe:hover:scale-110" src="{{ producto.imagen }}" alt="">
+                <img
+                  loading="lazy"
+                  class="transform duration-300 motion-safe:hover:scale-110"
+                  src="{{ producto.imagen }}"
+                  alt=""
+                />
               </a>
             </div>
           </div>
           {% endfor %}
         </div>
         <!-- Button -->
-        <a class="flex items-center justify-center p-2 text-3xl uppercase border-2 rounded-3xl sm:text-4xl hover:text-gray-300"
-           style="background-image: linear-gradient(#9e005d, #ff7bac)"
-           href="/catalogo">
+        <a
+          class="flex items-center justify-center rounded-3xl border-2 p-2 text-3xl uppercase hover:text-gray-300 sm:text-4xl"
+          style="background-image: linear-gradient(#9e005d, #ff7bac)"
+          href="/catalogo"
+        >
           Catálogo Completo
         </a>
       </div>
@@ -50,10 +64,14 @@
 
   <!-- Boton -->
   <div class="w-full">
-    <p class="px-5 text-base uppercase sm:pl-20 sm:text-2xl">QUÉRES SER PARTE DE LA FANZINEADA COLECTIVA INDECISA?</p>
-    <a class="block pr-4 sm:pr-16" rel="noopener noreferrer" target="_blank" href="{{ settings.email }}">
-      <div class="h-12 bg-right bg-no-repeat bg-cover sm:h-16"
-        style="background-image: url('/static/images/buttons/email.png');"></div>
+    <p class="px-5 text-base uppercase sm:pl-20 sm:text-2xl">
+      QUÉRES SER PARTE DE LA FANZINEADA COLECTIVA INDECISA?
+    </p>
+    <a class="block pr-4 sm:pr-16" href="{{ settings.email }}">
+      <div
+        class="h-12 bg-cover bg-right bg-no-repeat sm:h-16"
+        style="background-image: url('/static/images/buttons/email.png')"
+      ></div>
     </a>
   </div>
 </section>

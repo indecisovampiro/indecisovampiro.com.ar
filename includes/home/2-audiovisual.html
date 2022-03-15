@@ -1,11 +1,11 @@
 <!-- Audiovisuales -->
-<section id="audiovisual" class="flex flex-col items-center justify-center y">
+<section id="audiovisual" class="y flex flex-col items-center justify-center">
   <!-- Wrapper -->
-  <div class="flex flex-col x">
+  <div class="x flex flex-col">
     <!-- Titulo -->
     <div class="flex flex-col self-stretch">
       <!-- Separador -->
-      <div class="flex flex-col items-end self-end w-3/4 border-t-2 border-[#0C4967]">
+      <div class="flex w-3/4 flex-col items-end self-end border-t-2 border-[#0C4967]">
         <h2 class="text-base font-bold sm:text-lg">
           sesiones
           <span class="text-gray-600">,</span>
@@ -19,27 +19,20 @@
       <!-- Titulo -->
       <h1 class="h1 self-start text-[#EDEDED]">Audiovisual</h1>
     </div>
-    {% for a in audiovisual.audiovisual %}
-      {%
-        include '_card.html'
-        titulo:a.titulo
-        logo:a.logo
-        background:a.background
-        descripcion:a.descripcion
-        imagen:a.imagen
-        plataforma:a.plataforma
-        url-texto:a.url-texto
-        url:a.url
-        isBgLight:a.isBgLight
-      %}
-    {% endfor %}
+    {% for a in audiovisual.audiovisual %} {% include '_card.html' titulo:a.titulo logo:a.logo
+    background:a.background descripcion:a.descripcion imagen:a.imagen plataforma:a.plataforma
+    url-texto:a.url-texto url:a.url isBgLight:a.isBgLight %} {% endfor %}
   </div>
   <!-- Boton -->
   <div class="w-full">
-    <p class="px-5 text-base uppercase sm:pl-20 sm:text-2xl">Escucha y mira todo en nuestro canal de Youtube</p>
-    <a class="block pr-5 sm:pr-20" rel="noopener noreferrer" target="_blank" href="{{ settings.youtube }}">
-      <div class="h-12 bg-right bg-no-repeat bg-cover sm:h-16"
-        style="background-image: url('/static/images/buttons/youtube.png');"></div>
+    <p class="px-5 text-base uppercase sm:pl-20 sm:text-2xl">
+      Escucha y mira todo en nuestro canal de Youtube
+    </p>
+    <a class="block pr-5 sm:pr-20" href="{{ settings.youtube }}">
+      <div
+        class="h-12 bg-cover bg-right bg-no-repeat sm:h-16"
+        style="background-image: url('/static/images/buttons/youtube.png')"
+      ></div>
     </a>
   </div>
 </section>

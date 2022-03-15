@@ -1,7 +1,7 @@
 <!-- Mobile -->
 <header class="sticky top-0 z-10 w-full bg-black md:hidden" x-data="{ isOpen: false }">
   <!-- Bar -->
-  <div class="flex items-center justify-between max-w-screen-lg p-2 mx-auto">
+  <div class="mx-auto flex max-w-screen-lg items-center justify-between p-2">
     <!-- Left -->
     <a href="/">
       <img loading="lazy" class="h-12" src="/static/images/logo.png" alt="Indeciso Vampiro" />
@@ -10,14 +10,14 @@
     <div class="flex items-center justify-center gap-3">
       <!-- Icons -->
       {% for x in settings.nav.mobile %}
-        <a class="hover:text-gray-300" rel="noopener noreferrer" target="_blank" href="{{ x.href }}">
-          <svg class="w-6 h-6">
-            <use xlink:href="/static/sprite.svg#{{ x.icon }}"></use>
-          </svg>
-        </a>
+      <a class="hover:text-gray-300" href="{{ x.href }}">
+        <svg class="h-6 w-6">
+          <use xlink:href="/static/sprite.svg#{{ x.icon }}"></use>
+        </svg>
+      </a>
       {% endfor %}
       <button @click="isOpen = !isOpen" type="button">
-        <svg class="w-8 h-8">
+        <svg class="h-8 w-8">
           <use x-show="!isOpen" xlink:href="/static/sprite.svg#bars"></use>
           <use x-show="isOpen" xlink:href="/static/sprite.svg#times" x-cloak></use>
         </svg>
@@ -25,41 +25,49 @@
     </div>
   </div>
   <!-- List -->
-  <nav class="flex flex-col justify-between gap-3 px-2 pb-2" :class="isOpen ? 'block' : 'hidden'" x-cloak>
+  <nav
+    class="flex flex-col justify-between gap-3 px-2 pb-2"
+    :class="isOpen ? 'block' : 'hidden'"
+    x-cloak
+  >
     {% for x in settings.nav.main %}
-      <a class="text-xl font-semibold uppercase hover:text-gray-300" href="{{ x.href }}">{{ x.title }}</a>
+    <a class="text-xl font-semibold uppercase hover:text-gray-300" href="{{ x.href }}"
+      >{{ x.title }}</a
+    >
     {% endfor %}
   </nav>
 </header>
 
 <!-- Desktop -->
-<header class="sticky top-0 z-10 hidden w-full bg-black border-b-2 border-white md:block">
+<header class="sticky top-0 z-10 hidden w-full border-b-2 border-white bg-black md:block">
   <!-- Bar -->
-  <div class="flex items-center justify-between max-w-screen-lg p-2 mx-auto">
+  <div class="mx-auto flex max-w-screen-lg items-center justify-between p-2">
     <!-- Left -->
     <div class="flex items-center justify-center gap-5">
       {% for x in settings.nav.left %}
-        <a class="hover:text-gray-300" rel="noopener noreferrer" target="_blank" href="{{ x.href }}">
-          <svg class="w-6 h-6">
-            <use xlink:href="/static/sprite.svg#{{ x.icon }}"></use>
-          </svg>
-        </a>
+      <a class="hover:text-gray-300" href="{{ x.href }}">
+        <svg class="h-6 w-6">
+          <use xlink:href="/static/sprite.svg#{{ x.icon }}"></use>
+        </svg>
+      </a>
       {% endfor %}
     </div>
     <!-- Middle -->
     <nav class="flex items-center justify-between gap-7">
       {% for x in settings.nav.main %}
-        <a class="text-xl font-semibold uppercase hover:text-gray-300" href="{{ x.href }}">{{ x.title }}</a>
+      <a class="text-xl font-semibold uppercase hover:text-gray-300" href="{{ x.href }}"
+        >{{ x.title }}</a
+      >
       {% endfor %}
     </nav>
     <!-- Right -->
     <div class="flex items-center justify-center gap-5">
       {% for x in settings.nav.right %}
-        <a class="hover:text-gray-300" rel="noopener noreferrer" target="_blank" href="{{ x.href }}">
-          <svg class="w-6 h-6">
-            <use xlink:href="/static/sprite.svg#{{ x.icon }}"></use>
-          </svg>
-        </a>
+      <a class="hover:text-gray-300" href="{{ x.href }}">
+        <svg class="h-6 w-6">
+          <use xlink:href="/static/sprite.svg#{{ x.icon }}"></use>
+        </svg>
+      </a>
       {% endfor %}
     </div>
   </div>

@@ -1,24 +1,30 @@
 ---
 layout: editorial
 pagination:
-    data: editorial.editorial
-    size: 1
-    alias: producto
-permalink: "catalogo/{{ producto.titulo | slug }}/"
+  data: editorial.editorial
+  size: 1
+  alias: producto
+permalink: 'catalogo/{{ producto.titulo | slug }}/'
 ---
+
 <!-- Logo -->
 <section class="flex items-center justify-center pt-16 sm:pt-24">
   <a href="/catalogo">
-    <img loading="lazy" class="w-56 py-10" src="/static/images/logos/editorial-vampira.png" alt="">
+    <img
+      loading="lazy"
+      class="w-56 py-10"
+      src="/static/images/logos/editorial-vampira.png"
+      alt=""
+    />
   </a>
 </section>
 
 <!-- Card -->
-<section class="flex flex-col items-center justify-center py-24 x sm:py-32 sm:flex-row">
+<section class="x flex flex-col items-center justify-center py-24 sm:flex-row sm:py-32">
   <!-- Imagen -->
-  <img loading="lazy" class="max-w-md max-h-[32rem]" src="{{ producto.imagen }}" alt="">
+  <img loading="lazy" class="max-h-[32rem] max-w-md" src="{{ producto.imagen }}" alt="" />
   <!-- Descripcion -->
-  <div class="flex flex-col justify-between gap-4 my-4">
+  <div class="my-4 flex flex-col justify-between gap-4">
     <!-- Top -->
     <div class="flex flex-col gap-4">
       <!-- Header -->
@@ -26,21 +32,29 @@ permalink: "catalogo/{{ producto.titulo | slug }}/"
         <!-- Titulo -->
         <h1 class="text-3xl uppercase sm:text-5xl">{{ producto.titulo }}</h1>
         <!-- Subtitulo -->
-        <h3 class="text-2xl text-blue-800 uppercase">
+        <h3 class="text-2xl uppercase text-blue-800">
           {{ producto.subtitulo | renderUsingMarkdown }}
         </h3>
       </div>
       <!-- Descripcion -->
-      <div class="prose text-justify prose-dark">{{ producto.descripcion | renderUsingMarkdown }}</div>
+      <div class="prose prose-dark text-justify">
+        {{ producto.descripcion | renderUsingMarkdown }}
+      </div>
       <!-- Precio -->
-      <h1 class="text-4xl text-blue-800 uppercase">{% if producto.precio == 0 %}GRATIS{% else %}${{ producto.precio }}{% endif %}{% if producto.agotado %} (AGOTADO){% endif %}</h1>
+      <h1 class="text-4xl uppercase text-blue-800">
+        {% if producto.precio == 0 %}GRATIS{% else %}${{ producto.precio }}{% endif %}{% if
+        producto.agotado %} (AGOTADO){% endif %}
+      </h1>
     </div>
     <!-- Bottom -->
     <div class="flex items-start justify-between">
       <div class="flex flex-col">
         <!-- Comprar -->
-        <a class="hover:text-gray-300 flex items-center justify-center p-2 text-lg uppercase border-2 sm:text-3xl {% if producto.agotado %}pointer-events-none text-gray-300 line-through{% endif %}" href="{{ producto.url }}">
-          <svg class="w-6 h-6 mr-2">
+        <a
+          class="{% if producto.agotado %}pointer-events-none line-through{% endif %} flex items-center justify-center border-2 p-2 text-lg uppercase text-gray-300 hover:text-gray-300 sm:text-3xl"
+          href="{{ producto.url }}"
+        >
+          <svg class="mr-2 h-6 w-6">
             <use xlink:href="/static/sprite.svg#shopping-cart"></use>
           </svg>
           Comprar
@@ -48,20 +62,29 @@ permalink: "catalogo/{{ producto.titulo | slug }}/"
       </div>
       <!-- Compartir -->
       <div class="flex flex-col gap-2">
-        <p class="text-base text-right border-b-2 border-blue-900">Compartir</p>
+        <p class="border-b-2 border-blue-900 text-right text-base">Compartir</p>
         <div class="flex gap-2">
-          <a class="hover:text-gray-300" rel="noopener noreferrer" target="_blank" href="https://wa.me/?text={{ settings.url }}{{ page.url }}">
-            <svg class="w-5 h-5">
+          <a
+            class="hover:text-gray-300"
+            href="https://wa.me/?text={{ settings.url }}{{ page.url }}"
+          >
+            <svg class="h-5 w-5">
               <use xlink:href="/static/sprite.svg#whatsapp"></use>
             </svg>
           </a>
-          <a class="hover:text-gray-300" rel="noopener noreferrer" target="_blank" href="https://twitter.com/intent/tweet?url={{ settings.url }}{{ page.url }}">
-            <svg class="w-5 h-5">
+          <a
+            class="hover:text-gray-300"
+            href="https://twitter.com/intent/tweet?url={{ settings.url }}{{ page.url }}"
+          >
+            <svg class="h-5 w-5">
               <use xlink:href="/static/sprite.svg#twitter"></use>
             </svg>
           </a>
-          <a class="hover:text-gray-300" rel="noopener noreferrer" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ settings.url }}{{ page.url }}">
-            <svg class="w-5 h-5">
+          <a
+            class="hover:text-gray-300"
+            href="https://www.facebook.com/sharer/sharer.php?u={{ settings.url }}{{ page.url }}"
+          >
+            <svg class="h-5 w-5">
               <use xlink:href="/static/sprite.svg#facebook"></use>
             </svg>
           </a>

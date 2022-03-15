@@ -4,6 +4,7 @@ const MarkdownIt = require('markdown-it')
 const { DateTime } = require('luxon')
 const { convert } = require('html-to-text')
 const htmlmin = require('html-minifier')
+const externalLinks = require('eleventy-plugin-external-links')
 
 const OUTPUT_DIRECTORY = 'public'
 
@@ -64,6 +65,7 @@ module.exports = function (config) {
 
   // Plugins
   config.addDataExtension('yaml', contents => yaml.load(contents))
+  config.addPlugin(externalLinks)
 
   // Filters
   config.addFilter('readableDate', readableDate)

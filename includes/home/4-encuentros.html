@@ -1,4 +1,3 @@
-
 <section id="encuentros" class="y flex flex-col items-center justify-center">
   <!-- Wrapper -->
   <div class="x flex flex-col">
@@ -6,27 +5,17 @@
     <div class="flex flex-col self-stretch">
       <h1 class="h1 self-start text-[#EDEDED]">Encuentros</h1>
     </div>
-    {% for e in encuentros.encuentros %}
-      {%
-        include '_card.html'
-        titulo:e.titulo
-        logo:e.logo
-        background:e.background
-        descripcion:e.descripcion
-        imagen:e.imagen
-        plataforma:e.plataforma
-        url-texto:e.url-texto
-        url:e.url
-        isBgLight:e.isBgLight
-      %}
-    {% endfor %}
+    {% for e in encuentros.encuentros %} {% include '_card.html' titulo:e.titulo logo:e.logo
+    background:e.background descripcion:e.descripcion imagen:e.imagen plataforma:e.plataforma
+    url-texto:e.url-texto url:e.url isBgLight:e.isBgLight %} {% endfor %}
   </div>
   <!-- Button -->
   <div class="w-full">
-    <a class="block pr-5 sm:pr-20" rel="noopener noreferrer" target="_blank" href="{{ settings.instagram }}">
-      <div class="h-14 bg-right bg-no-repeat bg-cover sm:h-20"
-        style="background-image: url('/static/images/buttons/instagram.png');">
-      </div>
+    <a class="block pr-5 sm:pr-20" href="{{ settings.instagram }}">
+      <div
+        class="h-14 bg-cover bg-right bg-no-repeat sm:h-20"
+        style="background-image: url('/static/images/buttons/instagram.png')"
+      ></div>
     </a>
   </div>
 </section>
