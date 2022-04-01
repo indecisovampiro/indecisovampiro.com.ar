@@ -61,6 +61,8 @@ module.exports = function (config) {
     'static/images': 'static/images',
     'static/router.js': 'router.js',
     'node_modules/alpinejs/dist/cdn.min.js': 'alpine.js',
+    'node_modules/flickity/dist/flickity.min.css': 'flickity.min.css',
+    'node_modules/flickity/dist/flickity.pkgd.min.js': 'flickity.pkgd.min.js'
   })
 
   // Plugins

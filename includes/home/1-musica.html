@@ -1,53 +1,21 @@
-{% comment %}
-<!-- Radio en Vivo -->
-<section id="musica" class="x y">
-  <div class="flex flex-col items-center gap-16 sm:gap-24">
-    <!-- Logo -->
-    <img class="w-3/4 sm:hidden" src="/static/images/radio-vampira.png" alt="" loading="lazy" />
-    <img class="hidden sm:block" src="/static/images/radio-vampira.svg" alt="" loading="lazy" />
-    <!-- Title -->
-    <img class="w-3/4 sm:w-1/2" src="/static/images/radio-en-vivo.svg" alt="" loading="lazy" />
-  </div>
-</section>
-{% endcomment %} {% comment %}{% endcomment %}
-<section id="musica">
-  <!-- TODO: Refactor esta mugre de h-<harcodeado> -->
-  <!-- http://css3.bradshawenterprises.com/cfimg/ -->
-  <div id="cf" class="y relative mx-auto h-[300px] max-w-screen-lg sm:h-[485px]">
-    <img class="bottom" src="/static/images/carousel/ochoaslab.png" />
-    <img class="top" src="/static/images/carousel/radioenvivo.png" />
-  </div>
-</section>
+{% include "_carousel.html" %}
 
 <!-- Bajate la App -->
 <section class="bg-bajate-la-app">
   <div class="x flex flex-col items-center justify-center sm:flex-row">
     <!-- Titulo -->
     <div class="w-4/5 sm:order-2 sm:w-full">
-      <img class="w-full" loading="lazy" src="/static/images/bajate-la-app.svg" alt="" />
+      <img alt="" class="w-full" loading="lazy" src="/static/images/bajate-la-app.svg"/>
     </div>
     <!-- Imagen -->
-    <img loading="lazy" class="w-52 sm:order-1" src="/static/images/app.png" alt="" />
+    <img alt="" class="w-52 sm:order-1" loading="lazy" src="/static/images/app.png"/>
     <!-- Boton -->
     <div class="flex w-full gap-4 sm:order-3">
       <a class="flex w-2/3 items-center justify-center" href="{{ settings.app-store }}">
-        <img
-          loading="lazy"
-          class="w-48 transform duration-300 motion-safe:hover:scale-110"
-          src="/static/images/buttons/app-store.png"
-          alt=""
-        />
+        <img alt="" class="w-48 transform duration-300 motion-safe:hover:scale-110" loading="lazy" src="/static/images/buttons/app-store.png"/>
       </a>
-      <a
-        class="flex w-2/3 items-center justify-center sm:order-3"
-        href="{{ settings.google-play }}"
-      >
-        <img
-          loading="lazy"
-          class="w-48 transform duration-300 motion-safe:hover:scale-110"
-          src="/static/images/buttons/google-play.png"
-          alt=""
-        />
+      <a class="flex w-2/3 items-center justify-center sm:order-3" href="{{ settings.google-play }}">
+        <img alt="" class="w-48 transform duration-300 motion-safe:hover:scale-110" loading="lazy" src="/static/images/buttons/google-play.png"/>
       </a>
     </div>
   </div>
@@ -55,26 +23,20 @@
 
 <!-- Programacion -->
 {% if programacion.invisible != true %}
-<section class="x y flex flex-col">
-  <h2 class="h2 text-gray-700">Programación Indecisa</h2>
-  <div class="flex flex-wrap justify-center gap-1 sm:gap-4">
-    {% for programa in programacion.programacion %} {% if programa.invisible != true %}
-    <a class="w-52" href="/programas/{{ programa.titulo | slug }}/">
-      <img
-        loading="lazy"
-        class="transform duration-300 motion-safe:hover:scale-110"
-        src="{{ programa.imagen }}"
-        alt="{{ programa.titulo }}"
-      />
-    </a>
-    {% endif %} {% endfor %}
-  </div>
-</section>
-<!-- Separador -->
-<div
-  class="m-auto border-t-2 px-20"
-  style="max-width: calc(1024px - 5rem * 2); border-color: #1db954"
-></div>
+  <section class="x y flex flex-col">
+    <h2 class="h2 text-gray-700">Programación Indecisa</h2>
+    <div class="flex flex-wrap justify-center gap-1 sm:gap-4">
+      {% for programa in programacion.programacion %}
+        {% if programa.invisible != true %}
+          <a class="w-52" href="/programas/{{ programa.titulo | slug }}/">
+            <img loading="lazy" class="transform duration-300 motion-safe:hover:scale-110" src="{{ programa.imagen }}" alt="{{ programa.titulo }}"/>
+          </a>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </section>
+  <!-- Separador -->
+  <div class="m-auto border-t-2 px-20" style="max-width: calc(1024px - 5rem * 2); border-color: #1db954"></div>
 {% endif %}
 
 <!-- Streaming -->
@@ -84,17 +46,9 @@
     <!-- Desktop -->
     <div class="flex items-stretch justify-around gap-8 sm:gap-16">
       <!-- Widget Playlist -->
-      <!-- Visible only on Desktop -->
+                                                                        <!-- Visible only on Desktop -->
       <div class="hidden items-center justify-center sm:flex">
-        <iframe
-          src="https://open.spotify.com/embed/playlist/1iSMIpcONhHVZN0DTmS2kV"
-          width="300"
-          height="315"
-          frameborder="0"
-          allowtransparency="true"
-          allow="encrypted-media"
-          loading="lazy"
-        ></iframe>
+        <iframe allow="encrypted-media" allowtransparency="true" frameborder="0" height="315" loading="lazy" src="https://open.spotify.com/embed/playlist/1iSMIpcONhHVZN0DTmS2kV" width="300"></iframe>
       </div>
       <!-- Descripcion -->
       <div class="flex flex-col justify-around">
@@ -104,36 +58,28 @@
           <!-- Paragraph -->
           <p class="px-8 text-lg">
             ¿Sólo escuchas cosas en Spotify? También estamos ahí con la selección de música vampira.
-            Podés encontrarlas en nuestra cuenta y las actualizamos constantemente.
+                                                                                                                                                Podés encontrarlas en nuestra cuenta y las actualizamos constantemente.
           </p>
         </div>
         <!-- Nuestras Playlists -->
         <div class="mx-8 flex items-center justify-center">
-          <img class="w-full" loading="lazy" src="/static/images/nuestras-playlists.svg" alt="" />
+          <img alt="" class="w-full" loading="lazy" src="/static/images/nuestras-playlists.svg"/>
         </div>
       </div>
     </div>
     <!-- Grid -->
     <div class="flex flex-wrap justify-center gap-2 sm:gap-4">
       {% for p in playlists.playlists %}
-      <a class="w-[8.5rem]" href="{{ p.url }}">
-        <img
-          loading="lazy"
-          class="transform duration-300 motion-safe:hover:scale-110"
-          src="{{ p.imagen }}"
-          alt="{{ p.titulo }}"
-        />
-      </a>
+        <a class="w-[8.5rem]" href="{{ p.url }}">
+          <img loading="lazy" class="transform duration-300 motion-safe:hover:scale-110" src="{{ p.imagen }}" alt="{{ p.titulo }}"/>
+        </a>
       {% endfor %}
     </div>
   </div>
   <!-- Button -->
   <div class="w-full">
     <a class="block pr-5 sm:pr-20" href="{{ settings.spotify }}">
-      <div
-        class="h-12 bg-cover bg-right bg-no-repeat sm:h-16"
-        style="background-image: url('/static/images/buttons/spotify.png')"
-      ></div>
+      <div class="h-12 bg-cover bg-right bg-no-repeat sm:h-16" style="background-image: url('/static/images/buttons/spotify.png')"></div>
     </a>
   </div>
 </section>
