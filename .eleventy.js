@@ -6,7 +6,7 @@ const { convert } = require('html-to-text')
 const htmlmin = require('html-minifier')
 const externalLinks = require('eleventy-plugin-external-links')
 
-const OUTPUT_DIRECTORY = 'public'
+const OUTPUT_DIRECTORY = '_site'
 
 // Filters
 function readableDate(dateObj) {
@@ -62,7 +62,7 @@ module.exports = function (config) {
     'static/router.js': 'router.js',
     'node_modules/alpinejs/dist/cdn.min.js': 'alpine.js',
     'node_modules/flickity/dist/flickity.min.css': 'flickity.min.css',
-    'node_modules/flickity/dist/flickity.pkgd.min.js': 'flickity.pkgd.min.js'
+    'node_modules/flickity/dist/flickity.pkgd.min.js': 'flickity.pkgd.min.js',
   })
 
   // Plugins

@@ -2,15 +2,15 @@
   "private": true,
   "scripts": {
     "dev": "run-p dev:netlifycms dev:tailwind dev:eleventy",
-    "dev:eleventy": "eleventy --serve --config=eleventy.config.js --quiet",
-    "dev:tailwind": "tailwindcss -i tailwind.css -c tailwind.config.js -o public/main.css --watch",
+    "dev:eleventy": "eleventy --serve --quiet --incremental",
+    "dev:tailwind": "tailwindcss -i tailwind.css -o _site/main.css --watch",
     "dev:netlifycms": "netlify-cms-proxy-server",
     "build": "run-s build:eleventy build:tailwind",
-    "build:eleventy": "cross-env NODE_ENV=production eleventy --config=eleventy.config.js",
-    "build:tailwind": "cross-env NODE_ENV=production tailwindcss -i tailwind.css -c tailwind.config.js -o public/main.css --minify",
+    "build:eleventy": "cross-env NODE_ENV=production eleventy",
+    "build:tailwind": "cross-env NODE_ENV=production tailwindcss -i tailwind.css -o _site/main.css --minify",
     "debug": "cross-env DEBUG=Eleventy* eleventy",
-    "start": "npm run dev",
-    "clean": "rimraf public"
+    "start": "run-p dev:tailwind dev:eleventy",
+    "clean": "rm -rf _site"
   },
   "dependencies": {
     "@11ty/eleventy": "^1.0.0",
@@ -25,12 +25,13 @@
     "tailwindcss": "^3.0.23"
   },
   "devDependencies": {
+    "autoprefixer": "^10.0.2",
     "cross-env": "^7.0.3",
     "eleventy-plugin-external-links": "^1.1.2",
     "netlify-cms-proxy-server": "^1.3.23",
     "npm-run-all": "^4.1.5",
+    "postcss": "^8.1.0",
     "prettier": "^2.6.1",
-    "prettier-plugin-tailwindcss": "^0.1.8",
-    "rimraf": "^3.0.2"
+    "prettier-plugin-tailwindcss": "^0.1.8"
   }
 }
