@@ -7,7 +7,29 @@ collections:
     name: files
     editor: { preview: false }
     files:
-      - label: "🔖 Playlists"
+      - label: '🎠 Carousel'
+        name: carousel
+        file: data/carousel.json
+        media_folder: '/static/images/carousel'
+        fields:
+          - label: Carousel
+            name: carousel
+            widget: list
+            allow_add: true
+            fields:
+              - label: Logo
+                name: logo
+                widget: list
+                allow_add: true
+                fields:
+                  - { label: Titulo, name: titulo, widget: string }
+                  - { label: URL, name: url, widget: string, required: false }
+                  - {
+                      label: 'Imagen [320x287] (playlist-<genero>.jpg)',
+                      name: imagen,
+                      widget: image,
+                    }
+      - label: '🔖 Playlists'
         name: playlists
         file: data/playlists.json
         media_folder: '/static/images/playlists'
@@ -19,8 +41,8 @@ collections:
             fields:
               - { label: Titulo, name: titulo, widget: string }
               - { label: URL, name: url, widget: string }
-              - { label: "Imagen [320x287] (playlist-<genero>.jpg)", name: imagen, widget: image }
-      - label: "📻 Programación"
+              - { label: 'Imagen [320x287] (playlist-<genero>.jpg)', name: imagen, widget: image }
+      - label: '📻 Programación'
         name: programacion
         file: data/programacion.json
         media_folder: '/static/images/programacion'
@@ -39,15 +61,22 @@ collections:
                 fields:
                   - { label: Titulo, name: title, widget: string }
                   - { label: URL, name: url, widget: string }
-                  - { label: Fecha, name: fecha, widget: datetime, format: "DD-MM-YYYY", date_format: "DD-MM-YYYY", time_format: false }
+                  - {
+                      label: Fecha,
+                      name: fecha,
+                      widget: datetime,
+                      format: 'DD-MM-YYYY',
+                      date_format: 'DD-MM-YYYY',
+                      time_format: false,
+                    }
               - { label: Imagen, name: imagen, widget: image }
               - { label: Dia, name: dia, widget: string }
               - { label: Horario, name: hora, widget: string }
               - { label: Tags, name: tags, widget: list }
-              - { label: Descripcion, name: descripcion, widget: "markdown" }
+              - { label: Descripcion, name: descripcion, widget: 'markdown' }
               - { label: Musicalizacion, name: musicalizacion, widget: string }
               - { label: Contacto, name: contacto, widget: string }
-      - label: "🎥 Audiovisual"
+      - label: '🎥 Audiovisual'
         name: audiovisual
         file: data/audiovisual.json
         fields:
@@ -58,14 +87,34 @@ collections:
             fields:
               - { label: Titulo, name: titulo, widget: string }
               - { label: Logo, name: logo, widget: image, media_folder: '/static/images/logos' }
-              - { label: 'Es un background claro?', name: isBgLight, widget: boolean, required: true }
-              - { label: Background, name: background, widget: image, media_folder: '/static/images/backgrounds' }
-              - { label: Descripcion, name: descripcion, widget: "markdown" }
-              - { label: Imagen, name: imagen, widget: image, media_folder: '/static/images/flyers' }
-              - { label: Plataforma, name: plataforma, widget: select, options: ["instagram", "youtube"] }
-              - { label: "Texto del Link", name: url-texto, widget: string }
+              - {
+                  label: 'Es un background claro?',
+                  name: isBgLight,
+                  widget: boolean,
+                  required: true,
+                }
+              - {
+                  label: Background,
+                  name: background,
+                  widget: image,
+                  media_folder: '/static/images/backgrounds',
+                }
+              - { label: Descripcion, name: descripcion, widget: 'markdown' }
+              - {
+                  label: Imagen,
+                  name: imagen,
+                  widget: image,
+                  media_folder: '/static/images/flyers',
+                }
+              - {
+                  label: Plataforma,
+                  name: plataforma,
+                  widget: select,
+                  options: ['instagram', 'youtube'],
+                }
+              - { label: 'Texto del Link', name: url-texto, widget: string }
               - { label: URL, name: url, widget: string }
-      - label: "📚 Editorial"
+      - label: '📚 Editorial'
         name: editorial
         file: data/editorial.json
         media_folder: '/static/images/editorial'
@@ -82,7 +131,7 @@ collections:
               - { label: Agotado?, name: agotado, widget: boolean, required: false }
               - { label: URL, name: url, widget: string }
               - { label: Descripcion, name: descripcion, widget: markdown }
-      - label: "🤝 Encuentros"
+      - label: '🤝 Encuentros'
         name: encuentros
         file: data/encuentros.json
         fields:
@@ -93,14 +142,34 @@ collections:
             fields:
               - { label: Titulo, name: titulo, widget: string }
               - { label: Logo, name: logo, widget: image, media_folder: '/static/images/logos' }
-              - { label: 'Es un background claro?', name: isBgLight, widget: boolean, required: true }
-              - { label: Background, name: background, widget: image, media_folder: '/static/images/backgrounds'}
-              - { label: Descripcion, name: descripcion, widget: "markdown" }
-              - { label: Imagen, name: imagen, widget: image, media_folder: '/static/images/flyers' }
-              - { label: Plataforma, name: plataforma, widget: select, options: ["instagram", "youtube"] }
-              - { label: "Texto del Link", name: url-texto, widget: string }
+              - {
+                  label: 'Es un background claro?',
+                  name: isBgLight,
+                  widget: boolean,
+                  required: true,
+                }
+              - {
+                  label: Background,
+                  name: background,
+                  widget: image,
+                  media_folder: '/static/images/backgrounds',
+                }
+              - { label: Descripcion, name: descripcion, widget: 'markdown' }
+              - {
+                  label: Imagen,
+                  name: imagen,
+                  widget: image,
+                  media_folder: '/static/images/flyers',
+                }
+              - {
+                  label: Plataforma,
+                  name: plataforma,
+                  widget: select,
+                  options: ['instagram', 'youtube'],
+                }
+              - { label: 'Texto del Link', name: url-texto, widget: string }
               - { label: URL, name: url, widget: string }
-      - label: "⚙️ Settings"
+      - label: '⚙️ Settings'
         name: settings
         file: data/settings.yaml
         fields:
@@ -108,9 +177,9 @@ collections:
           - { label: Titulo, name: title, widget: string }
           - { label: Descripcion, name: description, widget: string }
           - { label: Author, name: author, widget: string }
-          - { label: "Open Graph", name: image, widget: string }
-          - { label: "App Store", name: app-store, widget: string }
-          - { label: "Google Play", name: google-play, widget: string }
+          - { label: 'Open Graph', name: image, widget: string }
+          - { label: 'App Store', name: app-store, widget: string }
+          - { label: 'Google Play', name: google-play, widget: string }
           - { label: Youtube, name: youtube, widget: string }
           - { label: Facebook, name: facebook, widget: string }
           - { label: Instagram, name: instagram, widget: string }
@@ -129,10 +198,10 @@ collections:
       - { label: Titulo, name: title, widget: string }
       - { label: Fecha, name: date, widget: datetime }
       - widget: select
-        label: "tags"
-        name: "tags"
+        label: 'tags'
+        name: 'tags'
         multiple: true
         create: true
-        options: ["noticias", "fanzines", "eventos", "encuentros", "talleres"]
-      - { label: "Texto", name: "body", widget: "markdown" }
-      - { label: "Imagen", name: image, widget: image }
+        options: ['noticias', 'fanzines', 'eventos', 'encuentros', 'talleres']
+      - { label: 'Texto', name: 'body', widget: 'markdown' }
+      - { label: 'Imagen', name: image, widget: image }

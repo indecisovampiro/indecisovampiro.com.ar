@@ -1,0 +1,35 @@
+{
+  "carousel": [
+    {
+      "logo": [
+        {
+          "titulo": "Radio En Vivo",
+          "imagen": "/static/images/carousel/radioenvivo.png"
+        }
+      ]
+    },
+    {
+      "logo": [
+        {
+          "titulo": "8AS",
+          "url": "https://www.8astdf.com/banos-quimicos",
+          "imagen": "/static/images/carousel/8as.svg"
+        },
+        {
+          "titulo": "Labo Marie",
+          "url": "https://www.instagram.com/labo.mariee/",
+          "imagen": "/static/images/carousel/labomarie.svg"
+        }
+      ]
+    },
+    {
+      "logo": [
+        {
+          "url": "https://www.instagram.com/690graffshhop/",
+          "titulo": "690 GRAFFITI SHHOP",
+          "imagen": "/static/images/carousel/690.png"
+        }
+      ]
+    }
+  ]
+}

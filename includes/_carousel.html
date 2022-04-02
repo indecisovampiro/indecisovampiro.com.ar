@@ -1,53 +1,19 @@
 <section
   x-cloak
   x-data="object"
-  {%
-  comment
-  %}
-  Previene
-  visibilidad
-  de
-  las
-  3
-  slides
-  mientras
-  carga{%
-  endcomment
-  %}
   id="musica"
   class="carousel y"
   data-flickity='{ "autoPlay": 7000, "pauseAutoPlayOnHover": false, "wrapAround": true,  "draggable": false, "prevNextButtons": false, "pageDots": false }'
 >
-  <div
-    class="flex w-full bg-[url('/static/images/carousel/bg.png')] h-[260px] bg-cover bg-no-repeat justify-center items-center"
-  >
-    <div class="flex align-middle justify-center items-center gap-12 my-12 bg-black bg-opacity-80 rounded-2xl">
-      <a class="flex justify-center m-2 pointer-events-none" href="">
-        <img class="m-4 max-h-36" src="/static/images/carousel/radioenvivo.png" />
+{% for x in carousel.carousel %}
+<div class="flex w-full bg-[url('/static/images/carousel/bg.png')] h-[260px] bg-cover bg-no-repeat justify-center items-center">
+  <div class="flex align-middle justify-center items-center gap-12 my-12 bg-black bg-opacity-80 rounded-2xl">
+    {% for y in x.logo %}
+      <a class="flex justify-center m-2 {% unless y.url %} pointer-events-none{% endunless %}" href="{{ y.url }}">
+        <img class="m-4 max-h-36" src="{{ y.imagen }}"/>
       </a>
-    </div>
+    {% endfor %}
   </div>
-  <div
-    class="flex w-full bg-[url('/static/images/carousel/bg.png')] h-[260px] bg-cover bg-no-repeat justify-center items-center"
-  >
-    <div class="flex align-middle justify-center items-center gap-8 md:gap-12 my-12 bg-black bg-opacity-80 rounded-2xl">
-      <a class="flex justify-center m-2" href="https://www.8astdf.com/banos-quimicos">
-        <img class="m-4 max-h-36" src="/static/images/carousel/8as.svg" />
-      </a>
-      <a class="flex justify-center m-2" href="https://www.instagram.com/labo.mariee/">
-        <img class="m-4 max-h-36" src="/static/images/carousel/labomarie.svg" />
-      </a>
-    </div>
-  </div>
-  <div
-    class="flex w-full bg-[url('/static/images/carousel/bg.png')] h-[260px] bg-cover bg-no-repeat justify-center items-center"
-  >
-    <div
-      class="flex align-middle justify-center items-center gap-12 my-12 bg-black bg-opacity-80 rounded-2xl"
-    >
-      <a class="flex justify-center m-2" href="https://www.instagram.com/690graffshhop/">
-        <img class="m-4 max-h-36 max-w-full" src="/static/images/carousel/690.png"
-      /></a>
-    </div>
-  </div>
+</div>
+{% endfor %}
 </section>
