@@ -5,7 +5,7 @@
   class="carousel y"
   data-flickity='{ "autoPlay": 7000, "pauseAutoPlayOnHover": false, "wrapAround": true,  "draggable": false, "prevNextButtons": false, "pageDots": false }'
 >
-{% for x in carousel.carousel %}
+{% for x in carousel.slides %}
 <div class="flex w-full bg-[url('/static/images/carousel/bg.png')] h-[260px] bg-cover bg-no-repeat justify-center items-center">
   <div class="flex align-middle justify-center items-center gap-12 my-12 bg-black bg-opacity-80 rounded-2xl">
     {% for y in x.logo %}

@@ -12,8 +12,9 @@ collections:
         file: data/carousel.json
         media_folder: '/static/images/carousel'
         fields:
-          - label: Carousel
-            name: carousel
+          - label: Slides
+            name: slides
+            label_singular: slide
             widget: list
             allow_add: true
             fields:
@@ -21,6 +22,7 @@ collections:
                 name: logo
                 widget: list
                 allow_add: true
+                summary: '{{fields.titulo}}'
                 fields:
                   - { label: Titulo, name: titulo, widget: string }
                   - { label: URL, name: url, widget: string, required: false }
