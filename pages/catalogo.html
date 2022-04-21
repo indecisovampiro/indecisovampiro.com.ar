@@ -3,9 +3,9 @@ title: Catalogo
 layout: default
 ---
 <section class="flex items-center justify-center max-w-screen-lg py-10 mx-auto">
-  <img loading="lazy" class="w-56 py-10" src="/static/images/logos/editorial-vampira.png" alt="">
+  <img alt="" class="w-56 py-10" loading="lazy" src="/static/images/logos/editorial-vampira.png">
 </section>
-<section class="flex flex-col max-w-screen-lg gap-12 pt-0 mx-auto sm:gap-14 y">
+<section class="flex flex-col max-w-screen-lg gap-12 p-2 mx-auto sm:gap-14 y">
   <h1 class="text-gray-700 h1">Catálogo</h1>
   <div class="grid grid-cols-2 gap-4 gap-y-10 sm:grid-cols-4 sm:gap-10 sm:px-10">
     {% for producto in editorial.editorial %}
@@ -18,9 +18,17 @@ layout: default
         <!-- Description -->
         <div class="flex flex-col justify-between flex-1 gap-3">
           <div class="">
-            <a href="/catalogo/{{ producto.titulo | slug }}/"><h1 class="text-sm font-bold border-b-2 border-white">{{ producto.titulo }}</h1></a>
+            <a href="/catalogo/{{ producto.titulo | slug }}/">
+              <h1 class="text-sm font-bold border-b-2 border-white">{{ producto.titulo }}</h1>
+            </a>
             <h2 class="text-sm">{{ producto.subtitulo | renderUsingMarkdown }}</h2>
-            <h2 class="text-base font-bold text-blue-700">{% if producto.precio == 0 %}GRATIS{% else %}${{ producto.precio }}{% endif %}{% if producto.agotado %} (AGOTADO){% endif %}</h2>
+            <h2 class="text-base font-bold text-blue-700">
+              {% if producto.precio == 0 %}GRATIS{% else %}${{ producto.precio }}
+              {% endif %}
+              {% if producto.agotado %}
+                (AGOTADO)
+              {% endif %}
+            </h2>
           </div>
           <!-- Boton -->
           <a class="flex items-center justify-center p-1 text-sm uppercase border-2 hover:text-gray-300 {% if producto.agotado %}pointer-events-none text-gray-300 line-through{% endif %}" href="{{ producto.url }}">
