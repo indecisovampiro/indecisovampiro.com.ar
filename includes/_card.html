@@ -1,32 +1,24 @@
 <div class="relative flex flex-col items-center justify-center">
   <!-- Logo -->
-  <img loading="lazy" class="absolute top-0 h-32" src="{{ logo }}" alt="{{ titulo }}" />
+  <img loading="lazy" class="absolute top-0 h-32" src="{{ logo }}" alt="{{ titulo }}"/>
   <!-- Background -->
-  <div
-    class="mt-16 bg-cover bg-center bg-no-repeat pb-8 pt-28"
-    style="background-image: url('{{ background }}');"
-  >
+  <div class="mt-16 bg-cover bg-center bg-no-repeat pb-8 pt-28" style="background-image: url('{{ background }}');">
     <!-- Wrapper -->
     <div class="mx-5 grid justify-between gap-8 md:mx-8 md:grid-cols-5">
       <!-- Left -->
-      <div
-        class="{%if isBgLight %}text-black{% endif %} flex flex-col justify-around gap-4 md:col-span-3 md:gap-0"
-      >
+      <div class="{%if isBgLight %}text-black{% endif %} flex flex-col md:justify-around gap-4 md:col-span-3 md:gap-0">
         <!-- Title -->
-        <h3 class="h3">{{ titulo }}</h3>
+        <h3 class="h3 hidden md:block">{{ titulo }}</h3>
         <!-- Description -->
         <p class="text-justify text-base md:text-lg md:leading-6">
           {{ descripcion | renderUsingMarkdown }}
         </p>
         <!-- ONLY MOBILE: Image -->
-        <a class="flex-none md:hidden" href="{{ url }}">
-          <img loading="lazy" class="h-full" src="{{ imagen }}" alt="{{ titulo }}" />
+        <a class="flex items-center justify-center md:hidden" href="{{ url }}">
+          <img loading="lazy" class="h-full" src="{{ imagen }}" alt="{{ titulo }}"/>
         </a>
         <!-- Link -->
-        <a
-          class="{%if isBgLight %}hover:text-gray-700{% else %}hover:text-gray-300{% endif %} flex items-center justify-end text-sm font-bold uppercase md:text-lg"
-          href="{{ url }}"
-        >
+        <a class="{%if isBgLight %}hover:text-gray-700{% else %}hover:text-gray-300{% endif %} flex items-center justify-end text-sm font-bold uppercase md:text-lg" href="{{ url }}">
           <svg class="mr-4 h-12 w-12">
             <use xlink:href="/static/sprite.svg#{{ plataforma }}"></use>
           </svg>
@@ -35,7 +27,7 @@
       </div>
       <!-- ONLY DESKTOP: Right -->
       <a class="hidden md:col-span-2 md:flex" href="{{ url }}">
-        <img src="{{ imagen }}" alt="{{ titulo }}" loading="lazy" />
+        <img src="{{ imagen }}" alt="{{ titulo }}" loading="lazy"/>
       </a>
     </div>
   </div>
