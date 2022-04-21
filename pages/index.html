@@ -4,22 +4,7 @@ path: home
 layout: default
 ---
 
-{% include 'home/1-musica.html' %} {% include 'home/2-audiovisual.html' %} {% include
-'home/3-editorial.html' %}
-<div class="mx-auto max-w-screen-lg">
-  <a href="{{ settings.flashcookie }}">
-    <img
-      loading="lazy"
-      class="hidden w-full md:block"
-      src="/static/images/buttons/flashcookie.png"
-      alt="Tienda Flash Cookie"
-    />
-    <img
-      loading="lazy"
-      class="block w-full md:hidden"
-      src="/static/images/buttons/flashcookie-mobile.png"
-      alt="Tienda Flash Cookie"
-    />
-  </a>
-</div>
+{% include 'home/1-musica.html' %}
+{% include 'home/2-audiovisual.html' %}
+{% include 'home/3-editorial.html' %}
 {% include 'home/4-encuentros.html' %}
