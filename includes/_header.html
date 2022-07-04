@@ -4,17 +4,17 @@
   <div class="mx-auto flex max-w-screen-lg items-center justify-between p-2">
     <!-- Left -->
     <a href="/">
-      <img loading="lazy" class="h-12" src="/static/images/logo.png" alt="Indeciso Vampiro" />
+      <img loading="lazy" class="h-12" src="/static/images/logo.png" alt="Indeciso Vampiro"/>
     </a>
     <!-- Right -->
     <div class="flex items-center justify-center gap-3">
       <!-- Icons -->
       {% for x in settings.nav.mobile %}
-      <a class="hover:text-gray-300" href="{{ x.href }}">
-        <svg class="h-6 w-6">
-          <use xlink:href="/static/sprite.svg#{{ x.icon }}"></use>
-        </svg>
-      </a>
+        <a class="hover:text-gray-300" href="{{ x.href }}">
+          <svg class="h-6 w-6">
+            <use xlink:href="/static/sprite.svg#{{ x.icon }}"></use>
+          </svg>
+        </a>
       {% endfor %}
       <button @click="isOpen = !isOpen" type="button">
         <svg class="h-8 w-8">
@@ -31,7 +31,7 @@
     x-cloak
   >
     {% for x in settings.nav.main %}
-    <a class="text-xl font-semibold uppercase hover:text-gray-300" href="{{ x.href }}"
+      <a class="text-xl font-semibold uppercase hover:text-gray-300" href="{{ x.href }}"
       >{{ x.title }}</a
     >
     {% endfor %}
@@ -45,17 +45,17 @@
     <!-- Left -->
     <div class="flex items-center justify-center gap-5">
       {% for x in settings.nav.left %}
-      <a class="hover:text-gray-300" href="{{ x.href }}">
-        <svg class="h-6 w-6">
-          <use xlink:href="/static/sprite.svg#{{ x.icon }}"></use>
-        </svg>
-      </a>
+        <a class="hover:text-gray-300" href="{{ x.href }}">
+          <svg class="h-6 w-6">
+            <use xlink:href="/static/sprite.svg#{{ x.icon }}"></use>
+          </svg>
+        </a>
       {% endfor %}
     </div>
     <!-- Middle -->
     <nav class="flex items-center justify-between gap-7">
       {% for x in settings.nav.main %}
-      <a class="text-xl font-semibold uppercase hover:text-gray-300" href="{{ x.href }}"
+        <a class="text-xl font-semibold uppercase hover:text-gray-300" href="{{ x.href }}"
         >{{ x.title }}</a
       >
       {% endfor %}
@@ -63,11 +63,11 @@
     <!-- Right -->
     <div class="flex items-center justify-center gap-5">
       {% for x in settings.nav.right %}
-      <a class="hover:text-gray-300" href="{{ x.href }}">
-        <svg class="h-6 w-6">
-          <use xlink:href="/static/sprite.svg#{{ x.icon }}"></use>
-        </svg>
-      </a>
+        <a class="hover:text-gray-300" href="{{ x.href }}">
+          <svg class="h-6 w-6">
+            <use xlink:href="/static/sprite.svg#{{ x.icon }}"></use>
+          </svg>
+        </a>
       {% endfor %}
     </div>
   </div>
@@ -76,9 +76,9 @@
 <!-- Hero -->
 <section
   class="flex items-center justify-center px-0 py-16"
-  style="background-image: linear-gradient(#006fbe, #1ba9e3)"
+  style="background: linear-gradient(0deg, #046FB6 0%, #035F9B 3.14%, #034977 8.18%, #023557 13.87%, #01243B 20.14%, #011725 27.24%, #000C14 35.52%, #000509 45.76%, #000102 60.12%, #000000 100%)"
 >
   <a href="/">
-    <img loading="lazy" class="w-56" src="/static/images/logo.png" alt="" />
+    <img loading="lazy" class="w-56" src="/static/images/logo.png" alt=""/>
   </a>
 </section>
